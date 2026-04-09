@@ -8,13 +8,25 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-zinc-700 hover:bg-zinc-900/70 md:p-6">
       <div className="mb-4 flex items-center justify-between gap-3">
-        <h3 className="text-lg font-semibold text-zinc-100">{project.name}</h3>
+        <h3 className="text-lg font-semibold text-zinc-100">
+          {project.name}
+          {project.featured ? (
+            <span className="ml-2 rounded-full border border-zinc-600 px-2 py-0.5 align-middle text-[10px] font-semibold uppercase tracking-widest text-zinc-300">
+              Featured
+            </span>
+          ) : null}
+        </h3>
         <span className="rounded-full border border-zinc-700 px-2.5 py-1 text-[11px] font-medium tracking-wide text-zinc-300">
           {project.tag}
         </span>
       </div>
 
-      <p className="text-sm leading-relaxed text-zinc-300">{project.description}</p>
+      <div className="space-y-2">
+        <p className="text-xs uppercase tracking-[0.16em] text-zinc-500">What it is</p>
+        <p className="text-sm leading-relaxed text-zinc-200">{project.whatItIs}</p>
+      </div>
+
+      <p className="mt-3 text-sm leading-relaxed text-zinc-300">{project.description}</p>
 
       <div className="mt-4 space-y-2">
         <p className="text-sm text-zinc-200">

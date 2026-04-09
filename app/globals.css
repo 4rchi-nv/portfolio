@@ -17,6 +17,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
+  line-height: 1.5;
 }
 
 html {
@@ -41,4 +42,12 @@ html {
 
 .contact-card strong {
   @apply mt-2 block text-base font-medium text-zinc-100;
+}
+
+.section-wrap {
+  @apply py-14 md:py-18;
+}
+
+.section-divider {
+  @apply border-b border-zinc-900;
 }

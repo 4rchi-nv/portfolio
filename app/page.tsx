@@ -1,5 +1,5 @@
 import { ExperienceCard } from "@/components/experience-card";
-import { ProjectCard } from "@/components/project-card";
+import { ProjectsSection } from "@/components/projects-section";
 import { SectionTitle } from "@/components/section-title";
 import { portfolioData } from "@/data/portfolio";
 
@@ -11,11 +11,21 @@ const navItems = [
 ];
 
 export default function Home() {
-  const { person, contacts, hero, expertise, projects, experience, skills } =
+  const {
+    person,
+    contacts,
+    hero,
+    expertise,
+    projects,
+    experience,
+    skills,
+    recruiterFacts,
+    helpWith,
+  } =
     portfolioData;
 
   return (
-    <div className="bg-zinc-950 text-zinc-100">
+    <div className="bg-zinc-950 text-zinc-100 selection:bg-zinc-100 selection:text-zinc-950">
       <header className="sticky top-0 z-20 border-b border-zinc-900/80 bg-zinc-950/80 backdrop-blur">
         <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3 md:px-6">
           <a href="#top" className="text-sm font-semibold tracking-wide text-zinc-200">
@@ -33,16 +43,19 @@ export default function Home() {
               </li>
             ))}
           </ul>
+          <a className="hidden text-sm text-zinc-300 transition-colors hover:text-zinc-100 md:inline" href="#contact">
+            Let&apos;s talk
+          </a>
         </nav>
       </header>
 
       <main id="top" className="mx-auto w-full max-w-6xl px-4 pb-20 md:px-6">
-        <section className="grid min-h-[78vh] items-center gap-10 border-b border-zinc-900 py-16 md:grid-cols-[1.1fr_0.9fr] md:py-24">
+        <section className="section-wrap section-divider grid min-h-[76vh] items-center gap-10 pt-14 md:grid-cols-[1.1fr_0.9fr] md:pt-20">
           <div>
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-zinc-400">
               {person.location}
             </p>
-            <h1 className="text-4xl font-semibold tracking-tight text-zinc-100 md:text-6xl">
+            <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-zinc-100 md:text-6xl md:leading-[1.05]">
               {hero.title}
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-300 md:text-lg">
@@ -66,11 +79,19 @@ export default function Home() {
                 LinkedIn
               </a>
             </div>
+
+            <ul className="mt-7 grid gap-2 text-sm text-zinc-400 sm:grid-cols-2">
+              {recruiterFacts.map((fact) => (
+                <li key={fact} className="rounded-lg border border-zinc-800/80 bg-zinc-900/30 px-3 py-2">
+                  {fact}
+                </li>
+              ))}
+            </ul>
           </div>
 
           <aside className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 md:p-7">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">
-              At a glance
+              Positioning
             </p>
             <ul className="mt-4 space-y-3 text-sm text-zinc-300">
               <li>- 5+ years in frontend development</li>
@@ -83,7 +104,7 @@ export default function Home() {
           </aside>
         </section>
 
-        <section className="border-b border-zinc-900 py-14 md:py-18" id="about">
+        <section className="section-wrap section-divider" id="about">
           <SectionTitle
             eyebrow="About"
             title="Frontend developer focused on product delivery, integrations, and maintainable interfaces."
@@ -91,7 +112,21 @@ export default function Home() {
           />
         </section>
 
-        <section className="border-b border-zinc-900 py-14 md:py-18" id="expertise">
+        <section className="section-wrap section-divider" id="help">
+          <SectionTitle
+            eyebrow="What I Can Help With"
+            title="Where I usually create the most product value"
+          />
+          <div className="grid gap-3 md:grid-cols-2">
+            {helpWith.map((item) => (
+              <article key={item} className="rounded-xl border border-zinc-800 bg-zinc-900/35 p-4 text-sm leading-relaxed text-zinc-300">
+                {item}
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section-wrap section-divider" id="expertise">
           <SectionTitle
             eyebrow="Core Expertise"
             title="What I bring to frontend product teams"
@@ -109,20 +144,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="border-b border-zinc-900 py-14 md:py-18" id="projects">
-          <SectionTitle
-            eyebrow="Selected Projects"
-            title="Work spanning Telegram products, integrations, and frontend delivery"
-            description="Project descriptions use conservative wording where details are limited to keep claims accurate."
-          />
-          <div className="grid gap-4 md:grid-cols-2">
-            {projects.map((project) => (
-              <ProjectCard key={project.name} project={project} />
-            ))}
-          </div>
-        </section>
+        <ProjectsSection projects={projects} />
 
-        <section className="border-b border-zinc-900 py-14 md:py-18" id="experience">
+        <section className="section-wrap section-divider" id="experience">
           <SectionTitle
             eyebrow="Experience"
             title="Professional background"
@@ -135,7 +159,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="border-b border-zinc-900 py-14 md:py-18" id="skills">
+        <section className="section-wrap section-divider" id="skills">
           <SectionTitle eyebrow="Skills & Toolbox" title="Technology stack and practical tools" />
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {skills.map((group) => (
@@ -159,10 +183,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-14 md:py-18" id="contact">
+        <section className="section-wrap" id="contact">
           <SectionTitle
             eyebrow="Contact"
             title="Open to remote frontend opportunities and product collaborations"
+            description={`Email, Telegram, and professional links are active. You can also reach me by phone: ${contacts.phone}.`}
           />
           <div className="grid gap-4 md:grid-cols-2">
             <a className="contact-card" href={`mailto:${contacts.email}`}>

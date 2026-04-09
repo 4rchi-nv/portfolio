@@ -32,6 +32,17 @@ export const metadata: Metadata = {
     description:
       "React/TypeScript frontend engineer with Telegram WebApp and Web3 integration experience.",
   },
+  keywords: [
+    "Frontend Developer",
+    "React Developer",
+    "TypeScript",
+    "Telegram WebApp",
+    "Telegram Mini App",
+    "REST API Integration",
+    "Web3 Frontend",
+    "WalletConnect",
+    "TronLink",
+  ],
 };
 
 export default function RootLayout({

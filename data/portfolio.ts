@@ -8,12 +8,14 @@ export type ProjectTag =
 
 export interface Project {
   name: string;
+  whatItIs: string;
   description: string;
   contribution: string;
   stack: string[];
   whyItMatters: string;
   href?: string;
   tag: ProjectTag;
+  featured?: boolean;
 }
 
 export interface ExperienceItem {
@@ -46,10 +48,16 @@ export const portfolioData = {
     linkedin: "https://www.linkedin.com/in/arslan-agajanov",
   },
   hero: {
-    title: "Frontend Engineer for Product Teams",
+    title: "React / TypeScript Frontend Developer for Product Teams",
     subtitle:
-      "I build production web interfaces with React and TypeScript, with hands-on delivery in Telegram Mini Apps, REST integrations, and Web3 transaction-facing flows.",
+      "I build production web apps and Telegram WebApps with integration-heavy frontend flows, from API-connected interfaces to wallet and transaction UX in Web3/fintech scenarios.",
   },
+  helpWith: [
+    "Shipping React/TypeScript product features from UI to integration-ready release",
+    "Building Telegram Mini App interfaces tied to bot and backend product flows",
+    "Implementing frontend logic for REST, wallet, transaction, and approve scenarios",
+    "Improving maintainability in legacy frontend modules through practical refactoring",
+  ],
   expertise: [
     {
       title: "React / TypeScript Product Development",
@@ -79,6 +87,7 @@ export const portfolioData = {
   projects: [
     {
       name: "T-Whale",
+      whatItIs: "Telegram WebApp game product",
       description:
         "Telegram WebApp game with progression mechanics similar to tap-to-progress products.",
       contribution:
@@ -87,9 +96,11 @@ export const portfolioData = {
       whyItMatters:
         "Demonstrates practical delivery in Telegram ecosystem products with real user interaction loops.",
       tag: "Telegram",
+      featured: true,
     },
     {
       name: "Web3 / Fintech / AML Flows",
+      whatItIs: "Integration-focused frontend product flows",
       description:
         "Frontend-facing integration scenarios covering wallet connectivity and transaction-oriented checks.",
       contribution:
@@ -98,9 +109,11 @@ export const portfolioData = {
       whyItMatters:
         "Shows applied experience with finance-sensitive and blockchain-integrated user journeys.",
       tag: "Web3",
+      featured: true,
     },
     {
       name: "DeepWaters",
+      whatItIs: "Financial accounting system frontend",
       description: "Financial accounting system interface and product functionality.",
       contribution:
         "Worked on frontend functionality and integration-related parts of the product.",
@@ -108,9 +121,11 @@ export const portfolioData = {
       whyItMatters:
         "Represents work on structured, business-focused interfaces beyond marketing pages.",
       tag: "Fintech",
+      featured: true,
     },
     {
       name: "itdealgroup.com",
+      whatItIs: "Company website cases section",
       description: "Company website and case presentation pages.",
       contribution:
         "Improved the design and frontend structure of the cases page and related UI composition.",
@@ -119,9 +134,11 @@ export const portfolioData = {
         "Highlights practical improvements to production-facing company web presence.",
       href: "https://itdealgroup.com",
       tag: "Web App",
+      featured: true,
     },
     {
       name: "trustpay.now",
+      whatItIs: "Public fintech-related web reference",
       description: "Public-facing web product reference.",
       contribution:
         "Contributed to frontend and user-facing experience with available public context.",
@@ -133,6 +150,7 @@ export const portfolioData = {
     },
     {
       name: "dezv3-dev.web.app",
+      whatItIs: "Deployed web app reference",
       description: "Live web project reference.",
       contribution:
         "Contributed to frontend implementation and UI behavior in a deployed environment.",
@@ -144,6 +162,7 @@ export const portfolioData = {
     },
     {
       name: "mosca-itdeal.web.app",
+      whatItIs: "Deployed web app reference",
       description: "Live web project reference.",
       contribution:
         "Worked on frontend tasks and support for user-facing interface parts.",
@@ -155,6 +174,7 @@ export const portfolioData = {
     },
     {
       name: "avia-landing.vercel.app",
+      whatItIs: "Public landing-style frontend build",
       description: "Public landing-style frontend project.",
       contribution:
         "Built and improved frontend structure and visual composition for a deployed page.",
@@ -166,6 +186,7 @@ export const portfolioData = {
     },
     {
       name: "Telegram Bot References",
+      whatItIs: "Telegram bot-side workflow references",
       description: "Supporting bot-side references connected to Telegram workflows.",
       contribution:
         "Built and maintained bot-related functionality for project use and testing scenarios.",
@@ -176,6 +197,12 @@ export const portfolioData = {
       tag: "Bot",
     },
   ] satisfies Project[],
+  recruiterFacts: [
+    "5+ years of frontend development experience",
+    "Current role in a distributed remote team",
+    "100+ students taught in programming tracks",
+    "40+ students supported into IT universities",
+  ],
   experience: [
     {
       company: "Itdeal",
