@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ExperienceCard } from "@/components/experience-card";
 import { ProjectsSection } from "@/components/projects-section";
 import { SectionTitle } from "@/components/section-title";
@@ -28,8 +29,15 @@ export default function Home() {
     <div className="bg-zinc-950 text-zinc-100 selection:bg-zinc-100 selection:text-zinc-950">
       <header className="sticky top-0 z-20 border-b border-zinc-900/80 bg-zinc-950/80 backdrop-blur">
         <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3 md:px-6">
-          <a href="#top" className="text-sm font-semibold tracking-wide text-zinc-200">
-            {person.name}
+          <a href="#top" className="inline-flex items-center gap-2.5 text-sm font-semibold tracking-wide text-zinc-200">
+            <Image
+              src="/brand-logo-light.png"
+              alt="Arslan Agajanov brand logo"
+              width={26}
+              height={26}
+              className="h-[26px] w-[26px] rounded-sm object-cover"
+            />
+            <span>{person.name}</span>
           </a>
           <ul className="hidden items-center gap-5 md:flex">
             {navItems.map((item) => (
@@ -90,11 +98,21 @@ export default function Home() {
           </div>
 
           <aside className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 md:p-7">
+            <div className="mb-5 overflow-hidden rounded-xl border border-zinc-800">
+              <Image
+                src="/arslan-profile.png"
+                alt="Arslan Agajanov portrait"
+                width={640}
+                height={640}
+                className="h-auto w-full object-cover"
+                priority
+              />
+            </div>
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">
               Positioning
             </p>
             <ul className="mt-4 space-y-3 text-sm text-zinc-300">
-              <li>- 5+ years in frontend development</li>
+              <li>- 6+ years in frontend development</li>
               <li>- React / TypeScript as main delivery stack</li>
               <li>- Telegram WebApp and Bot-oriented product flows</li>
               <li>- REST API and integration-heavy UI delivery</li>

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio-arslan.vercel.app"),
   title: "Arslan Agajanov - Frontend Developer (React / TypeScript)",
   description:
-    "Frontend Developer with 5+ years of experience in React/TypeScript, Telegram WebApps, REST integrations, and Web3 frontend flows.",
+    "Middle+ Frontend Developer with 6+ years of experience in React/TypeScript, Telegram WebApps, REST integrations, and Web3 frontend flows.",
   openGraph: {
     title: "Arslan Agajanov - Frontend Developer",
     description:
@@ -43,6 +43,11 @@ export const metadata: Metadata = {
     "WalletConnect",
     "TronLink",
   ],
+  icons: {
+    icon: "/brand-logo-light.png",
+    apple: "/brand-logo-light.png",
+    shortcut: "/brand-logo-light.png",
+  },
 };
 
 export default function RootLayout({

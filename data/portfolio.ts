@@ -34,10 +34,10 @@ export interface SkillGroup {
 export const portfolioData = {
   person: {
     name: "Arslan Agajanov",
-    role: "Frontend Developer (React / TypeScript) - Web, Telegram WebApp, Fintech / Web3 Integrations",
+    role: "Middle+ Frontend Developer | React | TypeScript | Next.js | Web3 & Fintech Integration",
     location: "Ashgabat, Turkmenistan - Remote",
     summary:
-      "Frontend developer with 5+ years of experience building user-facing web products with React, TypeScript, and Next.js. Works on Telegram WebApps, REST integrations, and Web3 product flows including wallet connections, balances, transactions, and token approve scenarios.",
+      "Frontend Engineer with 6+ years of experience building scalable SPA and SSR products using React, TypeScript, Next.js, and Redux. Focused on maintainable architecture, structured state management, performance-oriented rendering, and systematic legacy refactoring to reduce technical debt and improve stability. Hands-on with REST API integrations (auth, RBAC, transactional logic), Telegram WebApps, and Web3 frontend flows including wallet interaction and on-chain/off-chain coordination.",
   },
   contacts: {
     email: "agajanov0arslan@gmail.com",
@@ -50,13 +50,13 @@ export const portfolioData = {
   hero: {
     title: "React / TypeScript Frontend Developer for Product Teams",
     subtitle:
-      "I build production web apps and Telegram WebApps with integration-heavy frontend flows, from API-connected interfaces to wallet and transaction UX in Web3/fintech scenarios.",
+      "I build frontend systems where UI, architecture, and business logic work together: React/TypeScript web apps, Telegram WebApps, and Web3/fintech integration-heavy user flows.",
   },
   helpWith: [
     "Shipping React/TypeScript product features from UI to integration-ready release",
     "Building Telegram Mini App interfaces tied to bot and backend product flows",
-    "Implementing frontend logic for REST, wallet, transaction, and approve scenarios",
-    "Improving maintainability in legacy frontend modules through practical refactoring",
+    "Implementing frontend logic for REST auth/RBAC flows, wallet operations, and transactional scenarios",
+    "Improving maintainability in legacy modules through practical refactoring and architecture cleanup",
   ],
   expertise: [
     {
@@ -128,10 +128,10 @@ export const portfolioData = {
       whatItIs: "Company website cases section",
       description: "Company website and case presentation pages.",
       contribution:
-        "Improved the design and frontend structure of the cases page and related UI composition.",
+        "Redesigned and improved the frontend structure of the case studies section.",
       stack: ["Next.js", "React", "TypeScript"],
       whyItMatters:
-        "Highlights practical improvements to production-facing company web presence.",
+        "Highlights practical work on a production company website and clearer project presentation.",
       href: "https://itdealgroup.com",
       tag: "Web App",
       featured: true,
@@ -198,8 +198,8 @@ export const portfolioData = {
     },
   ] satisfies Project[],
   recruiterFacts: [
-    "5+ years of frontend development experience",
-    "Current role in a distributed remote team",
+    "6+ years of frontend development experience",
+    "Hands-on with SPA and SSR product delivery",
     "100+ students taught in programming tracks",
     "40+ students supported into IT universities",
   ],
@@ -207,14 +207,14 @@ export const portfolioData = {
     {
       company: "Itdeal",
       role: "Frontend Developer (Middle)",
-      period: "Jul 2024 - Present",
+      period: "Jul 2024 - Mar 2026",
       location: "Chisinau, Moldova / Remote / Distributed team",
       points: [
-        "Build and maintain client-side applications with React and TypeScript, integrated with REST APIs.",
-        "Contribute to Telegram WebApps and Bot API-connected product flows.",
-        "Implement Web3 functionality including wallet connection, balances, transaction behavior, and approve flows.",
-        "Support frontend integration for blockchain/AML-facing workflows.",
-        "Refactor legacy modules to improve maintainability and delivery speed.",
+        "Developed and maintained client-side React/TypeScript applications with REST API integrations, including auth and transactional flows.",
+        "Built and supported Telegram WebApps (Telegram Web Apps + Bot API), including user scenarios and business flow logic.",
+        "Implemented Web3 integrations with WalletConnect and TronLink, covering Tron/Ethereum wallet interactions, balances, transactions, and token approvals.",
+        "Integrated blockchain and AML-related checks in frontend user flows with backend data transfer.",
+        "Refactored legacy frontend modules to reduce technical debt and improve architecture stability.",
       ],
     },
     {
@@ -223,7 +223,7 @@ export const portfolioData = {
       period: "Apr 2022 - Feb 2024",
       location: "Ashgabat, Turkmenistan",
       points: [
-        "Taught 100+ students in programming and web development tracks.",
+        "Trained 100+ students in programming and web development tracks.",
         "Supported 40+ students in entering IT-focused universities.",
         "Covered HTML, CSS, JavaScript, backend basics, algorithms, and beginner game creation.",
         "Organized project-based learning through contests, practice, and technical activities.",
@@ -244,7 +244,7 @@ export const portfolioData = {
     {
       company: "Milli San",
       role: "Junior Frontend Developer / React Developer",
-      period: "May 2020 - Dec 2021",
+      period: "Feb 2020 - Dec 2021",
       location: "Ashgabat, Turkmenistan",
       points: [
         "Fixed and built web pages with responsive UI adaptations.",
