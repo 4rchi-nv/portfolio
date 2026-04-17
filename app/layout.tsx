@@ -1,66 +1,9 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  metadataBase: new URL("https://portfolio-arslan.vercel.app"),
-  title: "Arslan Agajanov - Frontend Developer (React / TypeScript)",
-  description:
-    "Middle+ Frontend Developer with 6+ years of experience in React/TypeScript, Telegram WebApps, REST integrations, and Web3 frontend flows.",
-  openGraph: {
-    title: "Arslan Agajanov - Frontend Developer",
-    description:
-      "React / TypeScript engineer focused on web apps, Telegram Mini Apps, fintech-style integrations, and Web3 user flows.",
-    url: "https://portfolio-arslan.vercel.app",
-    siteName: "Arslan Agajanov Portfolio",
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Arslan Agajanov - Frontend Developer",
-    description:
-      "React/TypeScript frontend engineer with Telegram WebApp and Web3 integration experience.",
-  },
-  keywords: [
-    "Frontend Developer",
-    "React Developer",
-    "TypeScript",
-    "Telegram WebApp",
-    "Telegram Mini App",
-    "REST API Integration",
-    "Web3 Frontend",
-    "WalletConnect",
-    "TronLink",
-  ],
-  icons: {
-    icon: "/brand-logo-light.png",
-    apple: "/brand-logo-light.png",
-    shortcut: "/brand-logo-light.png",
-  },
+type Props = {
+  children: React.ReactNode;
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
-    </html>
-  );
+export default function RootLayout({ children }: Props) {
+  return children;
 }
