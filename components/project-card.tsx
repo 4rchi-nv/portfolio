@@ -40,10 +40,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <span className="font-medium text-zinc-100">{t("contribution")}</span>{" "}
           {project.contribution}
         </p>
-        <p className="text-sm break-words text-zinc-200">
-          <span className="font-medium text-zinc-100">{t("whyItMatters")}</span>{" "}
-          {project.whyItMatters}
-        </p>
       </div>
 
       <ul className="mt-4 flex flex-wrap gap-2">
