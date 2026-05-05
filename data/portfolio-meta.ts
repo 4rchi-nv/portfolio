@@ -112,7 +112,7 @@ export const contacts = {
   phone: "+99363337949",
   telegram: "https://t.me/darc_nv",
   telegramHandle: "@darc_nv",
-  github: "https://github.com/4rch-nv",
+  github: "https://github.com/4rchi-nv",
   linkedin: "https://www.linkedin.com/in/arslan-agajanov",
 } as const;
 
