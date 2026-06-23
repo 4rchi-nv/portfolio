@@ -1,6 +1,8 @@
 /** Technical / structural data; user-facing copy lives in messages/{locale}.json */
+export const siteUrl = "https://portfolio-arslan.vercel.app";
+
 export type ProjectTag =
-  | "Party Game"
+  | "Interactive Games"
   | "Telegram"
   | "Web3"
   | "Fintech"
@@ -8,34 +10,47 @@ export type ProjectTag =
   | "Landing"
   | "Bot";
 
+export type ProjectLinkStatus = "live" | "nda" | "demoUnavailable";
+
 export interface ProjectMeta {
   key: string;
   tag: ProjectTag;
   featured?: boolean;
   href?: string;
+  githubUrl?: string;
+  image?: string;
+  linkStatus?: ProjectLinkStatus;
   stack: string[];
 }
+
+/** Set when `public/resume.pdf` (or custom name) is added. */
+export const resumeHref: string | undefined = undefined;
 
 export const projectOrder: ProjectMeta[] = [
   {
     key: "spy",
-    tag: "Party Game",
+    tag: "Interactive Games",
     featured: true,
+    linkStatus: "live",
     href: "https://spy-game-next.vercel.app",
+    githubUrl: "https://github.com/4rchi-nv/spy-game-next",
     stack: [
       "Next.js",
       "React",
       "TypeScript",
       "Tailwind CSS",
       "localStorage",
+      "PWA",
       "Vercel",
     ],
   },
   {
     key: "bunker",
-    tag: "Party Game",
+    tag: "Interactive Games",
     featured: true,
+    linkStatus: "live",
     href: "https://bunker-glhf.vercel.app",
+    githubUrl: "https://github.com/4rchi-nv/bunker-game",
     stack: [
       "Next.js",
       "React",
@@ -43,61 +58,66 @@ export const projectOrder: ProjectMeta[] = [
       "Tailwind CSS",
       "Firebase Firestore",
       "Firebase Auth",
+      "Game FSM",
       "Vercel",
     ],
   },
   {
     key: "tWhale",
     tag: "Telegram",
-    featured: true,
+    linkStatus: "nda",
     stack: ["React", "TypeScript", "Telegram Web Apps", "Telegram Bot API"],
   },
   {
     key: "web3Fintech",
     tag: "Web3",
     featured: true,
+    linkStatus: "nda",
     stack: ["React", "TypeScript", "WalletConnect", "TronLink", "REST API"],
   },
   {
     key: "deepWaters",
     tag: "Fintech",
-    featured: true,
+    linkStatus: "nda",
     stack: ["React", "TypeScript", "REST API"],
   },
   {
     key: "itdealgroup",
     tag: "Web App",
-    featured: true,
+    linkStatus: "live",
     href: "https://itdealgroup.com",
     stack: ["Next.js", "React", "TypeScript"],
   },
   {
     key: "trustpay",
     tag: "Fintech",
-    href: "https://trustpay.now/",
-    stack: ["Frontend", "Web Integration"],
+    linkStatus: "demoUnavailable",
+    stack: ["React", "TypeScript", "REST API", "Web Integration"],
   },
   {
     key: "dezv3",
     tag: "Web App",
+    linkStatus: "live",
     href: "https://dezv3-dev.web.app",
-    stack: ["Frontend", "Web App"],
+    stack: ["React", "TypeScript", "Firebase", "Web App"],
   },
   {
     key: "mosca",
     tag: "Web App",
+    linkStatus: "live",
     href: "https://mosca-itdeal.web.app/",
-    stack: ["Frontend", "Web App"],
+    stack: ["React", "TypeScript", "Web App", "Vercel"],
   },
   {
     key: "aviaLanding",
     tag: "Landing",
-    href: "https://avia-landing.vercel.app",
-    stack: ["HTML", "CSS", "JavaScript"],
+    linkStatus: "demoUnavailable",
+    stack: ["HTML", "CSS", "JavaScript", "Responsive UI"],
   },
   {
     key: "telegramBots",
     tag: "Bot",
+    linkStatus: "live",
     href: "https://t.me/t_projects_bot",
     stack: ["Telegram Bot API", "Python"],
   },
@@ -115,15 +135,21 @@ export type SkillGroupKey = (typeof skillGroupOrder)[number];
 
 export const skillItems: Record<SkillGroupKey, string[]> = {
   frontend: [
-    "JavaScript",
-    "TypeScript",
     "React",
-    "Redux",
-    "Next.js",
-    "HTML",
-    "CSS",
+    "Next.js App Router",
+    "TypeScript",
+    "Tailwind CSS",
+    "State Management",
+    "PWA",
   ],
-  integrations: ["REST API", "Telegram Web Apps", "Telegram Bot API"],
+  integrations: [
+    "REST API",
+    "Firebase",
+    "Firestore",
+    "Realtime Apps",
+    "API Integration",
+    "Telegram Web Apps",
+  ],
   web3: [
     "WalletConnect",
     "TronLink",
@@ -131,11 +157,14 @@ export const skillItems: Record<SkillGroupKey, string[]> = {
     "Balances & Transactions",
     "Token Approve Flows",
   ],
-  tools: ["Git", "Responsive Layout", "GraphQL", "Hasura", "Docker"],
-  other: ["jQuery", "SQL", "Python", "Django", "Databases", "English"],
+  tools: ["Git", "Vercel", "Responsive Layout", "GraphQL", "Docker"],
+  other: [
+    "Game Logic / FSM",
+    "Parser / Data Normalization",
+    "Python",
+    "English",
+  ],
 };
-
-export const expertiseIndices = [0, 1, 2, 3, 4, 5] as const;
 
 export const contacts = {
   email: "agajanov0arslan@gmail.com",
@@ -147,3 +176,6 @@ export const contacts = {
 } as const;
 
 export const personName = "Arslan Agajanov";
+
+/** Temporary OG fallback until `public/og-image.png` (1200×630) is added. */
+export const ogImagePath = "/arslan-profile.png";

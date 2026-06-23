@@ -26,7 +26,7 @@ export function ContactCards({ items }: { items: ContactCardItem[] }) {
           <a
             className="contact-card flex h-full min-h-[3.5rem] w-full flex-col justify-between gap-3 py-4"
             href={item.href}
-            {...(item.external ? { target: "_blank", rel: "noreferrer" } : {})}
+            {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
           >
             <span className="shrink-0">{item.label}</span>
             <strong className="mt-0 flex-1 text-pretty break-words text-base font-medium leading-snug text-zinc-100">

@@ -16,9 +16,12 @@ type HeroBlockProps = {
   linkedinLabel: string;
   githubUrl: string;
   linkedinUrl: string;
+  resumeHref?: string;
+  downloadCvLabel?: string;
   recruiterFacts: string[];
   asidePositioning: string;
   asideBullets: string[];
+  profilePhotoAlt: string;
 };
 
 export function HeroBlock({
@@ -32,9 +35,12 @@ export function HeroBlock({
   linkedinLabel,
   githubUrl,
   linkedinUrl,
+  resumeHref,
+  downloadCvLabel,
   recruiterFacts,
   asidePositioning,
   asideBullets,
+  profilePhotoAlt,
 }: HeroBlockProps) {
   const isMobile = useIsMobile();
   const reduced = useReducedMotion();
@@ -76,12 +82,23 @@ export function HeroBlock({
           <a className="btn-secondary" href="#contact">
             {contactMe}
           </a>
-          <a className="btn-secondary" href={githubUrl} target="_blank" rel="noreferrer">
+          <a className="btn-secondary focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950" href={githubUrl} target="_blank" rel="noopener noreferrer">
             {githubLabel}
           </a>
-          <a className="btn-secondary" href={linkedinUrl} target="_blank" rel="noreferrer">
+          <a className="btn-secondary focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950" href={linkedinUrl} target="_blank" rel="noopener noreferrer">
             {linkedinLabel}
           </a>
+          {resumeHref && downloadCvLabel ? (
+            <a
+              className="btn-secondary focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
+              href={resumeHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
+              {downloadCvLabel}
+            </a>
+          ) : null}
         </motion.div>
 
         <ul className="mt-7 grid gap-2 text-sm text-zinc-400 sm:grid-cols-2">
@@ -104,7 +121,7 @@ export function HeroBlock({
         <div className="mb-5 overflow-hidden rounded-xl border border-zinc-800">
           <Image
             src="/arslan-profile.png"
-            alt=""
+            alt={profilePhotoAlt}
             width={640}
             height={640}
             className="h-auto w-full object-cover"

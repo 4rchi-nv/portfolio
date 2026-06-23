@@ -6,6 +6,7 @@ import {
   skillGroupOrder,
   skillItems,
   type ProjectTag,
+  type ProjectLinkStatus,
 } from "@/data/portfolio-meta";
 
 export type ResolvedProject = {
@@ -16,6 +17,9 @@ export type ResolvedProject = {
   whyItMatters: string;
   stack: string[];
   href?: string;
+  githubUrl?: string;
+  image?: string;
+  linkStatus: ProjectLinkStatus;
   tag: ProjectTag;
   tagLabel: string;
   featured?: boolean;
@@ -39,7 +43,10 @@ export async function getResolvedProjects(): Promise<ResolvedProject[]> {
     contribution: t(`${meta.key}.contribution`),
     whyItMatters: t(`${meta.key}.whyItMatters`),
     stack: meta.stack,
-    href: meta.href,
+    href: meta.linkStatus === "live" ? meta.href : undefined,
+    githubUrl: meta.githubUrl,
+    image: meta.image,
+    linkStatus: meta.linkStatus ?? (meta.href ? "live" : "nda"),
     tag: meta.tag,
     tagLabel: tTags(meta.tag),
     featured: meta.featured,

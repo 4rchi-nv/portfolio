@@ -11,7 +11,8 @@ import { PaperSection } from "@/components/paper-section";
 import { ProjectsSection } from "@/components/projects-section";
 import { SectionTitle } from "@/components/section-title";
 import { SkillsGrid } from "@/components/skills-grid";
-import { personName } from "@/data/portfolio-meta";
+import { MobileNav } from "@/components/mobile-nav";
+import { personName, resumeHref } from "@/data/portfolio-meta";
 import {
   getPortfolioStrings,
   getResolvedExperience,
@@ -54,7 +55,7 @@ export default async function Home({ params }: Props) {
           >
             <Image
               src="/brand-logo-light.png"
-              alt=""
+              alt={`${personName} logo`}
               width={26}
               height={26}
               className="h-[26px] w-[26px] shrink-0 rounded-sm object-cover"
@@ -65,7 +66,7 @@ export default async function Home({ params }: Props) {
             {navItems.map((item) => (
               <li key={item.href}>
                 <a
-                  className="whitespace-nowrap text-sm text-zinc-400 transition-colors hover:text-zinc-100"
+                  className="whitespace-nowrap text-sm text-zinc-400 transition-colors hover:text-zinc-100 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
                   href={item.href}
                 >
                   {item.label}
@@ -83,6 +84,7 @@ export default async function Home({ params }: Props) {
             </a>
           </div>
         </nav>
+        <MobileNav items={navItems} />
       </header>
 
       <main
@@ -104,6 +106,9 @@ export default async function Home({ params }: Props) {
             recruiterFacts={portfolio.recruiterFacts}
             asidePositioning={tAside("positioning")}
             asideBullets={tAside.raw("bullets") as string[]}
+            profilePhotoAlt={tHero("profilePhotoAlt")}
+            resumeHref={resumeHref}
+            downloadCvLabel={resumeHref ? tHero("downloadCv") : undefined}
           />
         </PaperSection>
 
@@ -173,9 +178,7 @@ export default async function Home({ params }: Props) {
             <SectionTitle
               eyebrow={tSections("contactEyebrow")}
               title={tSections("contactTitle")}
-              description={tSections("contactDescription", {
-                phone: portfolio.contacts.phone,
-              })}
+              description={tSections("contactDescription")}
             />
           </FadeBlock>
           <ContactCards
@@ -190,6 +193,11 @@ export default async function Home({ params }: Props) {
                 value: portfolio.contacts.telegramHandle,
                 href: portfolio.contacts.telegram,
                 external: true,
+              },
+              {
+                label: tContact("phone"),
+                value: portfolio.contacts.phone,
+                href: `tel:${portfolio.contacts.phone.replace(/\s/g, "")}`,
               },
               {
                 label: tContact("github"),
