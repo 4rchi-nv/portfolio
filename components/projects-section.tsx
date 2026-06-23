@@ -17,6 +17,7 @@ interface ProjectsSectionProps {
 
 const filterOrder: Array<"All" | ProjectTag> = [
   "All",
+  "Party Game",
   "Telegram",
   "Web3",
   "Fintech",

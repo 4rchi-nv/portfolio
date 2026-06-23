@@ -49,11 +49,12 @@
   },
   "Projects": {
     "eyebrow": "Selected projects",
-    "title": "Frontend work across Telegram, integration-heavy web apps, and Web3-facing flows",
-    "description": "Cards prioritize context and honest contribution wording. Filter by product type for faster review.",
+    "title": "Frontend work across party games, Telegram, integration-heavy web apps, and Web3",
+    "description": "Cards prioritize context and honest contribution wording — from client-side games to realtime multiplayer. Filter by product type for faster review.",
     "filterAll": "All",
     "empty": "No projects in this category yet.",
     "tags": {
+      "Party Game": "Party game",
       "Telegram": "Telegram",
       "Web3": "Web3",
       "Fintech": "Fintech",
@@ -94,6 +95,7 @@
       "subtitle": "I build frontend systems where UI, architecture, and business logic work together: React/TypeScript web apps, Telegram WebApps, and Web3/fintech integration-heavy user flows."
     },
     "helpWith": [
+      "Building interactive party games on React/Next.js: from fully client-side apps with game logic and PWA to realtime Firebase multiplayer with AI integration and complex state management",
       "Shipping React/TypeScript product features from UI to integration-ready release",
       "Building Telegram Mini App interfaces tied to bot and backend product flows",
       "Implementing frontend logic for REST auth/RBAC flows, wallet operations, and transactional scenarios",
@@ -132,6 +134,20 @@
       }
     ],
     "projects": {
+      "spy": {
+        "name": "Spy — mobile party game",
+        "whatItIs": "Local pass-the-phone party game",
+        "description": "Browser-based Spy party game with no install or sign-up: lobby setup, 3D card dealing, discussion timer, voting, and a custom word database. Runs offline on a single phone.",
+        "contribution": "Full client-side game loop with no backend: session generation, pass-the-phone UX, Classic and Hardcore modes, discussion timer, voting, 13 built-in word categories with JSON import/export, and localStorage persistence.",
+        "whyItMatters": "Demonstrates a client-side game engine, offline-first architecture, 3D flip-card animations, and mobile-first UX with SSR-safe hydration."
+      },
+      "bunker": {
+        "name": "Bunker — online survival party game",
+        "whatItIs": "Realtime multiplayer discussion game",
+        "description": "Online Bunker-style survival game: the host creates a room, players join by code, reveal traits round by round, debate, vote, and eliminate players. Scenarios can be generated with an LLM and imported into the game.",
+        "contribution": "Firestore room model with realtime subscriptions, separate host/player screens, full game FSM (lobby → reveal → discussion → voting → elimination → final), AI-friendly scenario import pipeline, and player data privacy via getPublicPlayerCard().",
+        "whyItMatters": "Shows realtime multiplayer without sign-up, complex state management, scenario validation, and AI-generated content integration."
+      },
       "tWhale": {
         "name": "T-Whale",
         "whatItIs": "Telegram WebApp game product",

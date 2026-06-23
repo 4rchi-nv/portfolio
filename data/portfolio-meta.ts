@@ -1,5 +1,6 @@
 /** Technical / structural data; user-facing copy lives in messages/{locale}.json */
 export type ProjectTag =
+  | "Party Game"
   | "Telegram"
   | "Web3"
   | "Fintech"
@@ -16,6 +17,35 @@ export interface ProjectMeta {
 }
 
 export const projectOrder: ProjectMeta[] = [
+  {
+    key: "spy",
+    tag: "Party Game",
+    featured: true,
+    href: "https://spy-game-next.vercel.app",
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "localStorage",
+      "Vercel",
+    ],
+  },
+  {
+    key: "bunker",
+    tag: "Party Game",
+    featured: true,
+    href: "https://bunker-glhf.vercel.app",
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Firebase Firestore",
+      "Firebase Auth",
+      "Vercel",
+    ],
+  },
   {
     key: "tWhale",
     tag: "Telegram",
