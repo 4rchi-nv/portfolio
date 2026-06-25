@@ -104,11 +104,11 @@
     "person": {
       "role": "React / Next.js Engineer · TypeScript · Realtime Apps · Product UI",
       "location": "Ашхабад, Туркменистан — удалённо",
-      "summary": "React / Next.js разработчик с full-stack подходом к продукту. Проектирую интерактивные веб-приложения: от клиентской игровой логики и PWA до realtime, API-интеграций и деплоя. 6+ лет опыта в React/TypeScript, поддерживаемой архитектуре, state management и REST/Web3-интеграциях."
+      "summary": "React / Next.js разработчик с full-stack подходом к продукту. Проектирую интерактивные веб-приложения: от клиентской логики и PWA до realtime, API-интеграций и деплоя. 6+ лет опыта в React/TypeScript, поддерживаемой архитектуре, state management и REST/Web3-интеграциях."
     },
     "hero": {
       "title": "React / Next.js Engineer · TypeScript · Realtime Apps · Product UI",
-      "subtitle": "Проектирую интерактивные веб-приложения: от клиентской игровой логики и PWA до realtime, API-интеграций и деплоя."
+      "subtitle": "Проектирую интерактивные веб-приложения: от клиентской логики и PWA до realtime, API-интеграций и деплоя."
     },
     "helpWith": [
       "Поставка фич на React/TypeScript — от UI до интеграционно готового релиза",

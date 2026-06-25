@@ -104,11 +104,11 @@
     "person": {
       "role": "React / Next.js Engineer · TypeScript · Realtime Apps · Product UI",
       "location": "Ashgabat, Turkmenistan — Remote",
-      "summary": "React / Next.js engineer with full-stack product ownership. I build interactive web applications — from client-side game logic and PWA to realtime, API integrations and deployment. 6+ years in React/TypeScript, maintainable architecture, state management and REST/Web3 integrations."
+      "summary": "React / Next.js engineer with full-stack product ownership. I build interactive web applications — from client-side logic and PWA to realtime, API integrations and deployment. 6+ years in React/TypeScript, maintainable architecture, state management and REST/Web3 integrations."
     },
     "hero": {
       "title": "React / Next.js Engineer · TypeScript · Realtime Apps · Product UI",
-      "subtitle": "I build interactive web applications — from client-side game logic and PWA to realtime, API integrations and deployment."
+      "subtitle": "I build interactive web applications — from client-side logic and PWA to realtime, API integrations and deployment."
     },
     "helpWith": [
       "Shipping React/TypeScript product features from UI to integration-ready release",
