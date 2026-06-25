@@ -1,11 +1,11 @@
 {
   "Meta": {
     "title": "Арслан Агаджанов — React / Next.js Engineer",
-    "description": "React / Next.js разработчик с full-stack подходом к продукту: интерактивные веб-приложения, realtime multiplayer, Firebase, API-интеграции и деплой на Vercel.",
+    "description": "React / Next.js разработчик с full-stack подходом к продукту: интерактивные веб-приложения, клиентская и realtime-логика, API-интеграции и деплой.",
     "ogTitle": "Арслан Агаджанов — React / Next.js Engineer",
-    "ogDescription": "Инженер по React / Next.js: клиентская игровая логика, PWA, realtime apps на Firebase, Telegram WebApps и Web3-интеграции.",
-    "twitterDescription": "React / Next.js engineer: interactive apps, realtime multiplayer, Firebase, product UI.",
-    "keywords": "React, Next.js, TypeScript, Tailwind CSS, Firebase, Firestore, realtime apps, party games, frontend, full-stack product engineer, Telegram WebApp, Web3"
+    "ogDescription": "Инженер по React / Next.js: интерактивные веб-приложения, клиентская и realtime-логика, PWA, Telegram WebApps и Web3-интеграции.",
+    "twitterDescription": "React / Next.js engineer: interactive web apps, realtime UI, API integrations, product engineering.",
+    "keywords": "React, Next.js, TypeScript, Tailwind CSS, realtime apps, interactive apps, API integration, state management, frontend, full-stack product engineer, Telegram WebApp, Web3"
   },
   "Nav": {
     "projects": "Проекты",
@@ -27,10 +27,10 @@
     "bullets": [
       "6+ лет в разработке продуктовых интерфейсов",
       "React / Next.js / TypeScript как основной стек",
-      "Интерактивные игры: offline-first и realtime multiplayer",
-      "Firebase, REST API и интеграционно насыщенные UI",
+      "Интерактивные приложения: offline-first и realtime-логика",
+      "REST API и интеграционно насыщенные интерфейсы",
       "Web3: кошелёк, балансы и транзакционные сценарии",
-      "Деплой на Vercel и поддерживаемая архитектура"
+      "Production-деплой и поддерживаемая архитектура"
     ]
   },
   "Sections": {
@@ -51,13 +51,13 @@
   },
   "Projects": {
     "eyebrow": "Избранные проекты",
-    "title": "Инженерные кейсы: interactive games, Telegram, интеграции и Web3",
-    "description": "Интерактивные party-games на React/Next.js: один проект полностью клиентский и offline-first, второй — realtime multiplayer с комнатами, ролями host/player, Firebase-синхронизацией и импортом AI-сценариев.",
-    "gamesIntro": "Отдельное направление — интерактивные игры на Next.js. Эти проекты показывают разные уровни сложности: от полностью клиентского offline-first приложения до realtime multiplayer с Firebase, приватными состояниями игроков и AI-friendly сценарием.",
+    "title": "Инженерные кейсы: интерактивные приложения, Telegram, интеграции и Web3",
+    "description": "Интерактивные веб-приложения на React/Next.js: клиентская и realtime-логика, сложное состояние, API-интеграции и production-деплой.",
+    "gamesIntro": "Отдельное направление — интерактивные веб-приложения на Next.js. Эти кейсы показывают разные уровни сложности: от полностью клиентского offline-first приложения до realtime-синхронизации с приватными состояниями и AI-friendly сценарием.",
     "filterAll": "Все",
     "empty": "В этой категории пока нет проектов.",
     "tags": {
-      "Interactive Games": "Interactive Games",
+      "Interactive Apps": "Интерактивные приложения",
       "Telegram": "Telegram",
       "Web3": "Web3",
       "Fintech": "Финтех",
@@ -87,6 +87,9 @@
     "githubValue": "github.com/4rchi-nv",
     "linkedinValue": "linkedin.com/in/arslan-agajanov"
   },
+  "Experience": {
+    "visit": "Перейти на сайт компании"
+  },
   "NotFound": {
     "title": "Страница не найдена",
     "description": "Похоже, такой страницы больше нет или ссылка устарела.",
@@ -101,16 +104,16 @@
     "person": {
       "role": "React / Next.js Engineer · TypeScript · Realtime Apps · Product UI",
       "location": "Ашхабад, Туркменистан — удалённо",
-      "summary": "React / Next.js разработчик с full-stack подходом к продукту. Проектирую интерактивные веб-приложения: от клиентской игровой логики и PWA до realtime multiplayer на Firebase, API-интеграций и деплоя на Vercel. 6+ лет опыта в React/TypeScript, поддерживаемой архитектуре, state management и REST/Web3-интеграциях."
+      "summary": "React / Next.js разработчик с full-stack подходом к продукту. Проектирую интерактивные веб-приложения: от клиентской игровой логики и PWA до realtime, API-интеграций и деплоя. 6+ лет опыта в React/TypeScript, поддерживаемой архитектуре, state management и REST/Web3-интеграциях."
     },
     "hero": {
       "title": "React / Next.js Engineer · TypeScript · Realtime Apps · Product UI",
-      "subtitle": "Проектирую интерактивные веб-приложения: от клиентской игровой логики и PWA до realtime multiplayer на Firebase, API-интеграций и деплоя на Vercel."
+      "subtitle": "Проектирую интерактивные веб-приложения: от клиентской игровой логики и PWA до realtime, API-интеграций и деплоя."
     },
     "helpWith": [
       "Поставка фич на React/TypeScript — от UI до интеграционно готового релиза",
       "Интерфейсы Telegram Mini Apps, связанные с ботом и бэкенд-флоу",
-      "Интерактивные party-games на React/Next.js: offline-first клиентская логика и realtime multiplayer с Firebase",
+      "Интерактивные веб-приложения: offline-first клиентская логика и realtime-синхронизация состояния",
       "Фронтенд-логика для REST auth/RBAC, операций с кошельком и транзакционных сценариев",
       "Повышение поддерживаемости легаси через практичный рефакторинг и упрощение архитектуры"
     ],
@@ -148,16 +151,16 @@
     ],
     "projects": {
       "spy": {
-        "name": "Шпион — offline-first party game",
-        "whatItIs": "Клиентская party-игра · offline-first · mobile UX",
-        "description": "Мобильная party-игра для компании без регистрации и сервера: один телефон передаётся по кругу, игроки раскрывают карты, обсуждают ассоциации и голосуют. Вся игровая логика, таймер, база слов и прогресс работают на клиенте.",
+        "name": "Шпион — offline-first приложение",
+        "whatItIs": "Интерактивное веб-приложение · offline-first · клиентская логика",
+        "description": "Мобильное интерактивное приложение для компании без регистрации и сервера: один телефон передаётся по кругу, игроки раскрывают карты, обсуждают ассоциации и голосуют. Вся игровая логика, таймер, база слов и прогресс работают на клиенте.",
         "contribution": "Задача была сделать игру, которую можно открыть и сразу запустить с друзьями без аккаунтов, сервера и установки. Реализовал полный клиентский цикл: настройка партии, генерация ролей, pass-the-phone UX, Classic/Hardcore, 3D flip-card, таймер, голосование, база слов с JSON import/export и localStorage persistence с SSR-safe гидратацией.",
         "whyItMatters": "Показывает умение проектировать игровой цикл, приватное состояние, mobile-first UX и стабильную работу без backend-зависимостей."
       },
       "bunker": {
-        "name": "Бункер — realtime multiplayer party game",
-        "whatItIs": "Realtime multiplayer · host/player · Firebase sync",
-        "description": "Онлайн party-game с комнатами, ролью ведущего, realtime-синхронизацией и скрытыми карточками игроков. Хост импортирует AI-сценарий, управляет раундами, событиями, голосованиями и финальной историей.",
+        "name": "Бункер — realtime multiplayer приложение",
+        "whatItIs": "Realtime-приложение · host/player · синхронизация состояния",
+        "description": "Онлайн-приложение с комнатами, ролью ведущего, realtime-синхронизацией и скрытыми карточками участников. Хост импортирует AI-сценарий, управляет раундами, событиями, голосованиями и финальной историей.",
         "contribution": "Спроектировал модель комнаты в Firestore с realtime-подпиской, разделение host/player UI и полный игровой FSM. Приватные поля карточки скрыты от других игроков до раскрытия, а публичное состояние синхронизируется в комнате в реальном времени. AI-friendly workflow: промпт → сценарий → parser → валидация → игра.",
         "whyItMatters": "Демонстрирует realtime multiplayer, game state machine, приватные/публичные состояния и AI-friendly импорт сценариев без перегруженного backend."
       },
@@ -231,6 +234,7 @@
         "role": "Frontend-разработчик (Middle)",
         "period": "июл. 2024 — мар. 2026",
         "location": "Кишинёв, Молдова / удалённо / распределённая команда",
+        "url": "https://itdealgroup.com",
         "points": [
           "Разработка и сопровождение клиентских приложений на React/TypeScript с REST-интеграциями, включая авторизацию и транзакционные флоу.",
           "Создание и поддержка Telegram WebApps (Telegram Web Apps + Bot API): пользовательские сценарии и бизнес-логика.",
@@ -244,6 +248,7 @@
         "role": "Руководитель программы / ментор (программирование)",
         "period": "апр. 2022 — фев. 2024",
         "location": "Ашхабад, Туркменистан",
+        "url": "https://ashgabat.kiber-one.com/",
         "points": [
           "Обучение 100+ студентов трекам программирования и веб-разработки.",
           "Сопровождение 40+ студентов при поступлении в IT-направления вузов.",
@@ -256,6 +261,7 @@
         "role": "Frontend-разработчик (Middle)",
         "period": "дек. 2021 — янв. 2023",
         "location": "Ашхабад, Туркменистан",
+        "url": "https://tef-turkmenistan.com/",
         "points": [
           "Вёрстка, UI-элементы и части внутренних админ-интерфейсов.",
           "Фронтенд для ogt-turkmenistan.com и ittc.com.tm.",

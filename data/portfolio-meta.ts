@@ -2,7 +2,7 @@
 export const siteUrl = "https://portfolio-arslan.vercel.app";
 
 export type ProjectTag =
-  | "Interactive Games"
+  | "Interactive Apps"
   | "Telegram"
   | "Web3"
   | "Fintech"
@@ -29,7 +29,7 @@ export const resumeHref: string | undefined = undefined;
 export const projectOrder: ProjectMeta[] = [
   {
     key: "spy",
-    tag: "Interactive Games",
+    tag: "Interactive Apps",
     featured: true,
     linkStatus: "live",
     href: "https://spy-game-next.vercel.app",
@@ -46,7 +46,7 @@ export const projectOrder: ProjectMeta[] = [
   },
   {
     key: "bunker",
-    tag: "Interactive Games",
+    tag: "Interactive Apps",
     featured: true,
     linkStatus: "live",
     href: "https://bunker-glhf.vercel.app",

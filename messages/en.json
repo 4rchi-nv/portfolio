@@ -1,11 +1,11 @@
 {
   "Meta": {
     "title": "Arslan Agajanov - React / Next.js Engineer",
-    "description": "React / Next.js engineer with full-stack product ownership: interactive web apps, realtime multiplayer, Firebase, API integrations and Vercel deployment.",
+    "description": "React / Next.js engineer with full-stack product ownership: interactive web apps, client-side and realtime logic, API integrations and deployment.",
     "ogTitle": "Arslan Agajanov - React / Next.js Engineer",
-    "ogDescription": "React / Next.js engineer building client-side game logic, PWA flows, Firebase realtime apps, Telegram WebApps and Web3 integrations.",
-    "twitterDescription": "React / Next.js engineer: interactive apps, realtime multiplayer, Firebase, product UI.",
-    "keywords": "React, Next.js, TypeScript, Tailwind CSS, Firebase, Firestore, realtime apps, party games, frontend, full-stack product engineer, Telegram WebApp, Web3"
+    "ogDescription": "React / Next.js engineer building interactive web applications: client-side and realtime logic, PWA, Telegram WebApps and Web3 integrations.",
+    "twitterDescription": "React / Next.js engineer: interactive web apps, realtime UI, API integrations, product engineering.",
+    "keywords": "React, Next.js, TypeScript, Tailwind CSS, realtime apps, interactive apps, API integration, state management, frontend, full-stack product engineer, Telegram WebApp, Web3"
   },
   "Nav": {
     "projects": "Projects",
@@ -27,10 +27,10 @@
     "bullets": [
       "6+ years building product-facing interfaces",
       "React / Next.js / TypeScript as core delivery stack",
-      "Interactive games: offline-first and realtime multiplayer",
-      "Firebase, REST API and integration-heavy UI",
+      "Interactive apps: offline-first and realtime logic",
+      "REST API and integration-heavy interfaces",
       "Web3 wallet, balance and transaction UX flows",
-      "Vercel deployment and maintainable architecture"
+      "Production deployment and maintainable architecture"
     ]
   },
   "Sections": {
@@ -51,13 +51,13 @@
   },
   "Projects": {
     "eyebrow": "Selected projects",
-    "title": "Engineering cases: PWA, interactive games, Telegram, integrations and Web3",
-    "description": "Interactive party-games built with modern React/Next.js architecture: one project is fully client-side and offline-first, the other is realtime multiplayer with host/player roles, Firebase sync and AI-generated scenario import.",
-    "gamesIntro": "One of my recent directions is interactive games built with Next.js. These projects show different levels of complexity: from a fully client-side offline-first app to realtime multiplayer with Firebase, private player states and an AI-friendly scenario workflow.",
+    "title": "Engineering cases: interactive apps, Telegram, integrations and Web3",
+    "description": "Interactive web applications on React/Next.js: client-side and realtime logic, complex state, API integrations and production deployment.",
+    "gamesIntro": "One direction is interactive web applications built with Next.js. These cases show different levels of complexity: from a fully client-side offline-first app to realtime state sync with private states and an AI-friendly workflow.",
     "filterAll": "All",
     "empty": "No projects in this category yet.",
     "tags": {
-      "Interactive Games": "Interactive Games",
+      "Interactive Apps": "Interactive Apps",
       "Telegram": "Telegram",
       "Web3": "Web3",
       "Fintech": "Fintech",
@@ -87,6 +87,9 @@
     "githubValue": "github.com/4rchi-nv",
     "linkedinValue": "linkedin.com/in/arslan-agajanov"
   },
+  "Experience": {
+    "visit": "Visit company website"
+  },
   "NotFound": {
     "title": "Page not found",
     "description": "It looks like this page no longer exists or the link is outdated.",
@@ -101,16 +104,16 @@
     "person": {
       "role": "React / Next.js Engineer · TypeScript · Realtime Apps · Product UI",
       "location": "Ashgabat, Turkmenistan — Remote",
-      "summary": "React / Next.js engineer with full-stack product ownership. I build interactive web applications — from client-side game logic and PWA flows to realtime multiplayer with Firebase, API integrations and Vercel deployment. 6+ years in React/TypeScript, maintainable architecture, state management and REST/Web3 integrations."
+      "summary": "React / Next.js engineer with full-stack product ownership. I build interactive web applications — from client-side game logic and PWA to realtime, API integrations and deployment. 6+ years in React/TypeScript, maintainable architecture, state management and REST/Web3 integrations."
     },
     "hero": {
       "title": "React / Next.js Engineer · TypeScript · Realtime Apps · Product UI",
-      "subtitle": "I build interactive web applications — from client-side game logic and PWA flows to realtime multiplayer with Firebase, API integrations and Vercel deployment."
+      "subtitle": "I build interactive web applications — from client-side game logic and PWA to realtime, API integrations and deployment."
     },
     "helpWith": [
       "Shipping React/TypeScript product features from UI to integration-ready release",
       "Building Telegram Mini App interfaces tied to bot and backend product flows",
-      "Interactive party-games on React/Next.js: offline-first client logic and realtime Firebase multiplayer",
+      "Interactive web applications: offline-first client logic and realtime state sync",
       "Implementing frontend logic for REST auth/RBAC flows, wallet operations, and transactional scenarios",
       "Improving maintainability in legacy modules through practical refactoring and architecture cleanup"
     ],
@@ -148,16 +151,16 @@
     ],
     "projects": {
       "spy": {
-        "name": "Spy Game — offline-first party game",
-        "whatItIs": "Client-side party game · offline-first · mobile UX",
-        "description": "A mobile party game without backend or registration: players pass one phone around, reveal their cards, discuss clues and vote. Game logic, timer, word database and progress persistence run fully on the client.",
+        "name": "Spy Game — offline-first app",
+        "whatItIs": "Interactive web app · offline-first · client-side logic",
+        "description": "A mobile interactive app without backend or registration: players pass one phone around, reveal their cards, discuss clues and vote. Game logic, timer, word database and progress persistence run fully on the client.",
         "contribution": "The goal was to make a game that can be opened and played immediately with friends without accounts, backend or installation. I implemented the full client-side loop: setup, role generation, pass-the-phone UX, Classic/Hardcore modes, 3D flip-card animation, discussion timer, voting, custom word database with JSON import/export and localStorage persistence with SSR-safe hydration.",
         "whyItMatters": "Shows how I design game loops, private state, mobile-first UX and reliable flows without backend dependencies."
       },
       "bunker": {
-        "name": "Bunker — realtime multiplayer party game",
-        "whatItIs": "Realtime multiplayer · host/player · Firebase sync",
-        "description": "A realtime multiplayer party game with rooms, host/player roles and hidden character cards. The host imports an AI-generated scenario and manages rounds, events, voting and the final story.",
+        "name": "Bunker — realtime multiplayer app",
+        "whatItIs": "Realtime app · host/player · state sync",
+        "description": "A realtime multiplayer app with rooms, host/player roles and hidden character cards. The host imports an AI-generated scenario and manages rounds, events, voting and the final story.",
         "contribution": "Designed a Firestore room model with realtime subscriptions, separate host/player screens and a full game FSM. Private card fields remain hidden from other players until revealed, while the public game state is synchronized in realtime across the room. AI-friendly workflow: prompt → scenario → parser → validation → play.",
         "whyItMatters": "Demonstrates realtime multiplayer, game state machines, private/public state modeling and AI-friendly scenario import without an over-engineered backend."
       },
@@ -231,6 +234,7 @@
         "role": "Frontend Developer (Middle)",
         "period": "Jul 2024 - Mar 2026",
         "location": "Chisinau, Moldova / Remote / Distributed team",
+        "url": "https://itdealgroup.com",
         "points": [
           "Developed and maintained client-side React/TypeScript applications with REST API integrations, including auth and transactional flows.",
           "Built and supported Telegram WebApps (Telegram Web Apps + Bot API), including user scenarios and business flow logic.",
@@ -244,6 +248,7 @@
         "role": "Program Manager / Mentor (Programming)",
         "period": "Apr 2022 - Feb 2024",
         "location": "Ashgabat, Turkmenistan",
+        "url": "https://ashgabat.kiber-one.com/",
         "points": [
           "Trained 100+ students in programming and web development tracks.",
           "Supported 40+ students in entering IT-focused universities.",
@@ -256,6 +261,7 @@
         "role": "Frontend Developer (Middle)",
         "period": "Dec 2021 - Jan 2023",
         "location": "Ashgabat, Turkmenistan",
+        "url": "https://tef-turkmenistan.com/",
         "points": [
           "Built frontend layouts, UI elements, and parts of internal admin interfaces.",
           "Worked on frontend for ogt-turkmenistan.com and ittc.com.tm.",

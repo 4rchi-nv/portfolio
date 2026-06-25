@@ -17,7 +17,7 @@ interface ProjectsSectionProps {
 
 const filterOrder: Array<"All" | ProjectTag> = [
   "All",
-  "Interactive Games",
+  "Interactive Apps",
   "Telegram",
   "Web3",
   "Fintech",
@@ -81,7 +81,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
         })}
       </div>
 
-      {activeFilter === "Interactive Games" ? (
+      {activeFilter === "Interactive Apps" ? (
         <p className="relative z-20 mb-5 rounded-xl border border-zinc-800 bg-zinc-900/40 p-4 text-sm leading-relaxed break-words text-zinc-300">
           {t("gamesIntro")}
         </p>

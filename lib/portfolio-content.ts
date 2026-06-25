@@ -31,6 +31,7 @@ export type ResolvedExperience = {
   period: string;
   location: string;
   points: string[];
+  url?: string;
 };
 
 export async function getResolvedProjects(): Promise<ResolvedProject[]> {
