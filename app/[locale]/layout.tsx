@@ -6,6 +6,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { routing } from "@/i18n/routing";
 import { personName, siteUrl } from "@/data/portfolio-meta";
 import { JsonLd } from "@/components/json-ld";
+import { ogImage } from "@/lib/site-metadata";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -68,11 +69,13 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
       locale: locale === "ru" ? "ru_RU" : "en_US",
       alternateLocale: locale === "ru" ? ["en_US"] : ["ru_RU"],
       type: "website",
+      images: [ogImage],
     },
     twitter: {
       card: "summary_large_image",
       title: ogTitle,
       description: twitterDescription,
+      images: [ogImage.url],
     },
     keywords,
     icons: {
