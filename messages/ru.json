@@ -10,6 +10,7 @@
   "Nav": {
     "projects": "Проекты",
     "experience": "Опыт",
+    "certifications": "Сертификаты",
     "skills": "Навыки",
     "contact": "Контакты",
     "cta": "Связаться"
@@ -43,6 +44,8 @@
     "experienceEyebrow": "Опыт",
     "experienceTitle": "Профессиональный бэкграунд",
     "experienceDescription": "Продуктовая работа в распределённых командах, менторство и практическое владение фронтендом в разных типах проектов.",
+    "certificationsEyebrow": "Сертификаты и членство",
+    "certificationsTitle": "Курсы и профессиональное развитие",
     "skillsEyebrow": "Навыки и инструменты",
     "skillsTitle": "Стек и практические инструменты",
     "contactEyebrow": "Контакты",
@@ -279,6 +282,28 @@
           "React и участие в миграции с классовых компонентов на функциональные паттерны.",
           "Интеграции с Hasura, Docker, базовый TypeScript и GraphQL."
         ]
+      }
+    ],
+    "certifications": [
+      {
+        "title": "React, NodeJS, Express & MongoDB – The MERN Fullstack Guide",
+        "provider": "Udemy",
+        "year": "2021"
+      },
+      {
+        "title": "The Ultimate React Course: React, Next.js, Redux & More",
+        "provider": "Udemy",
+        "year": "2022"
+      },
+      {
+        "title": "The Complete React Native + Hooks Course",
+        "provider": "Udemy",
+        "year": "2024"
+      },
+      {
+        "title": "NestJS Masterclass – NodeJS Framework Backend Development",
+        "provider": "Udemy",
+        "year": "2024"
       }
     ],
     "skills": {

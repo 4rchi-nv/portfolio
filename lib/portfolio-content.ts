@@ -34,6 +34,12 @@ export type ResolvedExperience = {
   url?: string;
 };
 
+export type ResolvedCertification = {
+  title: string;
+  provider: string;
+  year: string;
+};
+
 export async function getResolvedProjects(): Promise<ResolvedProject[]> {
   const t = await getTranslations("Portfolio.projects");
   const tTags = await getTranslations("Projects.tags");
@@ -57,6 +63,12 @@ export async function getResolvedProjects(): Promise<ResolvedProject[]> {
 export async function getResolvedExperience(): Promise<ResolvedExperience[]> {
   const t = await getTranslations("Portfolio");
   const raw = t.raw("experience") as ResolvedExperience[];
+  return raw;
+}
+
+export async function getResolvedCertifications(): Promise<ResolvedCertification[]> {
+  const t = await getTranslations("Portfolio");
+  const raw = t.raw("certifications") as ResolvedCertification[];
   return raw;
 }
 

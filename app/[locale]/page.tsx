@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { setRequestLocale } from "next-intl/server";
+import { CertificationsList } from "@/components/certifications-list";
 import { ContactCards } from "@/components/contact-cards";
 import { ExpertiseCards } from "@/components/expertise-cards";
 import { ExperienceList } from "@/components/experience-list";
@@ -15,6 +16,7 @@ import { MobileNav } from "@/components/mobile-nav";
 import { personName, resumeHref } from "@/data/portfolio-meta";
 import {
   getPortfolioStrings,
+  getResolvedCertifications,
   getResolvedExperience,
   getResolvedProjects,
 } from "@/lib/portfolio-content";
@@ -37,10 +39,12 @@ export default async function Home({ params }: Props) {
   const portfolio = await getPortfolioStrings();
   const projects = await getResolvedProjects();
   const experience = await getResolvedExperience();
+  const certifications = await getResolvedCertifications();
 
   const navItems = [
     { label: tNav("projects"), href: "#projects" },
     { label: tNav("experience"), href: "#experience" },
+    { label: tNav("certifications"), href: "#certifications" },
     { label: tNav("skills"), href: "#skills" },
     { label: tNav("contact"), href: "#contact" },
   ];
@@ -161,6 +165,19 @@ export default async function Home({ params }: Props) {
             />
           </FadeBlock>
           <ExperienceList items={experience} />
+        </PaperSection>
+
+        <PaperSection
+          className="section-wrap section-wrap-dense section-divider"
+          id="certifications"
+        >
+          <FadeBlock>
+            <SectionTitle
+              eyebrow={tSections("certificationsEyebrow")}
+              title={tSections("certificationsTitle")}
+            />
+          </FadeBlock>
+          <CertificationsList items={certifications} />
         </PaperSection>
 
         <PaperSection className="section-wrap section-divider" id="skills">

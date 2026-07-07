@@ -10,6 +10,7 @@
   "Nav": {
     "projects": "Projects",
     "experience": "Experience",
+    "certifications": "Certifications",
     "skills": "Skills",
     "contact": "Contact",
     "cta": "Let's talk"
@@ -43,6 +44,8 @@
     "experienceEyebrow": "Experience",
     "experienceTitle": "Professional background",
     "experienceDescription": "Product work in distributed teams, mentoring experience, and practical frontend ownership across different project types.",
+    "certificationsEyebrow": "Certifications & memberships",
+    "certificationsTitle": "Courses and professional development",
     "skillsEyebrow": "Skills & toolbox",
     "skillsTitle": "Technology stack and practical tools",
     "contactEyebrow": "Contact",
@@ -279,6 +282,28 @@
           "Worked with React and participated in migration from class components to functional patterns.",
           "Contributed to integrations involving Hasura, Docker, basic TypeScript, and GraphQL."
         ]
+      }
+    ],
+    "certifications": [
+      {
+        "title": "React, NodeJS, Express & MongoDB – The MERN Fullstack Guide",
+        "provider": "Udemy",
+        "year": "2021"
+      },
+      {
+        "title": "The Ultimate React Course: React, Next.js, Redux & More",
+        "provider": "Udemy",
+        "year": "2022"
+      },
+      {
+        "title": "The Complete React Native + Hooks Course",
+        "provider": "Udemy",
+        "year": "2024"
+      },
+      {
+        "title": "NestJS Masterclass – NodeJS Framework Backend Development",
+        "provider": "Udemy",
+        "year": "2024"
       }
     ],
     "skills": {
