@@ -76,10 +76,22 @@ export const projectOrder: ProjectMeta[] = [
     stack: ["React", "TypeScript", "WalletConnect", "TronLink", "REST API"],
   },
   {
-    key: "deepWaters",
-    tag: "Fintech",
-    linkStatus: "nda",
-    stack: ["React", "TypeScript", "REST API"],
+    key: "nova",
+    tag: "Web App",
+    featured: true,
+    linkStatus: "live",
+    href: "https://novva-erp.vercel.app/",
+    stack: [
+      "Next.js 16",
+      "React",
+      "TypeScript",
+      "MUI X DataGrid",
+      "TanStack Query",
+      "Effector",
+      "Zod",
+      "FSD",
+      "Biome",
+    ],
   },
   {
     key: "itdealgroup",
@@ -176,6 +188,3 @@ export const contacts = {
 } as const;
 
 export const personName = "Arslan Agajanov";
-
-/** Temporary OG fallback until `public/og-image.png` (1200×630) is added. */
-export const ogImagePath = "/arslan-profile.png";

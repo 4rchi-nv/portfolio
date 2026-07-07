@@ -4,8 +4,8 @@
     "description": "React / Next.js разработчик с full-stack подходом к продукту: интерактивные веб-приложения, клиентская и realtime-логика, API-интеграции и деплой.",
     "ogTitle": "Арслан Агаджанов — React / Next.js Engineer",
     "ogDescription": "Инженер по React / Next.js: интерактивные веб-приложения, клиентская и realtime-логика, PWA, Telegram WebApps и Web3-интеграции.",
-    "twitterDescription": "React / Next.js engineer: interactive web apps, realtime UI, API integrations, product engineering.",
-    "keywords": "React, Next.js, TypeScript, Tailwind CSS, realtime apps, interactive apps, API integration, state management, frontend, full-stack product engineer, Telegram WebApp, Web3"
+    "twitterDescription": "React / Next.js разработчик: интерактивные веб-приложения, realtime UI, API-интеграции, продуктовая разработка.",
+    "keywords": "React, Next.js, TypeScript, Tailwind CSS, Firebase, realtime apps, interactive apps, party games, ERP, API integration, state management, frontend, full-stack product engineer, Telegram WebApp, Web3, PWA"
   },
   "Nav": {
     "projects": "Проекты",
@@ -178,12 +178,12 @@
         "contribution": "Подключение кошельков (WalletConnect, TronLink), балансы, транзакции и token approve для Tron/Ethereum, интеграция AML/blockchain checks во фронтенд-флоу.",
         "whyItMatters": "Подтверждает опыт в finance-sensitive и blockchain-integrated user journeys."
       },
-      "deepWaters": {
-        "name": "DeepWaters",
-        "whatItIs": "Финансовая учётная система · business UI",
-        "description": "Интерфейс системы финансового учёта для структурированной работы с данными, отчётами и операционными экранами. Продуктовый фокус — ясная навигация и предсказуемые бизнес-флоу.",
-        "contribution": "Фронтенд-логика, экраны учёта и интеграционные части продукта: формы, таблицы, валидация и работа с REST API.",
-        "whyItMatters": "Пример работы над structured business interfaces, не только маркетинговыми страницами."
+      "nova": {
+        "name": "Nova Engineering ERP",
+        "whatItIs": "Демо ERP для промышленной автоматизации · АСУ ТП / SCADA / MES",
+        "description": "Демо ERP для инжиниринговой компании: 10 модулей с ролевым доступом (7 ролей), дашборд с метриками и графиками, CRUD-таблицы на MUI X DataGrid (серверная пагинация, сортировка, фильтры, поиск), i18n RU/EN.",
+        "contribution": "Архитектура на Feature-Sliced Design с переключаемым слоем данных: один контракт, две реализации — mock-бэкенд (seed + localStorage) и реальный REST API без изменения UI. Ролевой доступ, учёт проектов и оборудования, сертификаты и экспорт отчётов, SSR CSS-in-JS без ошибок гидратации.",
+        "whyItMatters": "Работа с крупным enterprise-домом: чистая архитектура, ролевой доступ и переключаемый слой данных (mock ↔ real API), а не маркетинговые страницы."
       },
       "itdealgroup": {
         "name": "itdealgroup.com",

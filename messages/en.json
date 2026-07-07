@@ -5,7 +5,7 @@
     "ogTitle": "Arslan Agajanov - React / Next.js Engineer",
     "ogDescription": "React / Next.js engineer building interactive web applications: client-side and realtime logic, PWA, Telegram WebApps and Web3 integrations.",
     "twitterDescription": "React / Next.js engineer: interactive web apps, realtime UI, API integrations, product engineering.",
-    "keywords": "React, Next.js, TypeScript, Tailwind CSS, realtime apps, interactive apps, API integration, state management, frontend, full-stack product engineer, Telegram WebApp, Web3"
+    "keywords": "React, Next.js, TypeScript, Tailwind CSS, Firebase, realtime apps, interactive apps, party games, ERP, API integration, state management, frontend, full-stack product engineer, Telegram WebApp, Web3, PWA"
   },
   "Nav": {
     "projects": "Projects",
@@ -178,12 +178,12 @@
         "contribution": "Wallet connections (WalletConnect, TronLink), balances, transactions and token approve for Tron/Ethereum, plus AML/blockchain checks integrated into frontend flows.",
         "whyItMatters": "Shows applied experience with finance-sensitive and blockchain-integrated user journeys."
       },
-      "deepWaters": {
-        "name": "DeepWaters",
-        "whatItIs": "Financial accounting system · business UI",
-        "description": "Interface for a financial accounting system with structured data, reporting and operational screens. The product focus is clear navigation and predictable business flows.",
-        "contribution": "Frontend logic, accounting screens and integration-related product parts: forms, tables, validation and REST API work.",
-        "whyItMatters": "Represents work on structured business interfaces beyond marketing pages."
+      "nova": {
+        "name": "Nova Engineering ERP",
+        "whatItIs": "Demo ERP for industrial automation · ICS / SCADA / MES",
+        "description": "A demo ERP for an engineering company: 10 modules with role-based access (7 roles), a dashboard with metrics and charts, CRUD tables on MUI X DataGrid (server-side pagination, sorting, filtering, search), i18n RU/EN.",
+        "contribution": "Architecture on Feature-Sliced Design with a switchable data layer: one contract, two implementations — a mock backend (seed + localStorage) and a real REST API with no UI changes. Role-based access, project and equipment accounting, certificates and report export, SSR CSS-in-JS without hydration errors.",
+        "whyItMatters": "Work on a large enterprise domain: clean architecture, role-based access and a switchable data layer (mock ↔ real API), not marketing pages."
       },
       "itdealgroup": {
         "name": "itdealgroup.com",

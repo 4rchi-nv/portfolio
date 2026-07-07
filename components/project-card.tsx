@@ -84,7 +84,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2">
         {project.href ? (
           <a
-            className="inline-flex max-w-full items-center break-words text-sm font-medium text-zinc-100 underline decoration-zinc-600 underline-offset-4 transition-colors hover:text-white hover:decoration-zinc-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900 rounded-sm"
+            className="inline-flex max-w-full items-center justify-center break-words rounded-lg bg-zinc-100 px-4 py-2 text-sm font-semibold text-zinc-900 transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900"
             href={project.href}
             target="_blank"
             rel="noopener noreferrer"
