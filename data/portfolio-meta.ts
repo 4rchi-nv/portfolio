@@ -1,5 +1,18 @@
 /** Technical / structural data; user-facing copy lives in messages/{locale}.json */
-export const siteUrl = "https://portfolio-arslan.vercel.app";
+function resolveSiteUrl(): string {
+  const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
+  if (fromEnv) return fromEnv;
+
+  const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+  if (productionHost) return `https://${productionHost}`;
+
+  const deploymentHost = process.env.VERCEL_URL;
+  if (deploymentHost) return `https://${deploymentHost}`;
+
+  return "https://arslan-agajanov.vercel.app";
+}
+
+export const siteUrl = resolveSiteUrl();
 
 export type ProjectTag =
   | "Interactive Apps"
