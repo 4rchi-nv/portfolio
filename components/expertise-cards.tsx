@@ -17,11 +17,13 @@ export function ExpertiseCards({
       {items.map((item, i) => (
         <motion.article
           key={item.title}
-          className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-5"
+          className="glass-interactive rounded-[var(--radius-xl)] p-5"
           {...staggerItemProps(i, isMobile, reduced)}
         >
-          <h3 className="text-base font-semibold break-words text-zinc-100">{item.title}</h3>
-          <p className="mt-2 text-sm leading-relaxed break-words text-zinc-300 hyphens-auto">
+          <h3 className="text-base font-semibold break-words text-[var(--foreground)]">
+            {item.title}
+          </h3>
+          <p className="mt-2 text-sm leading-relaxed break-words text-[var(--muted-strong)] hyphens-auto">
             {item.text}
           </p>
         </motion.article>

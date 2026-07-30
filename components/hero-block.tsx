@@ -51,25 +51,25 @@ export function HeroBlock({
     <>
       <div className="min-w-0">
         <motion.p
-          className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-zinc-400"
+          className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--muted)]"
           {...p(0)}
         >
           {location}
         </motion.p>
         <motion.h1
-          className="max-w-3xl text-balance break-words text-3xl font-semibold tracking-tight text-zinc-100 md:text-5xl md:leading-[1.05]"
+          className="max-w-3xl text-balance break-words text-3xl font-semibold tracking-tight text-[var(--foreground)] md:text-5xl md:leading-[1.05]"
           {...p(1)}
         >
           {title}
         </motion.h1>
         <motion.p
-          className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-300 md:text-lg"
+          className="mt-4 max-w-2xl text-base leading-relaxed text-[var(--muted-strong)] md:text-lg"
           {...p(2)}
         >
           {role}
         </motion.p>
         <motion.p
-          className="mt-4 max-w-2xl text-sm leading-relaxed text-zinc-400 md:text-base"
+          className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--muted)] md:text-base"
           {...p(3)}
         >
           {subtitle}
@@ -82,15 +82,25 @@ export function HeroBlock({
           <a className="btn-secondary" href="#contact">
             {contactMe}
           </a>
-          <a className="btn-secondary focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950" href={githubUrl} target="_blank" rel="noopener noreferrer">
+          <a
+            className="btn-secondary"
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {githubLabel}
           </a>
-          <a className="btn-secondary focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950" href={linkedinUrl} target="_blank" rel="noopener noreferrer">
+          <a
+            className="btn-secondary"
+            href={linkedinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {linkedinLabel}
           </a>
           {resumeHref && downloadCvLabel ? (
             <a
-              className="btn-secondary focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
+              className="btn-secondary"
               href={resumeHref}
               target="_blank"
               rel="noopener noreferrer"
@@ -101,11 +111,11 @@ export function HeroBlock({
           ) : null}
         </motion.div>
 
-        <ul className="mt-7 grid gap-2 text-sm text-zinc-400 sm:grid-cols-2">
+        <ul className="mt-7 grid gap-2 text-sm text-[var(--muted)] sm:grid-cols-2">
           {recruiterFacts.map((fact, i) => (
             <motion.li
               key={fact}
-              className="rounded-lg border border-zinc-800/80 bg-zinc-900/30 px-3 py-2 break-words hyphens-auto"
+              className="glass-chip rounded-[var(--radius-md)] px-3.5 py-2.5 break-words hyphens-auto text-[var(--muted-strong)]"
               {...p(5 + i)}
             >
               {fact}
@@ -115,10 +125,10 @@ export function HeroBlock({
       </div>
 
       <motion.aside
-        className="min-w-0 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 md:p-7"
+        className="glass-dense min-w-0 rounded-[var(--radius-xl)] p-5 md:p-7"
         {...staggerItemProps(5 + recruiterFacts.length, isMobile, reduced)}
       >
-        <div className="mb-5 overflow-hidden rounded-xl border border-zinc-800">
+        <div className="mb-5 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--glass-border)] shadow-[var(--shadow-md)]">
           <Image
             src="/arslan-profile.png"
             alt={profilePhotoAlt}
@@ -128,10 +138,10 @@ export function HeroBlock({
             priority
           />
         </div>
-        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">
+        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--muted)]">
           {asidePositioning}
         </p>
-        <ul className="mt-4 space-y-3 text-sm text-zinc-300">
+        <ul className="mt-4 space-y-3 text-sm text-[var(--muted-strong)]">
           {asideBullets.map((line) => (
             <li key={line} className="break-words hyphens-auto">
               - {line}

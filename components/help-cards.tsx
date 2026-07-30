@@ -13,7 +13,7 @@ export function HelpCards({ items }: { items: string[] }) {
       {items.map((item, i) => (
         <motion.article
           key={item}
-          className="rounded-xl border border-zinc-800 bg-zinc-900/35 p-4 text-sm leading-relaxed break-words text-zinc-300 hyphens-auto"
+          className="glass-interactive rounded-[var(--radius-lg)] p-4 text-sm leading-relaxed break-words text-[var(--muted-strong)] hyphens-auto"
           {...staggerItemProps(i, isMobile, reduced)}
         >
           {item}
