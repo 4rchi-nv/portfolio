@@ -189,32 +189,32 @@
         "whyItMatters": "Work on a large enterprise domain: clean architecture, role-based access and a switchable data layer (mock ↔ real API), not marketing pages."
       },
       "itdealgroup": {
-        "name": "itdealgroup.com",
-        "whatItIs": "Company website · case studies section",
-        "description": "An IT company website presenting services and case studies for a B2B audience. The goal was a clear structure for clients and easier content updates for the team.",
-        "contribution": "Redesigned the case studies section frontend: component layout, responsive UI, improved readability and project navigation.",
-        "whyItMatters": "Highlights practical work on a production company website and clearer commercial project presentation."
+        "name": "ITDEAL — company website",
+        "whatItIs": "Corporate site · cases catalog · B2B",
+        "description": "Production website of ITDEAL (Chisinau): the studio ships CRM/ERP, Telegram bots, AI and blockchain products. The site covers services, a 4-step delivery process, a filterable case catalog and a lead form, with RU/EN.",
+        "contribution": "Frontend work on the company site, mainly the cases section: card layout, category filters, load-more, responsive UI and clearer navigation across commercial projects.",
+        "whyItMatters": "A live B2B marketing site with a real case catalog, not a template landing."
       },
       "trustpay": {
-        "name": "trustpay.now",
+        "name": "TrustPay",
         "whatItIs": "Fintech web product · payment-oriented UI",
-        "description": "A fintech web interface focused on a clear user journey and product trust. The emphasis is clean UI, responsive layout and integration with external payment/API scenarios.",
-        "contribution": "Contributed to the public-facing frontend and UX: screen structure, responsive layout and integration-relevant UI blocks.",
-        "whyItMatters": "Included as a portfolio reference for product-oriented fintech interface work."
+        "description": "A fintech frontend from the Itdeal period: payment-oriented screens and API-facing UI. The original public URL no longer resolves, so there is no live demo at the moment.",
+        "contribution": "Public-facing frontend: screen structure, responsive layout and UI around payment and API scenarios.",
+        "whyItMatters": "Commercial fintech UI work in a payment product — the case stays in the portfolio even though the demo is offline."
       },
       "dezv3": {
-        "name": "dezv3-dev.web.app",
-        "whatItIs": "Web application · Firebase deploy",
-        "description": "A deployed web application for real user scenarios with a focus on stable UI and production builds. The project demonstrates end-to-end delivery from interface to deployment.",
-        "contribution": "Implemented frontend, UI behavior and backend/Firebase integration in a deployed environment; supported responsive layout and user flows.",
-        "whyItMatters": "Shows practical participation in shipped web interfaces with production deployment."
+        "name": "WorkDez — disinfection field app",
+        "whatItIs": "Field-service app · Telegram WebApp · order workflow",
+        "description": "WorkDez is an aggregator for disinfection technicians across Russia: incoming orders, a task queue (call the client, start, report, pay, complete), wallet and average check, work schedule, ratings and phone-number auth. Runs as a mobile web app and a Telegram WebApp.",
+        "contribution": "Frontend of the master app: signup/login, task list and order actions, wallet/balance, schedule, Telegram WebApp shell and Firebase Hosting deploy.",
+        "whyItMatters": "A real operations product: field workflows, money-related UI and Telegram-native delivery — not a marketing page."
       },
       "mosca": {
-        "name": "mosca-itdeal.web.app",
-        "whatItIs": "Product web app · Itdeal",
-        "description": "A client/product web application with working screens and frontend product logic. The focus is maintainable UI, clear states and reliable browser behavior.",
-        "contribution": "Frontend tasks, user-facing interface improvements, UI fixes and post-deploy support on Vercel/Firebase hosting.",
-        "whyItMatters": "Adds additional proof of frontend ownership around deployment and product support."
+        "name": "Bitex — OTC USDT exchange",
+        "whatItIs": "Telegram WebApp · cash RUB ↔ USDT · AML",
+        "description": "OTC desk in Moscow: buy/sell USDT for cash rubles, 24/7, table-to-table (no custody of client funds), live rate, orders, AML check, referral program and office-pass flow via the bot.",
+        "contribution": "Frontend of the Telegram WebApp: home, swap, rate, orders, about, AML and referral screens on React/MUI, with Telegram Web Apps integration and Firebase Hosting.",
+        "whyItMatters": "A live fintech WebApp with compliance (AML) and transactional UX, not a landing."
       },
       "aviaLanding": {
         "name": "avia-landing.vercel.app",
