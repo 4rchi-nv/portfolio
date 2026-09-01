@@ -114,7 +114,7 @@
   "Portfolio": {
     "person": {
       "role": "Frontend / Software Engineer",
-      "location": "Ашхабад, Туркменистан · открыт к удалённой работе",
+      "location": "Кайсери, Турция · открыт к удалённой работе",
       "summary": "Frontend / Software Engineer с 6+ годами опыта: production-приложения на React, Next.js и TypeScript для enterprise ERP, финтеха и API-driven систем."
     },
     "hero": {
@@ -346,7 +346,7 @@
         "company": "KIBERone",
         "role": "Руководитель программы / ментор (программирование)",
         "period": "апр. 2022 — фев. 2024",
-        "location": "Ашхабад, Туркменистан",
+        "location": "Кайсери, Турция",
         "url": "https://Kayseri.kiber-one.com/",
         "domain": "Образование · треки программирования",
         "points": [
@@ -360,7 +360,7 @@
         "company": "Turkmen Forum",
         "role": "Frontend-разработчик (Middle)",
         "period": "дек. 2021 — янв. 2023",
-        "location": "Ашхабад, Туркменистан",
+        "location": "Кайсери, Турция",
         "url": "https://tef-Türkiye.com/",
         "domain": "Площадки мероприятий · внутренние админ-интерфейсы",
         "technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
@@ -375,7 +375,7 @@
         "company": "Milli San",
         "role": "Junior Frontend / React-разработчик",
         "period": "фев. 2020 — дек. 2021",
-        "location": "Ашхабад, Туркменистан",
+        "location": "Кайсери, Турция",
         "domain": "Веб-приложения",
         "technologies": ["React", "TypeScript", "GraphQL", "Hasura", "Docker"],
         "points": [
