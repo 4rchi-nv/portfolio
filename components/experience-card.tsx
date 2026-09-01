@@ -15,7 +15,7 @@ export function ExperienceCard({ item }: ExperienceCardProps) {
       <div className="mb-4 min-w-0">
         <div className="flex items-start justify-between gap-3">
           <h3 className="min-w-0 break-words text-lg font-semibold text-[var(--foreground)]">
-            {item.company}
+            {item.role}
           </h3>
           {item.url ? (
             <span
@@ -27,13 +27,51 @@ export function ExperienceCard({ item }: ExperienceCardProps) {
           ) : null}
         </div>
         <p className="mt-1 text-sm font-medium break-words text-[var(--muted-strong)]">
-          {item.role}
+          {item.company}
         </p>
         <p className="mt-1 text-xs uppercase tracking-wide break-words text-[var(--muted)]">
-          {item.period} - {item.location}
+          {item.period} · {item.location}
         </p>
       </div>
 
+      {item.domain ? (
+        <p className="mb-3 text-sm break-words text-[var(--muted-strong)]">
+          <span className="font-medium text-[var(--foreground)]">
+            {t("domain")}
+          </span>{" "}
+          {item.domain}
+        </p>
+      ) : null}
+
+      {item.technologies && item.technologies.length > 0 ? (
+        <div className="mb-3">
+          <p className="mb-2 text-xs font-medium uppercase tracking-[0.16em] text-[var(--muted)]">
+            {t("technologies")}
+          </p>
+          <ul className="flex flex-wrap gap-2">
+            {item.technologies.map((tech) => (
+              <li key={`${item.company}-${tech}`} className="tech-chip">
+                {tech}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+
+      {item.scope ? (
+        <p className="mb-3 text-sm leading-relaxed break-words text-[var(--muted-strong)] hyphens-auto">
+          <span className="font-medium text-[var(--foreground)]">
+            {t("scope")}
+          </span>{" "}
+          {item.scope}
+        </p>
+      ) : null}
+
+      {item.scope ? (
+        <p className="mb-2 text-xs font-medium uppercase tracking-[0.16em] text-[var(--muted)]">
+          {t("impact")}
+        </p>
+      ) : null}
       <ul className="space-y-2">
         {item.points.map((point) => (
           <li

@@ -20,7 +20,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <div className="mb-4 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--glass-border)]">
           <Image
             src={project.image}
-            alt=""
+            alt={project.name}
             width={640}
             height={360}
             className="h-auto w-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-[1.02]"
@@ -65,7 +65,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </p>
       </div>
 
-      {project.featured && project.whyItMatters ? (
+      {project.whyItMatters ? (
         <p className="mt-3 text-sm break-words text-[var(--muted)]">
           <span className="font-medium text-[var(--foreground)]">
             {t("whyItMatters")}

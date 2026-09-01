@@ -79,7 +79,8 @@ export function SiteHeader({ navItems, ctaLabel }: SiteHeaderProps) {
           <span className="truncate">{personName}</span>
         </a>
 
-        <ul className="hidden min-w-0 flex-1 items-center justify-center gap-0.5 md:flex lg:gap-1">
+        <nav aria-label="Section navigation" className="hidden min-w-0 flex-1 md:block">
+          <ul className="flex items-center justify-center gap-0.5 lg:gap-1">
           {navItems.map((item) => {
             const isActive = activeHref === item.href;
             return (
@@ -94,7 +95,8 @@ export function SiteHeader({ navItems, ctaLabel }: SiteHeaderProps) {
               </li>
             );
           })}
-        </ul>
+          </ul>
+        </nav>
 
         <div className="flex min-w-0 shrink-0 items-center gap-2 sm:gap-3">
           <LanguageSwitcher />

@@ -1,24 +1,26 @@
 import type { Metadata } from "next";
-import { personName, siteUrl } from "@/data/portfolio-meta";
+import { jobTitle, personName, siteUrl } from "@/data/portfolio-meta";
+
+const title = `${personName} — ${jobTitle} | React, Next.js, TypeScript`;
+const description =
+  "Frontend / Software Engineer with 6+ years building production React, Next.js and TypeScript applications across enterprise ERP, fintech, and API-driven systems.";
 
 const ogImage = {
   url: "/og-image.png",
   width: 1200,
   height: 630,
-  alt: `${personName} — React / Next.js Engineer`,
+  alt: `${personName} — ${jobTitle}`,
   type: "image/png",
 } as const;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: `${personName} — React / Next.js Engineer`,
-  description:
-    "React / Next.js engineer with full-stack product ownership: interactive web apps, client-side and realtime logic, API integrations and deployment.",
+  title,
+  description,
   applicationName: `${personName} Portfolio`,
   openGraph: {
-    title: `${personName} — React / Next.js Engineer`,
-    description:
-      "React / Next.js engineer building interactive web applications: client-side and realtime logic, PWA, Telegram WebApps and Web3 integrations.",
+    title,
+    description,
     url: siteUrl,
     siteName: `${personName} Portfolio`,
     type: "website",
@@ -26,9 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${personName} — React / Next.js Engineer`,
-    description:
-      "React / Next.js engineer: interactive web apps, realtime UI, API integrations, product engineering.",
+    title,
+    description,
     images: [ogImage.url],
   },
   icons: {

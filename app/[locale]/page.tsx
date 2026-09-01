@@ -6,6 +6,7 @@ import { ExperienceList } from "@/components/experience-list";
 import { FadeBlock } from "@/components/fade-block";
 import { HelpCards } from "@/components/help-cards";
 import { HeroBlock } from "@/components/hero-block";
+import { ImpactMetrics } from "@/components/impact-metrics";
 import { PaperSection } from "@/components/paper-section";
 import { ProjectsSection } from "@/components/projects-section";
 import { SectionTitle } from "@/components/section-title";
@@ -41,9 +42,9 @@ export default async function Home({ params }: Props) {
   const certifications = await getResolvedCertifications();
 
   const navItems = [
+    { label: tNav("impact"), href: "#impact" },
     { label: tNav("projects"), href: "#projects" },
     { label: tNav("experience"), href: "#experience" },
-    { label: tNav("certifications"), href: "#certifications" },
     { label: tNav("skills"), href: "#skills" },
     { label: tNav("contact"), href: "#contact" },
   ];
@@ -63,7 +64,7 @@ export default async function Home({ params }: Props) {
             <HeroBlock
               location={portfolio.person.location}
               title={portfolio.hero.title}
-              role={portfolio.person.role}
+              stack={portfolio.hero.stack}
               subtitle={portfolio.hero.subtitle}
               viewProjects={tHero("viewProjects")}
               contactMe={tHero("contactMe")}
@@ -85,9 +86,29 @@ export default async function Home({ params }: Props) {
               <SectionTitle
                 eyebrow={tSections("aboutEyebrow")}
                 title={tSections("aboutTitle")}
-                description={portfolio.person.summary}
+              />
+              <div className="max-w-2xl space-y-3">
+                {portfolio.aboutParagraphs.map((paragraph) => (
+                  <p
+                    key={paragraph}
+                    className="text-sm leading-relaxed break-words text-[var(--muted-strong)] hyphens-auto md:text-base"
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </FadeBlock>
+          </PaperSection>
+
+          <PaperSection className="section-wrap section-divider" id="impact">
+            <FadeBlock>
+              <SectionTitle
+                eyebrow={tSections("impactEyebrow")}
+                title={tSections("impactTitle")}
+                description={tSections("impactDescription")}
               />
             </FadeBlock>
+            <ImpactMetrics items={portfolio.impact} />
           </PaperSection>
 
           <PaperSection className="section-wrap section-divider" id="help">

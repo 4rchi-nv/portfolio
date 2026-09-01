@@ -32,6 +32,15 @@ export type ResolvedExperience = {
   location: string;
   points: string[];
   url?: string;
+  domain?: string;
+  technologies?: string[];
+  scope?: string;
+};
+
+export type ImpactMetric = {
+  value: string;
+  label: string;
+  context: string;
 };
 
 export type ResolvedCertification = {
@@ -83,10 +92,13 @@ export async function getPortfolioStrings() {
     },
     hero: {
       title: t("hero.title"),
+      stack: t("hero.stack"),
       subtitle: t("hero.subtitle"),
     },
+    aboutParagraphs: t.raw("aboutParagraphs") as string[],
     helpWith: t.raw("helpWith") as string[],
     recruiterFacts: t.raw("recruiterFacts") as string[],
+    impact: t.raw("impact") as ImpactMetric[],
     expertise: t.raw("expertise") as { title: string; text: string }[],
     skills: Object.fromEntries(
       skillGroupOrder.map((key) => [key, t(`skills.${key}`)]),

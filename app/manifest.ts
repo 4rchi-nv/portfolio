@@ -5,7 +5,8 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: `${personName} — Portfolio`,
     short_name: personName,
-    description: "React / Next.js engineer portfolio",
+    description:
+      "Frontend / Software Engineer portfolio — React, Next.js, TypeScript, enterprise ERP and fintech",
     start_url: "/en",
     display: "standalone",
     background_color: "#09090b",

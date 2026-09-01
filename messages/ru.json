@@ -1,19 +1,20 @@
 {
   "Meta": {
-    "title": "Арслан Агаджанов — React / Next.js Engineer",
-    "description": "React / Next.js разработчик с full-stack подходом к продукту: интерактивные веб-приложения, клиентская и realtime-логика, API-интеграции и деплой.",
-    "ogTitle": "Арслан Агаджанов — React / Next.js Engineer",
-    "ogDescription": "Инженер по React / Next.js: интерактивные веб-приложения, клиентская и realtime-логика, PWA, Telegram WebApps и Web3-интеграции.",
-    "twitterDescription": "React / Next.js разработчик: интерактивные веб-приложения, realtime UI, API-интеграции, продуктовая разработка.",
-    "keywords": "React, Next.js, TypeScript, Tailwind CSS, Firebase, realtime apps, interactive apps, party games, ERP, API integration, state management, frontend, full-stack product engineer, Telegram WebApp, Web3, PWA"
+    "title": "Арслан Агаджанов — Frontend / Software Engineer | React, Next.js, TypeScript",
+    "description": "Frontend / Software Engineer с 6+ годами опыта: production-приложения на React, Next.js и TypeScript для enterprise ERP, финтеха и API-driven систем.",
+    "ogTitle": "Арслан Агаджанов — Frontend / Software Engineer | React, Next.js, TypeScript",
+    "ogDescription": "Frontend / Software Engineer: React, Next.js и TypeScript для enterprise ERP, финтех-сценариев и REST API-интеграций.",
+    "twitterDescription": "Frontend / Software Engineer — React, Next.js, TypeScript. Enterprise ERP, финтех и API-driven фронтенд.",
+    "keywords": "Frontend Engineer, Software Engineer, Senior Frontend Developer, React Engineer, Next.js Engineer, TypeScript Engineer, React, Next.js, TypeScript, ERP frontend, enterprise frontend, fintech frontend, REST API"
   },
   "Nav": {
+    "impact": "Результаты",
     "projects": "Проекты",
     "experience": "Опыт",
     "certifications": "Сертификаты",
     "skills": "Навыки",
     "contact": "Контакты",
-    "cta": "Связаться"
+    "cta": "Нанять"
   },
   "Hero": {
     "viewProjects": "К проектам",
@@ -21,45 +22,48 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "downloadCv": "Скачать CV",
-    "profilePhotoAlt": "Фото профиля Арслана Агаджанова"
+    "profilePhotoAlt": "Арслан Агаджанов, Frontend / Software Engineer"
   },
   "Aside": {
-    "positioning": "Фокус",
+    "positioning": "Позиционирование",
     "bullets": [
-      "6+ лет в разработке продуктовых интерфейсов",
-      "React / Next.js / TypeScript как основной стек",
-      "Интерактивные приложения: offline-first и realtime-логика",
-      "REST API и интеграционно насыщенные интерфейсы",
-      "Web3: кошелёк, балансы и транзакционные сценарии",
-      "Production-деплой и поддерживаемая архитектура"
+      "Фронтенд-архитектура, бизнес-логика и REST API-интеграции",
+      "Production React и Next.js для ERP и финтеха",
+      "Data-heavy CRUD, RBAC, аутентификация и сложные workflow",
+      "Крупные миграции без остановки production-системы",
+      "End-to-end ответственность за фронтенд-фичи, включая отладку и деплой"
     ]
   },
   "Sections": {
     "aboutEyebrow": "Обо мне",
-    "aboutTitle": "React / Next.js engineer с full-stack подходом к продукту и интерактивным приложениям.",
-    "helpEyebrow": "Чем могу помочь",
-    "helpTitle": "Где обычно даётся максимальная продуктовая польза",
-    "expertiseEyebrow": "Ключевая экспертиза",
-    "expertiseTitle": "Что я приношу в продуктовые frontend-команды",
+    "aboutTitle": "Обо мне",
+    "helpEyebrow": "Зона ответственности",
+    "helpTitle": "За что беру ownership",
+    "impactEyebrow": "Результаты",
+    "impactTitle": "Engineering Impact",
+    "impactDescription": "Измеримые результаты миграции production ERP-фронтенда, аудита Finance API-контрактов, архитектуры локализации и регрессионных гейтов.",
+    "expertiseEyebrow": "Фокус",
+    "expertiseTitle": "Инженерный фокус",
     "experienceEyebrow": "Опыт",
-    "experienceTitle": "Профессиональный бэкграунд",
-    "experienceDescription": "Продуктовая работа в распределённых командах, менторство и практическое владение фронтендом в разных типах проектов.",
-    "certificationsEyebrow": "Сертификаты и членство",
+    "experienceTitle": "Опыт",
+    "experienceDescription": "Enterprise ERP, финтех и продуктовый фронтенд в международных и распределённых командах.",
+    "certificationsEyebrow": "Сертификаты",
     "certificationsTitle": "Курсы и профессиональное развитие",
-    "skillsEyebrow": "Навыки и инструменты",
-    "skillsTitle": "Стек и практические инструменты",
+    "skillsEyebrow": "Стек",
+    "skillsTitle": "Technical Expertise",
     "contactEyebrow": "Контакты",
-    "contactTitle": "Открыт к удалённым ролям React / Next.js и продуктовым коллаборациям",
-    "contactDescription": "Email, Telegram, телефон и профильные ссылки — ниже."
+    "contactTitle": "Контакты",
+    "contactDescription": "Открыт к ролям Frontend Engineer, Senior Frontend Developer и Software Engineer. Удалённая полная занятость и проектная работа."
   },
   "Projects": {
     "eyebrow": "Избранные проекты",
-    "title": "Инженерные кейсы: интерактивные приложения, Telegram, интеграции и Web3",
-    "description": "Интерактивные веб-приложения на React/Next.js: клиентская и realtime-логика, сложное состояние, API-интеграции и production-деплой.",
-    "gamesIntro": "Отдельное направление — интерактивные веб-приложения на Next.js. Эти кейсы показывают разные уровни сложности: от полностью клиентского offline-first приложения до realtime-синхронизации с приватными состояниями и AI-friendly сценарием.",
+    "title": "Selected Projects",
+    "description": "Production ERP и финтех-системы, API-driven интерфейсы на React, а также отдельные публичные продукты на Next.js и TypeScript.",
+    "gamesIntro": "Отдельное направление — интерактивные приложения на Next.js: от полностью клиентского offline-first приложения до realtime-синхронизации с приватным состоянием игроков.",
     "filterAll": "Все",
     "empty": "В этой категории пока нет проектов.",
     "tags": {
+      "Enterprise": "Enterprise",
       "Interactive Apps": "Интерактивные приложения",
       "Telegram": "Telegram",
       "Web3": "Web3",
@@ -73,11 +77,11 @@
     "featured": "Избранное",
     "ndaBadge": "NDA / Internal",
     "whatItIs": "Что это",
-    "contribution": "Вклад:",
-    "whyItMatters": "Зачем это важно:",
+    "contribution": "Роль:",
+    "whyItMatters": "Инженерный эффект:",
     "viewReference": "Открыть демо",
     "viewGitHub": "Код",
-    "ndaNote": "Коммерческий проект под NDA: публичное демо недоступно, но кейс описывает архитектуру, стек и мою зону ответственности.",
+    "ndaNote": "Коммерческий проект под NDA: публичное демо недоступно. Кейс описывает архитектуру, стек и зону ответственности.",
     "demoUnavailable": "Демо временно недоступно",
     "noPublicLink": "Публичная ссылка для этого проекта недоступна."
   },
@@ -91,7 +95,11 @@
     "linkedinValue": "linkedin.com/in/arslan-agajanov"
   },
   "Experience": {
-    "visit": "Перейти на сайт компании"
+    "visit": "Перейти на сайт компании",
+    "domain": "Домен:",
+    "technologies": "Технологии",
+    "scope": "Скоуп:",
+    "impact": "Инженерный эффект"
   },
   "NotFound": {
     "title": "Страница не найдена",
@@ -105,88 +113,137 @@
   },
   "Portfolio": {
     "person": {
-      "role": "React / Next.js Engineer · TypeScript · Realtime Apps · Product UI",
-      "location": "Ашхабад, Туркменистан — удалённо",
-      "summary": "React / Next.js разработчик с full-stack подходом к продукту. Проектирую интерактивные веб-приложения: от клиентской логики и PWA до realtime, API-интеграций и деплоя. 6+ лет опыта в React/TypeScript, поддерживаемой архитектуре, state management и REST/Web3-интеграциях."
+      "role": "Frontend / Software Engineer",
+      "location": "Ашхабад, Туркменистан · открыт к удалённой работе",
+      "summary": "Frontend / Software Engineer с 6+ годами опыта: production-приложения на React, Next.js и TypeScript для enterprise ERP, финтеха и API-driven систем."
     },
     "hero": {
-      "title": "React / Next.js Engineer · TypeScript · Realtime Apps · Product UI",
-      "subtitle": "Проектирую интерактивные веб-приложения: от клиентской логики и PWA до realtime, API-интеграций и деплоя."
+      "title": "Frontend / Software Engineer",
+      "stack": "React · Next.js · TypeScript · Enterprise · ERP · Fintech",
+      "subtitle": "6+ лет в production-фронтенде: enterprise-приложения, ERP-сценарии, финтех-операции и API-driven продукты на React, Next.js и TypeScript. В работе — фронтенд-архитектура, бизнес-логика, HTTP-контракты и интеграция с бэкендом."
     },
+    "aboutParagraphs": [
+      "Я Frontend / Software Engineer с 6+ годами опыта в production-приложениях на React, Next.js и TypeScript: enterprise-софт, ERP и финтех.",
+      "Это не только UI. В скоупе — фронтенд-архитектура, HTTP/API-контракты, интеграция с бэкендом, data-heavy интерфейсы, аутентификация и RBAC, сложные CRUD-workflow, крупные миграции, production-отладка и end-to-end ответственность за фронтенд-фичи. English C1. Открыт к удалённым full-time и проектным ролям Frontend Engineer, Senior Frontend Developer, React Engineer, Next.js Engineer или Software Engineer."
+    ],
     "helpWith": [
-      "Поставка фич на React/TypeScript — от UI до интеграционно готового релиза",
-      "Интерфейсы Telegram Mini Apps, связанные с ботом и бэкенд-флоу",
-      "Интерактивные веб-приложения: offline-first клиентская логика и realtime-синхронизация состояния",
-      "Фронтенд-логика для REST auth/RBAC, операций с кошельком и транзакционных сценариев",
-      "Повышение поддерживаемости легаси через практичный рефакторинг и упрощение архитектуры"
+      "Фронтенд-архитектура production-систем на React, Next.js и TypeScript",
+      "Enterprise ERP и бизнес-приложения: склад, HR, финансы, проекты и права доступа",
+      "REST API-интеграции, HTTP-контракты и аудит request/response",
+      "Финтех-интерфейсы: счета, платежи, расходы, отчёты и денежные workflow",
+      "Production-миграции, регрессионные гейты и разбор инцидентов без остановки работающей системы"
     ],
     "recruiterFacts": [
-      "6+ лет опыта во фронтенд-разработке",
-      "Практика поставки SPA и SSR-продуктов",
-      "100+ учеников на курсах по программированию",
-      "40+ учеников сопровождены при поступлении в IT-вузы"
+      "6+ лет во фронтенд-разработке",
+      "Enterprise ERP, финтех и SaaS-интерфейсы",
+      "Ownership API-контрактов в финансовых доменах",
+      "Открыт к удалённой полной занятости и проектам"
+    ],
+    "impact": [
+      {
+        "value": "135",
+        "label": "legacy MUI-импортеров на старте миграции",
+        "context": "Плюс 59 импортеров MUI-иконок и 31 файл DataGrid до миграции UI/API ERP."
+      },
+      {
+        "value": "13/13",
+        "label": "доменов Finance проаудировано",
+        "context": "Полное покрытие request/response-контрактов Finance до production cutover."
+      },
+      {
+        "value": "46",
+        "label": "некорректных API-контрактов найдено",
+        "context": "Фронтенд HTTP-контракты, которые не совпадали с Finance API ERP."
+      },
+      {
+        "value": "22",
+        "label": "отсутствующих Finance-сценариев",
+        "context": "Пробелы, выявленные при аудите API-контрактов Finance."
+      },
+      {
+        "value": "8",
+        "label": "P0-проблем до production cutover",
+        "context": "Критичные расхождения контрактов и сценариев, пойманные до вывода в прод."
+      },
+      {
+        "value": "710",
+        "label": "проходящих регрессионных тестов",
+        "context": "Регрессионный набор после этапов миграции. Ранее контролируемый milestone: 682 теста в 160 файлах плюс typecheck, build и проверки API-контрактов."
+      },
+      {
+        "value": "951",
+        "label": "централизованных ключей перевода",
+        "context": "Архитектура локализации: около 420 захардкоженных строк вынесены в 22 namespace; legacy-зависимости i18next удалены."
+      }
     ],
     "expertise": [
       {
-        "title": "Разработка продуктов на React / TypeScript",
-        "text": "Создание и сопровождение пользовательских интерфейсов для продуктовых команд — от UI-архитектуры до экранов, готовых к интеграции."
+        "title": "Фронтенд-архитектура",
+        "text": "Production-системы на React и Next.js App Router на TypeScript: модели данных, URL-state, серверная пагинация и поддерживаемый ownership фич."
       },
       {
-        "title": "Telegram WebApps и сценарии с ботами",
-        "text": "Участие в продуктах на Telegram WebApp и флоу, связанных с Bot API, где поведение UI завязано на чат-путешествие пользователя."
+        "title": "Enterprise ERP",
+        "text": "Мультимодульный ERP-фронтенд: Finance, Warehouse, HR, Projects, Tasks, офисные workflow, пользователи, роли, права и self-service."
       },
       {
-        "title": "Интеграции REST API",
-        "text": "Подключение фронтенда к бэкенд-сервисам с валидацией, обработкой данных и устойчивой работой запросов."
+        "title": "Финтех-сценарии",
+        "text": "Счета, сметы, платежи, расходы, регулярные операции, отчёты, транзакции и интерфейсы с правами доступа."
       },
       {
-        "title": "Web3 на фронтенде",
-        "text": "Подключение кошелька, балансы, транзакции и approve-флоу для сценариев Tron и Ethereum."
+        "title": "API-контракты и интеграции",
+        "text": "HTTP request/response-модели, REST API и аудит фронтенд-контрактов к сервисам на NestJS, Prisma и PostgreSQL."
       },
       {
-        "title": "Рефакторинг легаси",
-        "text": "Улучшение старых кодовых баз: структура модулей, снижение сложности, рост поддерживаемости."
+        "title": "Auth, сессии и RBAC",
+        "text": "Аутентификация, сессии, ролевой доступ, загрузка файлов и сложные CRUD-workflow в бизнес-приложениях."
       },
       {
-        "title": "Менторство и коммуникация",
-        "text": "Педагогический опыт помогает ясно объяснять технические решения, онбординг и кросс-командное взаимодействие."
+        "title": "Production-ownership",
+        "text": "Постепенный вывод legacy, регрессионные гейты, защита конфигурации и отладка routing, HTTP и деплоя."
       }
     ],
     "projects": {
+      "enterpriseErp": {
+        "name": "Enterprise ERP Frontend",
+        "whatItIs": "Production мультимодульный ERP · Next.js · TypeScript · REST API",
+        "description": "Крупный production ERP-фронтенд: Finance, Warehouse, HR, Projects, Tasks, офисные/документные workflow, Users, Roles, Permissions и Self-service. Склад покрывает 16+ операционных зон; HR — 20+ разделов досье сотрудника. Data-heavy система: серверная пагинация, фильтры, сортировка, URL-state и CRUD с правами доступа.",
+        "contribution": "Вёл миграцию фронтенда с legacy UI/API на Next.js, TypeScript, Tailwind CSS v4, shadcn/ui и TanStack — и UI, и API/data-контракты. Production-интерфейсы на TanStack Table, TanStack Query, React Hook Form, Zod, RBAC, аутентификации, сессиях и загрузке файлов, с постепенным снятием legacy без остановки системы. Аудит Finance HTTP-контрактов (13/13 доменов), разбор production-регрессии маршрутизации на legacy Nest и перевод локализации на централизованную систему.",
+        "whyItMatters": "Показывает ownership фронтенд-архитектуры и API-контрактов в enterprise ERP: гейты MUI-zero / DataGrid-zero, 46 некорректных Finance-контрактов и 8 P0 до cutover, регрессия до 710 зелёных тестов."
+      },
       "spy": {
         "name": "Шпион — offline-first приложение",
         "whatItIs": "Интерактивное веб-приложение · offline-first · клиентская логика",
         "description": "Мобильное интерактивное приложение для компании без регистрации и сервера: один телефон передаётся по кругу, игроки раскрывают карты, обсуждают ассоциации и голосуют. Вся игровая логика, таймер, база слов и прогресс работают на клиенте.",
-        "contribution": "Задача была сделать игру, которую можно открыть и сразу запустить с друзьями без аккаунтов, сервера и установки. Реализовал полный клиентский цикл: настройка партии, генерация ролей, pass-the-phone UX, Classic/Hardcore, 3D flip-card, таймер, голосование, база слов с JSON import/export и localStorage persistence с SSR-safe гидратацией.",
+        "contribution": "Полный клиентский цикл: настройка партии, генерация ролей, pass-the-phone UX, Classic/Hardcore, 3D flip-card, таймер, голосование, база слов с JSON import/export и localStorage persistence с SSR-safe гидратацией.",
         "whyItMatters": "Показывает умение проектировать игровой цикл, приватное состояние, mobile-first UX и стабильную работу без backend-зависимостей."
       },
       "bunker": {
         "name": "Бункер — realtime multiplayer приложение",
         "whatItIs": "Realtime-приложение · host/player · синхронизация состояния",
         "description": "Онлайн-приложение с комнатами, ролью ведущего, realtime-синхронизацией и скрытыми карточками участников. Хост импортирует AI-сценарий, управляет раундами, событиями, голосованиями и финальной историей.",
-        "contribution": "Спроектировал модель комнаты в Firestore с realtime-подпиской, разделение host/player UI и полный игровой FSM. Приватные поля карточки скрыты от других игроков до раскрытия, а публичное состояние синхронизируется в комнате в реальном времени. AI-friendly workflow: промпт → сценарий → parser → валидация → игра.",
-        "whyItMatters": "Демонстрирует realtime multiplayer, game state machine, приватные/публичные состояния и AI-friendly импорт сценариев без перегруженного backend."
+        "contribution": "Модель комнаты в Firestore с realtime-подпиской, разделение host/player UI и полный игровой FSM. Приватные поля карточки скрыты от других игроков до раскрытия, публичное состояние синхронизируется в комнате. AI-friendly workflow: промпт → сценарий → parser → валидация → игра.",
+        "whyItMatters": "Realtime multiplayer, game state machine, приватные/публичные состояния и AI-friendly импорт сценариев без перегруженного backend."
       },
       "tWhale": {
         "name": "T-Whale",
         "whatItIs": "Telegram WebApp · игровая прогрессия",
         "description": "Telegram WebApp-игра с механикой прогрессии и пользовательскими сценариями внутри чата. Продукт ориентирован на удержание и повторные сессии в экосистеме Telegram.",
-        "contribution": "Фронтенд-функциональность, пользовательские флоу и интеграционные части опыта в Telegram WebApp: экраны прогрессии, обработка состояния и связка с bot/backend-логикой.",
-        "whyItMatters": "Показывает практическую поставку в Telegram ecosystem с реальными циклами взаимодействия."
+        "contribution": "Фронтенд, пользовательские флоу и интеграционные части Telegram WebApp: экраны прогрессии, состояние и связка с bot/backend-логикой.",
+        "whyItMatters": "Практическая поставка в Telegram ecosystem с реальными циклами взаимодействия."
       },
       "web3Fintech": {
         "name": "Web3 / Финтех / AML-сценарии",
         "whatItIs": "Web3 + финтех · wallet & transaction flows",
-        "description": "Набор фронтенд-сценариев для продуктов с кошельком, транзакциями и compliance-проверками. Фокус — безопасный UX вокруг чувствительных финансовых операций.",
+        "description": "Фронтенд-сценарии для продуктов с кошельком, транзакциями и compliance-проверками. Фокус — безопасный UX вокруг чувствительных финансовых операций.",
         "contribution": "Подключение кошельков (WalletConnect, TronLink), балансы, транзакции и token approve для Tron/Ethereum, интеграция AML/blockchain checks во фронтенд-флоу.",
-        "whyItMatters": "Подтверждает опыт в finance-sensitive и blockchain-integrated user journeys."
+        "whyItMatters": "Опыт в finance-sensitive и blockchain-integrated user journeys."
       },
       "nova": {
         "name": "Nova Engineering ERP",
-        "whatItIs": "Демо ERP для промышленной автоматизации · АСУ ТП / SCADA / MES",
-        "description": "Демо ERP для инжиниринговой компании: 10 модулей с ролевым доступом (7 ролей), дашборд с метриками и графиками, CRUD-таблицы на MUI X DataGrid (серверная пагинация, сортировка, фильтры, поиск), i18n RU/EN.",
+        "whatItIs": "Публичное демо ERP · промышленная автоматизация · АСУ ТП / SCADA / MES",
+        "description": "Публичное демо ERP для инжиниринговой компании: 10 модулей с ролевым доступом (7 ролей), дашборд с метриками и графиками, CRUD-таблицы на MUI X DataGrid с серверной пагинацией, сортировкой, фильтрами и поиском, i18n RU/EN. Это демонстрационный продукт, отдельно от production ERP-кейса выше.",
         "contribution": "Архитектура на Feature-Sliced Design с переключаемым слоем данных: один контракт, две реализации — mock-бэкенд (seed + localStorage) и реальный REST API без изменения UI. Ролевой доступ, учёт проектов и оборудования, сертификаты и экспорт отчётов, SSR CSS-in-JS без ошибок гидратации.",
-        "whyItMatters": "Работа с крупным enterprise-домом: чистая архитектура, ролевой доступ и переключаемый слой данных (mock ↔ real API), а не маркетинговые страницы."
+        "whyItMatters": "Публичный референс enterprise-фронтенда: RBAC, CRUD-таблицы и переключаемый REST-слой данных, а не маркетинговая страница."
       },
       "itdealgroup": {
         "name": "ITDEAL — корпоративный сайт",
@@ -198,7 +255,7 @@
       "trustpay": {
         "name": "TrustPay",
         "whatItIs": "Финтех-веб-продукт · payment-oriented UI",
-        "description": "Финтех-фронтенд периода Itdeal: payment-ориентированные экраны и UI вокруг API. Публичный URL больше не открывается, поэтому live-демо сейчас нет.",
+        "description": "Финтех-фронтенд периода Itdeal: payment-ориентированные экраны и UI вокруг API-сценариев оплаты. Публичный URL больше не открывается, поэтому live-демо сейчас нет.",
         "contribution": "Публичный фронтенд: структура экранов, адаптив и UI вокруг payment/API-сценариев.",
         "whyItMatters": "Коммерческий финтех-UI в платёжном продукте — кейс остаётся в портфолио, даже если демо сейчас офлайн."
       },
@@ -233,17 +290,56 @@
     },
     "experience": [
       {
+        "company": "Мультимодульный Enterprise ERP",
+        "role": "Frontend / Software Engineer",
+        "period": "NDA / production-система",
+        "location": "Удалённо · международная команда",
+        "domain": "Enterprise-софт · ERP · Финтех · SaaS",
+        "technologies": [
+          "Next.js",
+          "Next.js App Router",
+          "TypeScript",
+          "Tailwind CSS v4",
+          "shadcn/ui",
+          "TanStack Query",
+          "TanStack Table",
+          "React Hook Form",
+          "Zod",
+          "REST API"
+        ],
+        "scope": "Вёл миграцию фронтенда production ERP с legacy UI/API, включая интерфейс и HTTP/data-контракты по основным бизнес-модулям, без остановки работающей системы.",
+        "points": [
+          "Мигрировал Warehouse, HR, Projects, Tasks, Users, роли и права, офисные/документные workflow, Finance и Self-service на новый ERP API. Склад — 16+ операционных зон; HR — 20+ разделов досье сотрудника.",
+          "Убрал большой legacy UI-слой: старт — 135 MUI-импортеров, 59 импортеров иконок и 31 DataGrid; гейты миграции — MUI-zero и DataGrid-zero.",
+          "Аудит 13/13 доменов Finance (счета, сметы, платежи, расходы, регулярные операции, отчёты, транзакции): 46 некорректных фронтенд API-контрактов, 22 отсутствующих сценария и 8 P0 до production cutover.",
+          "Интеграция с NestJS API на Prisma и PostgreSQL — request/response-модели, фронтенд-модели данных, RBAC, аутентификация, сессии, загрузка файлов, серверная пагинация, фильтры, сортировка и URL-state.",
+          "Локализация как архитектура: около 420 захардкоженных строк вынесены в 22 namespace и 951 ключ перевода, legacy i18next убран.",
+          "Разобрал production-регрессию маршрутизации, из-за которой ERP-запросы могли уходить на legacy Nest при невалидной ERP URL-конфигурации, и добавил защиту конфигурации.",
+          "Этапы миграции проходили регрессионные гейты: контролируемый milestone — 682 теста в 160 файлах плюс typecheck, build и проверки API-контрактов; позднее набор достиг 710 зелёных тестов."
+        ]
+      },
+      {
         "company": "Itdeal",
         "role": "Frontend-разработчик (Middle)",
         "period": "июл. 2024 — мар. 2026",
         "location": "Кишинёв, Молдова / удалённо / распределённая команда",
         "url": "https://itdealgroup.com",
+        "domain": "Финтех · Web3 · продукты в Telegram",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "REST API",
+          "Telegram Web Apps",
+          "WalletConnect",
+          "TronLink"
+        ],
+        "scope": "Клиентская поставка на React/TypeScript для финтеха, Telegram и Web3 в международной распределённой команде.",
         "points": [
-          "Разработка и сопровождение клиентских приложений на React/TypeScript с REST-интеграциями, включая авторизацию и транзакционные флоу.",
-          "Создание и поддержка Telegram WebApps (Telegram Web Apps + Bot API): пользовательские сценарии и бизнес-логика.",
-          "Web3-интеграции с WalletConnect и TronLink: взаимодействие с кошельками Tron/Ethereum, балансы, транзакции и approve токенов.",
-          "Интеграция блокчейн- и AML-проверок во фронтенд-флоу с передачей данных на бэкенд.",
-          "Рефакторинг легаси-модулей для снижения технического долга и повышения устойчивости архитектуры."
+          "Разработка и сопровождение приложений на React/TypeScript с REST-интеграциями, включая аутентификацию и транзакционные флоу.",
+          "Интерфейсы Telegram WebApp, связанные с Bot API и бэкенд-флоу продукта.",
+          "Web3 UX с WalletConnect и TronLink: балансы, транзакции и approve токенов на Tron/Ethereum.",
+          "Интеграция AML- и блокчейн-проверок во фронтенд-сценарии с передачей данных на бэкенд.",
+          "Рефакторинг легаси-модулей для снижения технического долга и устойчивости архитектуры."
         ]
       },
       {
@@ -251,7 +347,8 @@
         "role": "Руководитель программы / ментор (программирование)",
         "period": "апр. 2022 — фев. 2024",
         "location": "Ашхабад, Туркменистан",
-        "url": "https://ashgabat.kiber-one.com/",
+        "url": "https://Kayseri.kiber-one.com/",
+        "domain": "Образование · треки программирования",
         "points": [
           "Обучение 100+ студентов трекам программирования и веб-разработки.",
           "Сопровождение 40+ студентов при поступлении в IT-направления вузов.",
@@ -264,10 +361,12 @@
         "role": "Frontend-разработчик (Middle)",
         "period": "дек. 2021 — янв. 2023",
         "location": "Ашхабад, Туркменистан",
-        "url": "https://tef-turkmenistan.com/",
+        "url": "https://tef-Türkiye.com/",
+        "domain": "Площадки мероприятий · внутренние админ-интерфейсы",
+        "technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
         "points": [
           "Вёрстка, UI-элементы и части внутренних админ-интерфейсов.",
-          "Фронтенд для ogt-turkmenistan.com и ittc.com.tm.",
+          "Фронтенд для ogt-Türkiye.com и ittc.com.tm.",
           "HTML, CSS, ванильный JavaScript и jQuery в продакшн-задачах.",
           "Поддержка IT-сопровождения мероприятий и координации делегаций."
         ]
@@ -277,6 +376,8 @@
         "role": "Junior Frontend / React-разработчик",
         "period": "фев. 2020 — дек. 2021",
         "location": "Ашхабад, Туркменистан",
+        "domain": "Веб-приложения",
+        "technologies": ["React", "TypeScript", "GraphQL", "Hasura", "Docker"],
         "points": [
           "Исправление и создание страниц с адаптивной вёрсткой.",
           "React и участие в миграции с классовых компонентов на функциональные паттерны.",
@@ -307,11 +408,13 @@
       }
     ],
     "skills": {
-      "frontend": "Фронтенд",
-      "integrations": "Интеграции",
-      "web3": "Web3",
-      "tools": "Инструменты",
-      "other": "Прочий опыт"
+      "frontend": "Frontend Engineering",
+      "uiForms": "UI & Forms",
+      "architecture": "Architecture & Integration",
+      "state": "State Management",
+      "backend": "Backend Exposure",
+      "infrastructure": "Infrastructure",
+      "platforms": "Platforms & Integrations"
     }
   }
 }

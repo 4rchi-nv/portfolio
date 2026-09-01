@@ -8,7 +8,7 @@ import { useIsMobile } from "@/hooks/use-is-mobile";
 type HeroBlockProps = {
   location: string;
   title: string;
-  role: string;
+  stack: string;
   subtitle: string;
   viewProjects: string;
   contactMe: string;
@@ -27,7 +27,7 @@ type HeroBlockProps = {
 export function HeroBlock({
   location,
   title,
-  role,
+  stack,
   subtitle,
   viewProjects,
   contactMe,
@@ -50,29 +50,29 @@ export function HeroBlock({
   return (
     <>
       <div className="min-w-0">
-        <motion.p
-          className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--muted)]"
-          {...p(0)}
-        >
-          {location}
-        </motion.p>
         <motion.h1
           className="max-w-3xl text-balance break-words text-3xl font-semibold tracking-tight text-[var(--foreground)] md:text-5xl md:leading-[1.05]"
-          {...p(1)}
+          {...p(0)}
         >
           {title}
         </motion.h1>
         <motion.p
-          className="mt-4 max-w-2xl text-base leading-relaxed text-[var(--muted-strong)] md:text-lg"
-          {...p(2)}
+          className="mt-4 max-w-2xl text-base font-medium leading-relaxed text-[var(--muted-strong)] md:text-lg"
+          {...p(1)}
         >
-          {role}
+          {stack}
         </motion.p>
         <motion.p
           className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--muted)] md:text-base"
-          {...p(3)}
+          {...p(2)}
         >
           {subtitle}
+        </motion.p>
+        <motion.p
+          className="mt-3 text-xs text-[var(--muted)]"
+          {...p(3)}
+        >
+          {location}
         </motion.p>
 
         <motion.div className="mt-8 flex flex-wrap gap-3" {...p(4)}>

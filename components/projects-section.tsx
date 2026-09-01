@@ -17,10 +17,11 @@ interface ProjectsSectionProps {
 
 const filterOrder: Array<"All" | ProjectTag> = [
   "All",
+  "Enterprise",
+  "Fintech",
   "Interactive Apps",
   "Telegram",
   "Web3",
-  "Fintech",
   "Web App",
   "Landing",
   "Bot",

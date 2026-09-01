@@ -15,6 +15,7 @@ function resolveSiteUrl(): string {
 export const siteUrl = resolveSiteUrl();
 
 export type ProjectTag =
+  | "Enterprise"
   | "Interactive Apps"
   | "Telegram"
   | "Web3"
@@ -40,6 +41,24 @@ export interface ProjectMeta {
 export const resumeHref: string | undefined = undefined;
 
 export const projectOrder: ProjectMeta[] = [
+  {
+    key: "enterpriseErp",
+    tag: "Enterprise",
+    featured: true,
+    linkStatus: "nda",
+    stack: [
+      "Next.js",
+      "Next.js App Router",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "shadcn/ui",
+      "TanStack Query",
+      "TanStack Table",
+      "React Hook Form",
+      "Zod",
+      "REST API",
+    ],
+  },
   {
     key: "spy",
     tag: "Interactive Apps",
@@ -90,7 +109,7 @@ export const projectOrder: ProjectMeta[] = [
   },
   {
     key: "nova",
-    tag: "Web App",
+    tag: "Enterprise",
     featured: true,
     linkStatus: "live",
     href: "https://novva-erp.vercel.app/",
@@ -164,10 +183,12 @@ export const projectOrder: ProjectMeta[] = [
 
 export const skillGroupOrder = [
   "frontend",
-  "integrations",
-  "web3",
-  "tools",
-  "other",
+  "uiForms",
+  "architecture",
+  "state",
+  "backend",
+  "infrastructure",
+  "platforms",
 ] as const;
 
 export type SkillGroupKey = (typeof skillGroupOrder)[number];
@@ -175,33 +196,40 @@ export type SkillGroupKey = (typeof skillGroupOrder)[number];
 export const skillItems: Record<SkillGroupKey, string[]> = {
   frontend: [
     "React",
+    "Next.js",
     "Next.js App Router",
     "TypeScript",
+    "JavaScript",
+    "TanStack Query",
+    "TanStack Table",
+  ],
+  uiForms: [
     "Tailwind CSS",
-    "State Management",
-    "PWA",
+    "Tailwind CSS v4",
+    "shadcn/ui",
+    "React Hook Form",
+    "Zod",
+    "Framer Motion",
   ],
-  integrations: [
-    "REST API",
-    "Firebase",
-    "Firestore",
-    "Realtime Apps",
-    "API Integration",
+  architecture: [
+    "REST APIs",
+    "HTTP API contracts",
+    "Authentication",
+    "Sessions",
+    "RBAC",
+    "SSR",
+    "ISR",
+  ],
+  state: ["Zustand", "Redux", "TanStack Query"],
+  backend: ["NestJS", "Prisma", "PostgreSQL"],
+  infrastructure: ["Docker", "Linux", "Nginx", "Git", "Vercel"],
+  platforms: [
+    "Web3 integrations",
+    "Fintech integrations",
     "Telegram Web Apps",
-  ],
-  web3: [
-    "WalletConnect",
-    "TronLink",
-    "Tron / Ethereum",
-    "Balances & Transactions",
-    "Token Approve Flows",
-  ],
-  tools: ["Git", "Vercel", "Responsive Layout", "GraphQL", "Docker"],
-  other: [
-    "Game Logic / FSM",
-    "Parser / Data Normalization",
-    "Python",
-    "English",
+    "Firebase",
+    "GraphQL",
+    "PWA",
   ],
 };
 
@@ -215,3 +243,19 @@ export const contacts = {
 } as const;
 
 export const personName = "Arslan Agajanov";
+
+export const jobTitle = "Frontend / Software Engineer";
+
+export const knowsAbout = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Frontend Development",
+  "Software Engineering",
+  "Enterprise Software",
+  "ERP",
+  "Fintech",
+  "REST APIs",
+  "NestJS",
+  "PostgreSQL",
+] as const;

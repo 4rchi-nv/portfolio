@@ -103,7 +103,6 @@ export default async function LocaleLayout({ children, params }: Props) {
   setRequestLocale(locale);
   const messages = await getMessages();
   const t = await getTranslations({ locale, namespace: "Meta" });
-  const tHero = await getTranslations({ locale, namespace: "Portfolio.hero" });
 
   return (
     <html
@@ -111,11 +110,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-dvh min-w-0 flex-col overflow-x-clip">
-        <JsonLd
-          locale={locale}
-          description={t("description")}
-          jobTitle={tHero("title")}
-        />
+        <JsonLd locale={locale} description={t("description")} />
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>

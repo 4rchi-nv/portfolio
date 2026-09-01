@@ -1,19 +1,20 @@
 {
   "Meta": {
-    "title": "Arslan Agajanov - React / Next.js Engineer",
-    "description": "React / Next.js engineer with full-stack product ownership: interactive web apps, client-side and realtime logic, API integrations and deployment.",
-    "ogTitle": "Arslan Agajanov - React / Next.js Engineer",
-    "ogDescription": "React / Next.js engineer building interactive web applications: client-side and realtime logic, PWA, Telegram WebApps and Web3 integrations.",
-    "twitterDescription": "React / Next.js engineer: interactive web apps, realtime UI, API integrations, product engineering.",
-    "keywords": "React, Next.js, TypeScript, Tailwind CSS, Firebase, realtime apps, interactive apps, party games, ERP, API integration, state management, frontend, full-stack product engineer, Telegram WebApp, Web3, PWA"
+    "title": "Arslan Agajanov — Frontend / Software Engineer | React, Next.js, TypeScript",
+    "description": "Frontend / Software Engineer with 6+ years building production React, Next.js and TypeScript applications across enterprise ERP, fintech, and API-driven systems.",
+    "ogTitle": "Arslan Agajanov — Frontend / Software Engineer | React, Next.js, TypeScript",
+    "ogDescription": "Frontend / Software Engineer specializing in React, Next.js and TypeScript for enterprise ERP, fintech workflows, and REST API-driven interfaces.",
+    "twitterDescription": "Frontend / Software Engineer — React, Next.js, TypeScript. Enterprise ERP, fintech, and API-driven frontend systems.",
+    "keywords": "Frontend Engineer, Software Engineer, Senior Frontend Developer, React Engineer, Next.js Engineer, TypeScript Engineer, React, Next.js, TypeScript, ERP frontend, enterprise frontend, fintech frontend, REST API"
   },
   "Nav": {
+    "impact": "Impact",
     "projects": "Projects",
     "experience": "Experience",
     "certifications": "Certifications",
     "skills": "Skills",
     "contact": "Contact",
-    "cta": "Let's talk"
+    "cta": "Hire me"
   },
   "Hero": {
     "viewProjects": "View projects",
@@ -21,45 +22,48 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "downloadCv": "Download CV",
-    "profilePhotoAlt": "Arslan Agajanov profile photo"
+    "profilePhotoAlt": "Arslan Agajanov, Frontend / Software Engineer"
   },
   "Aside": {
     "positioning": "Positioning",
     "bullets": [
-      "6+ years building product-facing interfaces",
-      "React / Next.js / TypeScript as core delivery stack",
-      "Interactive apps: offline-first and realtime logic",
-      "REST API and integration-heavy interfaces",
-      "Web3 wallet, balance and transaction UX flows",
-      "Production deployment and maintainable architecture"
+      "Frontend architecture, business logic, and REST API integrations",
+      "Production React and Next.js applications for ERP and fintech",
+      "Data-heavy CRUD, RBAC, authentication, and complex workflows",
+      "Large-scale migrations without stopping production systems",
+      "End-to-end ownership of frontend features, including debugging and deployment"
     ]
   },
   "Sections": {
     "aboutEyebrow": "About",
-    "aboutTitle": "React / Next.js engineer with full-stack product ownership and interactive application experience.",
-    "helpEyebrow": "What I can help with",
-    "helpTitle": "Where I usually create the most product value",
-    "expertiseEyebrow": "Core expertise",
-    "expertiseTitle": "What I bring to frontend product teams",
+    "aboutTitle": "About",
+    "helpEyebrow": "Scope",
+    "helpTitle": "What I take ownership of",
+    "impactEyebrow": "Results",
+    "impactTitle": "Engineering Impact",
+    "impactDescription": "Measurable outcomes from a production ERP frontend migration, Finance API-contract audit, localization architecture, and regression gates.",
+    "expertiseEyebrow": "Focus",
+    "expertiseTitle": "Engineering focus",
     "experienceEyebrow": "Experience",
-    "experienceTitle": "Professional background",
-    "experienceDescription": "Product work in distributed teams, mentoring experience, and practical frontend ownership across different project types.",
-    "certificationsEyebrow": "Certifications & memberships",
+    "experienceTitle": "Experience",
+    "experienceDescription": "Enterprise ERP, fintech, and product frontend work with international and distributed teams.",
+    "certificationsEyebrow": "Certifications",
     "certificationsTitle": "Courses and professional development",
-    "skillsEyebrow": "Skills & toolbox",
-    "skillsTitle": "Technology stack and practical tools",
+    "skillsEyebrow": "Stack",
+    "skillsTitle": "Technical Expertise",
     "contactEyebrow": "Contact",
-    "contactTitle": "Open to remote React / Next.js roles and product collaborations",
-    "contactDescription": "Email, Telegram, phone and profile links are below."
+    "contactTitle": "Contact",
+    "contactDescription": "Available for Frontend Engineer, Senior Frontend Developer, and Software Engineer opportunities. Remote full-time and project work."
   },
   "Projects": {
-    "eyebrow": "Selected projects",
-    "title": "Engineering cases: interactive apps, Telegram, integrations and Web3",
-    "description": "Interactive web applications on React/Next.js: client-side and realtime logic, complex state, API integrations and production deployment.",
-    "gamesIntro": "One direction is interactive web applications built with Next.js. These cases show different levels of complexity: from a fully client-side offline-first app to realtime state sync with private states and an AI-friendly workflow.",
+    "eyebrow": "Selected Projects",
+    "title": "Selected Projects",
+    "description": "Production ERP and fintech systems, API-driven React interfaces, and selected public product work in Next.js and TypeScript.",
+    "gamesIntro": "A separate track is interactive Next.js applications: from a fully client-side offline-first app to realtime state sync with private player state.",
     "filterAll": "All",
     "empty": "No projects in this category yet.",
     "tags": {
+      "Enterprise": "Enterprise",
       "Interactive Apps": "Interactive Apps",
       "Telegram": "Telegram",
       "Web3": "Web3",
@@ -73,11 +77,11 @@
     "featured": "Featured",
     "ndaBadge": "NDA / Internal",
     "whatItIs": "What it is",
-    "contribution": "Contribution:",
-    "whyItMatters": "Why it matters:",
+    "contribution": "Role:",
+    "whyItMatters": "Engineering impact:",
     "viewReference": "Open demo",
     "viewGitHub": "Code",
-    "ndaNote": "Commercial NDA project: public demo is unavailable, but the case highlights the architecture, stack and my ownership area.",
+    "ndaNote": "Commercial NDA project: public demo is unavailable. The case describes architecture, stack, and ownership.",
     "demoUnavailable": "Demo temporarily unavailable",
     "noPublicLink": "Public link is not available for this project."
   },
@@ -91,7 +95,11 @@
     "linkedinValue": "linkedin.com/in/arslan-agajanov"
   },
   "Experience": {
-    "visit": "Visit company website"
+    "visit": "Visit company website",
+    "domain": "Domain:",
+    "technologies": "Technologies",
+    "scope": "Scope:",
+    "impact": "Engineering impact"
   },
   "NotFound": {
     "title": "Page not found",
@@ -105,59 +113,108 @@
   },
   "Portfolio": {
     "person": {
-      "role": "React / Next.js Engineer · TypeScript · Realtime Apps · Product UI",
-      "location": "Ashgabat, Turkmenistan — Remote",
-      "summary": "React / Next.js engineer with full-stack product ownership. I build interactive web applications — from client-side logic and PWA to realtime, API integrations and deployment. 6+ years in React/TypeScript, maintainable architecture, state management and REST/Web3 integrations."
+      "role": "Frontend / Software Engineer",
+      "location": "Kayseri, Türkiye · Open to remote",
+      "summary": "Frontend / Software Engineer with 6+ years building production React, Next.js and TypeScript applications across enterprise ERP, fintech, and API-driven systems."
     },
     "hero": {
-      "title": "React / Next.js Engineer · TypeScript · Realtime Apps · Product UI",
-      "subtitle": "I build interactive web applications — from client-side logic and PWA to realtime, API integrations and deployment."
+      "title": "Frontend / Software Engineer",
+      "stack": "React · Next.js · TypeScript · Enterprise · ERP · Fintech",
+      "subtitle": "6+ years building production frontend systems: enterprise applications, ERP workflows, fintech operations, and API-driven products in React, Next.js, and TypeScript. Work covers frontend architecture, business logic, HTTP contracts, and backend integration."
     },
+    "aboutParagraphs": [
+      "I am a Frontend / Software Engineer with 6+ years of experience building production React, Next.js, and TypeScript applications across enterprise software, ERP, and fintech.",
+      "The work is not limited to UI. It includes frontend architecture, HTTP/API contracts, backend integration, data-heavy interfaces, authentication and role-based access control, complex CRUD workflows, large-scale migrations, production debugging, and end-to-end ownership of frontend features. English C1. Available for remote full-time and project roles as a Frontend Engineer, Senior Frontend Developer, React Engineer, Next.js Engineer, or Software Engineer."
+    ],
     "helpWith": [
-      "Shipping React/TypeScript product features from UI to integration-ready release",
-      "Building Telegram Mini App interfaces tied to bot and backend product flows",
-      "Interactive web applications: offline-first client logic and realtime state sync",
-      "Implementing frontend logic for REST auth/RBAC flows, wallet operations, and transactional scenarios",
-      "Improving maintainability in legacy modules through practical refactoring and architecture cleanup"
+      "Frontend architecture for production React, Next.js, and TypeScript systems",
+      "Enterprise ERP and business-application workflows: warehouse, HR, finance, projects, and permissions",
+      "REST API integrations, HTTP contracts, and request/response auditing",
+      "Fintech interfaces: invoices, payments, expenses, reports, and monetary workflows",
+      "Production migrations, regression gates, and incident debugging without stopping the running application"
     ],
     "recruiterFacts": [
-      "6+ years of frontend development experience",
-      "Hands-on with SPA and SSR product delivery",
-      "100+ students taught in programming tracks",
-      "40+ students supported into IT universities"
+      "6+ years in frontend development",
+      "Enterprise ERP, fintech, and SaaS interfaces",
+      "API-contract ownership across finance domains",
+      "Open to remote full-time and project work"
+    ],
+    "impact": [
+      {
+        "value": "135",
+        "label": "legacy MUI importers at migration start",
+        "context": "Plus 59 MUI icon importers and 31 DataGrid files before the ERP UI/API migration."
+      },
+      {
+        "value": "13/13",
+        "label": "Finance domains audited",
+        "context": "Full coverage of finance request/response contracts before production cutover."
+      },
+      {
+        "value": "46",
+        "label": "incorrect API contracts identified",
+        "context": "Frontend HTTP contracts that did not match the ERP Finance API."
+      },
+      {
+        "value": "22",
+        "label": "missing Finance scenarios identified",
+        "context": "Gaps found during the Finance API-contract audit."
+      },
+      {
+        "value": "8",
+        "label": "P0 issues before production cutover",
+        "context": "High-severity contract and scenario issues caught before go-live."
+      },
+      {
+        "value": "710",
+        "label": "passing regression tests",
+        "context": "Migration regression suite after later stages. An earlier controlled milestone passed 682 tests across 160 files, with typecheck, build, and API-contract checks."
+      },
+      {
+        "value": "951",
+        "label": "centralized translation keys",
+        "context": "Localization architecture: about 420 hardcoded UI strings moved into 22 namespaces; legacy i18next dependencies removed."
+      }
     ],
     "expertise": [
       {
-        "title": "React / TypeScript Product Development",
-        "text": "Build and maintain real user-facing interfaces for product teams, from UI architecture to integration-ready screens."
+        "title": "Frontend architecture",
+        "text": "Production React and Next.js App Router systems in TypeScript: data models, URL state, server pagination, and maintainable feature ownership."
       },
       {
-        "title": "Telegram WebApps & Bot Flows",
-        "text": "Contribute to Telegram WebApp products and Bot API-facing flows where frontend behavior is tied to chat-based user journeys."
+        "title": "Enterprise ERP",
+        "text": "Multi-module ERP frontends covering Finance, Warehouse, HR, Projects, Tasks, office workflows, users, roles, permissions, and self-service."
       },
       {
-        "title": "REST API Integrations",
-        "text": "Connect frontend applications to backend services with validation, data processing, and reliable request handling."
+        "title": "Fintech workflows",
+        "text": "Invoices, estimates, payments, expenses, recurring operations, reports, transactions, and permissioned monetary interfaces."
       },
       {
-        "title": "Web3 Frontend Flows",
-        "text": "Implement wallet connection scenarios, balances, transactions, and approve flows for Tron and Ethereum product use cases."
+        "title": "API contracts & integration",
+        "text": "HTTP request/response models, REST API integration, and frontend contract auditing against NestJS, Prisma, and PostgreSQL-backed services."
       },
       {
-        "title": "Legacy Refactoring",
-        "text": "Improve older codebases by restructuring modules, reducing complexity, and increasing maintainability."
+        "title": "Auth, sessions & RBAC",
+        "text": "Authentication, sessions, role-based access control, file uploads, and complex CRUD workflows in business applications."
       },
       {
-        "title": "Mentoring & Communication",
-        "text": "Teaching experience helps with clear technical communication, onboarding, and cross-team collaboration."
+        "title": "Production ownership",
+        "text": "Gradual legacy removal, regression gates, configuration safeguards, and production debugging across routing, HTTP, and deployment."
       }
     ],
     "projects": {
+      "enterpriseErp": {
+        "name": "Enterprise ERP Frontend",
+        "whatItIs": "Production multi-module ERP · Next.js · TypeScript · REST API",
+        "description": "A large production ERP frontend spanning Finance, Warehouse, HR, Projects, Tasks, office/document workflows, Users, Roles, Permissions, and Self-service. Warehouse covers 16+ operational areas; HR includes 20+ sections of the employee dossier. The system is data-heavy: server pagination, filtering, sorting, URL state, and permissioned CRUD.",
+        "contribution": "Led the frontend migration from a legacy UI/API architecture to Next.js, TypeScript, Tailwind CSS v4, shadcn/ui, and TanStack — covering both UI and API/data-contract work. Built production interfaces with TanStack Table, TanStack Query, React Hook Form, Zod, RBAC, authentication, sessions, and file uploads, while removing legacy dependencies without stopping the running application. Audited Finance HTTP contracts (13/13 domains), resolved a production routing regression that could send ERP traffic to the legacy Nest backend, and reworked localization into a centralized system.",
+        "whyItMatters": "Shows frontend architecture and API-contract ownership on an enterprise ERP: MUI-zero / DataGrid-zero migration gates, 46 incorrect Finance contracts and 8 P0 issues found before cutover, and regression suites that reached 710 passing tests."
+      },
       "spy": {
         "name": "Spy Game — offline-first app",
         "whatItIs": "Interactive web app · offline-first · client-side logic",
         "description": "A mobile interactive app without backend or registration: players pass one phone around, reveal their cards, discuss clues and vote. Game logic, timer, word database and progress persistence run fully on the client.",
-        "contribution": "The goal was to make a game that can be opened and played immediately with friends without accounts, backend or installation. I implemented the full client-side loop: setup, role generation, pass-the-phone UX, Classic/Hardcore modes, 3D flip-card animation, discussion timer, voting, custom word database with JSON import/export and localStorage persistence with SSR-safe hydration.",
+        "contribution": "Implemented the full client-side loop: setup, role generation, pass-the-phone UX, Classic/Hardcore modes, 3D flip-card animation, discussion timer, voting, custom word database with JSON import/export and localStorage persistence with SSR-safe hydration.",
         "whyItMatters": "Shows how I design game loops, private state, mobile-first UX and reliable flows without backend dependencies."
       },
       "bunker": {
@@ -177,16 +234,16 @@
       "web3Fintech": {
         "name": "Web3 / Fintech / AML Flows",
         "whatItIs": "Web3 + fintech · wallet & transaction flows",
-        "description": "A set of frontend flows for products involving wallets, transactions and compliance checks. The focus is safe UX around finance-sensitive operations.",
+        "description": "Frontend flows for products involving wallets, transactions and compliance checks. The focus is safe UX around finance-sensitive operations.",
         "contribution": "Wallet connections (WalletConnect, TronLink), balances, transactions and token approve for Tron/Ethereum, plus AML/blockchain checks integrated into frontend flows.",
         "whyItMatters": "Shows applied experience with finance-sensitive and blockchain-integrated user journeys."
       },
       "nova": {
         "name": "Nova Engineering ERP",
-        "whatItIs": "Demo ERP for industrial automation · ICS / SCADA / MES",
-        "description": "A demo ERP for an engineering company: 10 modules with role-based access (7 roles), a dashboard with metrics and charts, CRUD tables on MUI X DataGrid (server-side pagination, sorting, filtering, search), i18n RU/EN.",
+        "whatItIs": "Public demo ERP · industrial automation · ICS / SCADA / MES",
+        "description": "A public demo ERP for an engineering company: 10 modules with role-based access (7 roles), a dashboard with metrics and charts, CRUD tables on MUI X DataGrid with server-side pagination, sorting, filtering and search, plus i18n RU/EN. This is a demonstration product, separate from the production ERP case above.",
         "contribution": "Architecture on Feature-Sliced Design with a switchable data layer: one contract, two implementations — a mock backend (seed + localStorage) and a real REST API with no UI changes. Role-based access, project and equipment accounting, certificates and report export, SSR CSS-in-JS without hydration errors.",
-        "whyItMatters": "Work on a large enterprise domain: clean architecture, role-based access and a switchable data layer (mock ↔ real API), not marketing pages."
+        "whyItMatters": "A public reference for enterprise frontend architecture: RBAC, CRUD tables, and a switchable REST data layer rather than a marketing page."
       },
       "itdealgroup": {
         "name": "ITDEAL — company website",
@@ -198,7 +255,7 @@
       "trustpay": {
         "name": "TrustPay",
         "whatItIs": "Fintech web product · payment-oriented UI",
-        "description": "A fintech frontend from the Itdeal period: payment-oriented screens and API-facing UI. The original public URL no longer resolves, so there is no live demo at the moment.",
+        "description": "A fintech frontend from the Itdeal period: payment-oriented screens and API-facing UI around payment scenarios. The original public URL no longer resolves, so there is no live demo at the moment.",
         "contribution": "Public-facing frontend: screen structure, responsive layout and UI around payment and API scenarios.",
         "whyItMatters": "Commercial fintech UI work in a payment product — the case stays in the portfolio even though the demo is offline."
       },
@@ -233,25 +290,65 @@
     },
     "experience": [
       {
+        "company": "Multi-module Enterprise ERP",
+        "role": "Frontend / Software Engineer",
+        "period": "NDA / production system",
+        "location": "Remote · International team",
+        "domain": "Enterprise software · ERP · Fintech · SaaS",
+        "technologies": [
+          "Next.js",
+          "Next.js App Router",
+          "TypeScript",
+          "Tailwind CSS v4",
+          "shadcn/ui",
+          "TanStack Query",
+          "TanStack Table",
+          "React Hook Form",
+          "Zod",
+          "REST API"
+        ],
+        "scope": "Led frontend migration of a production ERP from a legacy UI/API architecture, including both interface work and HTTP/data-contract migration across major business modules, without stopping the running application.",
+        "points": [
+          "Migrated Warehouse, HR, Projects, Tasks, Users, roles and permissions, office/document workflows, Finance, and Self-service to the new ERP API. Warehouse covers 16+ operational areas; HR includes 20+ sections of the employee dossier.",
+          "Eliminated a large legacy UI surface: started at 135 MUI importers, 59 MUI icon importers, and 31 DataGrid files; migration gates reached MUI-zero and DataGrid-zero.",
+          "Audited 13/13 Finance domains (invoices, estimates, payments, expenses, recurring operations, reports, transactions): identified 46 incorrect frontend API contracts, 22 missing scenarios, and 8 P0 issues before production cutover.",
+          "Integrated against NestJS APIs backed by Prisma and PostgreSQL — request/response models, frontend data models, RBAC, authentication, sessions, file uploads, server pagination, filtering, sorting, and URL state.",
+          "Reworked localization as architecture: moved about 420 hardcoded UI strings into 22 namespaces and 951 translation keys, and removed legacy i18next dependencies.",
+          "Resolved a production routing regression where ERP requests could fall back to the legacy Nest backend when ERP URL configuration was invalid, and added configuration safeguards.",
+          "Migration stages passed regression gates: a controlled milestone at 682 tests across 160 files with typecheck, build, and API-contract checks; later the suite reached 710 passing tests."
+        ]
+      },
+      {
         "company": "Itdeal",
         "role": "Frontend Developer (Middle)",
         "period": "Jul 2024 - Mar 2026",
         "location": "Chisinau, Moldova / Remote / Distributed team",
         "url": "https://itdealgroup.com",
+        "domain": "Fintech · Web3 · Telegram products",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "REST API",
+          "Telegram Web Apps",
+          "WalletConnect",
+          "TronLink"
+        ],
+        "scope": "Client-side React/TypeScript delivery for fintech, Telegram, and Web3 products in an international distributed team.",
         "points": [
-          "Developed and maintained client-side React/TypeScript applications with REST API integrations, including auth and transactional flows.",
-          "Built and supported Telegram WebApps (Telegram Web Apps + Bot API), including user scenarios and business flow logic.",
-          "Implemented Web3 integrations with WalletConnect and TronLink, covering Tron/Ethereum wallet interactions, balances, transactions, and token approvals.",
-          "Integrated blockchain and AML-related checks in frontend user flows with backend data transfer.",
-          "Refactored legacy frontend modules to reduce technical debt and improve architecture stability."
+          "Developed and maintained React/TypeScript applications with REST API integrations, including authentication and transactional flows.",
+          "Built Telegram WebApp interfaces tied to Bot API and backend product flows.",
+          "Implemented Web3 wallet UX with WalletConnect and TronLink: balances, transactions, and token approvals on Tron/Ethereum.",
+          "Integrated AML and blockchain checks into frontend journeys with backend data transfer.",
+          "Refactored legacy frontend modules to reduce technical debt and stabilize architecture."
         ]
       },
       {
         "company": "KIBERone",
         "role": "Program Manager / Mentor (Programming)",
         "period": "Apr 2022 - Feb 2024",
-        "location": "Ashgabat, Turkmenistan",
-        "url": "https://ashgabat.kiber-one.com/",
+        "location": "Kayseri, Türkiye",
+        "url": "https://Kayseri.kiber-one.com/",
+        "domain": "Education · programming tracks",
         "points": [
           "Trained 100+ students in programming and web development tracks.",
           "Supported 40+ students in entering IT-focused universities.",
@@ -263,12 +360,14 @@
         "company": "Turkmen Forum",
         "role": "Frontend Developer (Middle)",
         "period": "Dec 2021 - Jan 2023",
-        "location": "Ashgabat, Turkmenistan",
-        "url": "https://tef-turkmenistan.com/",
+        "location": "Kayseri, Türkiye",
+        "url": "https://tef-Türkiye.com/",
+        "domain": "Event platforms · internal admin UI",
+        "technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
         "points": [
           "Built frontend layouts, UI elements, and parts of internal admin interfaces.",
-          "Worked on frontend for ogt-turkmenistan.com and ittc.com.tm.",
-          "Used HTML, CSS, Vanilla JavaScript, and jQuery for production tasks.",
+          "Worked on frontend for ogt-Türkiye.com and ittc.com.tm.",
+          "Used HTML, CSS, vanilla JavaScript, and jQuery for production tasks.",
           "Supported event-related IT operations and delegate coordination."
         ]
       },
@@ -276,7 +375,9 @@
         "company": "Milli San",
         "role": "Junior Frontend Developer / React Developer",
         "period": "Feb 2020 - Dec 2021",
-        "location": "Ashgabat, Turkmenistan",
+        "location": "Kayseri, Türkiye",
+        "domain": "Web applications",
+        "technologies": ["React", "TypeScript", "GraphQL", "Hasura", "Docker"],
         "points": [
           "Fixed and built web pages with responsive UI adaptations.",
           "Worked with React and participated in migration from class components to functional patterns.",
@@ -307,11 +408,13 @@
       }
     ],
     "skills": {
-      "frontend": "Frontend",
-      "integrations": "Integrations",
-      "web3": "Web3",
-      "tools": "Tools",
-      "other": "Other experience"
+      "frontend": "Frontend Engineering",
+      "uiForms": "UI & Forms",
+      "architecture": "Architecture & Integration",
+      "state": "State Management",
+      "backend": "Backend Exposure",
+      "infrastructure": "Infrastructure",
+      "platforms": "Platforms & Integrations"
     }
   }
 }
