@@ -53,8 +53,8 @@ export interface ProjectMeta {
   language?: string;
 }
 
-/** Set when `public/resume.pdf` (or custom name) is added. */
-export const resumeHref: string | undefined = undefined;
+/** Public CV under `public/cv/`. */
+export const resumeHref = "/cv/Arslan_Agajanov_Resume_EN.pdf";
 
 export const projectOrder: ProjectMeta[] = [
   {

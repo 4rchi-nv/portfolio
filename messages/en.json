@@ -194,7 +194,8 @@
       "localeRu": "Switch language to Russian",
       "email": "Send email",
       "github": "Open GitHub",
-      "linkedin": "Open LinkedIn"
+      "linkedin": "Open LinkedIn",
+      "resume": "Download CV"
     }
   },
   "ProductPreview": {
@@ -226,7 +227,8 @@
       "Full-time",
       "Project-based",
       "Enterprise frontend"
-    ]
+    ],
+    "downloadCv": "Download CV"
   },
   "Aside": {
     "positioning": "Positioning",
@@ -317,6 +319,8 @@
     "phone": "Phone",
     "github": "GitHub",
     "linkedin": "LinkedIn",
+    "resume": "Resume",
+    "resumeValue": "PDF · English",
     "githubValue": "github.com/4rchi-nv",
     "linkedinValue": "linkedin.com/in/arslan-agajanov"
   },

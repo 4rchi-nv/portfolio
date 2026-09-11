@@ -4,7 +4,7 @@ import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { usePortfolioMode } from "@/components/portfolio-mode-provider";
-import { contacts } from "@/data/portfolio-meta";
+import { contacts, resumeHref } from "@/data/portfolio-meta";
 import { COMMAND_PALETTE_EVENT } from "@/lib/events";
 import type { PortfolioMode } from "@/lib/portfolio-mode";
 
@@ -171,6 +171,20 @@ export function CommandPalette() {
           window.open(contacts.linkedin, "_blank", "noopener,noreferrer");
         },
       },
+      ...(resumeHref
+        ? [
+            {
+              id: "resume",
+              label: t("commands.resume"),
+              hint: "PDF",
+              group: t("groups.actions"),
+              run: () => {
+                setOpen(false);
+                window.open(resumeHref, "_blank", "noopener,noreferrer");
+              },
+            } satisfies CommandItem,
+          ]
+        : []),
     ];
   }, [t, mode, setMode, locale, pathname, router]);
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { resumeHref } from "@/data/portfolio-meta";
 
 export function CurrentStatus() {
   const t = useTranslations("CurrentStatus");
@@ -27,6 +28,19 @@ export function CurrentStatus() {
           </li>
         ))}
       </ul>
+      {resumeHref ? (
+        <div className="mt-5">
+          <a
+            className="btn-primary !min-h-10 !px-4 !py-2 !text-sm"
+            href={resumeHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Arslan_Agajanov_Resume_EN.pdf"
+          >
+            {t("downloadCv")}
+          </a>
+        </div>
+      ) : null}
     </div>
   );
 }

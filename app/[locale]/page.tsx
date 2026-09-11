@@ -269,6 +269,17 @@ export default async function Home({ params }: Props) {
                     href: portfolio.contacts.linkedin,
                     external: true,
                   },
+                  ...(resumeHref
+                    ? [
+                        {
+                          label: tContact("resume"),
+                          value: tContact("resumeValue"),
+                          href: resumeHref,
+                          external: true,
+                          download: "Arslan_Agajanov_Resume_EN.pdf",
+                        },
+                      ]
+                    : []),
                 ]}
               />
             </PaperSection>
