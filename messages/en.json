@@ -34,6 +34,23 @@
     "more": "More controls",
     "controls": "Site controls"
   },
+  "Preloader": {
+    "aria": "Loading portfolio",
+    "variants": {
+      "terminal": "Terminal boot"
+    },
+    "terminal": {
+      "ready": "session ready — rendering UI",
+      "lines": [
+        "mount /portfolio --secure",
+        "verify signature · ed25519 ok",
+        "hydrate react tree",
+        "link next.js app router",
+        "sync i18n namespaces",
+        "compile motion timeline"
+      ]
+    }
+  },
   "Capabilities": {
     "status": {
       "proven": "Proven",
@@ -199,7 +216,8 @@
       "email": "Send email",
       "github": "Open GitHub",
       "linkedin": "Open LinkedIn",
-      "resume": "Download CV"
+      "resume": "Download CV",
+      "bootTerminal": "Replay boot"
     }
   },
   "ProductPreview": {

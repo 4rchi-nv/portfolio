@@ -185,6 +185,18 @@ export function CommandPalette() {
             } satisfies CommandItem,
           ]
         : []),
+      {
+        id: "boot-terminal",
+        label: t("commands.bootTerminal"),
+        hint: "?boot=1",
+        group: t("groups.actions"),
+        run: () => {
+          setOpen(false);
+          const url = new URL(window.location.href);
+          url.searchParams.set("boot", "1");
+          window.location.assign(url.toString());
+        },
+      },
     ];
   }, [t, mode, setMode, locale, pathname, router]);
 

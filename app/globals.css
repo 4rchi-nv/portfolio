@@ -18,7 +18,7 @@
   --glass-bg: rgba(255, 255, 255, 0.055);
   --glass-bg-hover: rgba(255, 255, 255, 0.1);
   --glass-bg-dense: rgba(255, 255, 255, 0.085);
-  --glass-bg-nav: rgba(14, 16, 24, 0.55);
+  --glass-bg-nav: rgba(14, 16, 24, 0.42);
   --glass-border: rgba(255, 255, 255, 0.12);
   --glass-border-strong: rgba(255, 255, 255, 0.2);
   --glass-highlight: rgba(255, 255, 255, 0.14);
@@ -73,13 +73,12 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: clip;
   max-width: 100%;
+  /* No overflow-x here: clip/hidden on html|body breaks backdrop-filter (Chromium). */
 }
 
 body {
   max-width: 100%;
-  overflow-x: clip;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
@@ -202,11 +201,12 @@ body {
 }
 
 .glass-nav {
+  position: relative;
   background: var(--glass-bg-nav);
   border: 1px solid var(--glass-border);
   box-shadow: var(--shadow-md), var(--glass-inset);
-  backdrop-filter: blur(var(--blur-nav)) saturate(1.35);
   -webkit-backdrop-filter: blur(var(--blur-nav)) saturate(1.35);
+  backdrop-filter: blur(var(--blur-nav)) saturate(1.35);
 }
 
 .glass-chip {
@@ -380,22 +380,21 @@ body {
 .tab-bar {
   position: fixed;
   z-index: 100;
+  left: 0;
+  right: 0;
   bottom: max(0.7rem, env(safe-area-inset-bottom));
   width: min(34rem, calc(100% - 1.25rem));
+  margin-inline: auto;
   padding: 0.35rem;
   border-radius: 1.45rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  background:
-    linear-gradient(
-      180deg,
-      rgba(18, 20, 28, 0.82) 0%,
-      rgba(10, 12, 18, 0.94) 100%
-    );
+  /* Keep alpha low enough for blur to read; transform on this node breaks backdrop-filter. */
+  background: rgba(12, 14, 22, 0.46);
   box-shadow:
     0 14px 40px rgba(0, 0, 0, 0.45),
     inset 0 1px 0 rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(22px) saturate(1.35);
-  -webkit-backdrop-filter: blur(22px) saturate(1.35);
+  -webkit-backdrop-filter: blur(24px) saturate(1.4);
+  backdrop-filter: blur(24px) saturate(1.4);
 }
 
 .tab-bar__list {
@@ -786,5 +785,215 @@ html.has-custom-cursor * {
 
   .preview-cursor__pulse {
     animation: none;
+  }
+}
+
+/* ——— Boot / preloader ——— */
+
+html.boot-pending,
+html.boot-lock {
+  background: #05060a;
+}
+
+html.boot-pending,
+html.boot-lock,
+html.boot-pending body,
+html.boot-lock body {
+  overflow: hidden;
+}
+
+/* Hide real site until React boot finishes (no separate SSR splash). */
+html.boot-pending .site-shell {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+html.boot-done .site-shell {
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.boot-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 40%, rgba(126, 184, 232, 0.1), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 80% 80%, rgba(94, 234, 212, 0.06), transparent 55%),
+    #05060a;
+  color: var(--foreground);
+  transition:
+    opacity 480ms var(--ease-out),
+    visibility 480ms var(--ease-out),
+    filter 480ms var(--ease-out);
+}
+
+.boot-screen--leave {
+  opacity: 0;
+  visibility: hidden;
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.boot-screen__noise {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0.08;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.03) 2px,
+      rgba(255, 255, 255, 0.03) 4px
+    );
+  mix-blend-mode: soft-light;
+}
+
+.boot-screen__vignette {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, 0.55) 100%);
+}
+
+.boot-screen__hint {
+  position: absolute;
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.boot-terminal {
+  position: relative;
+  z-index: 1;
+  width: min(34rem, 100%);
+  overflow: hidden;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(8, 10, 16, 0.88);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.boot-terminal__chrome {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.boot-terminal__dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.boot-terminal__dot:nth-child(1) {
+  background: #ff5f57;
+}
+.boot-terminal__dot:nth-child(2) {
+  background: #febc2e;
+}
+.boot-terminal__dot:nth-child(3) {
+  background: #28c840;
+}
+
+.boot-terminal__title {
+  margin-left: 0.5rem;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.boot-terminal__body {
+  min-height: 11rem;
+  padding: 1rem 1.1rem 0.75rem;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+.boot-terminal__line {
+  margin: 0;
+  color: var(--muted-strong);
+}
+
+.boot-terminal__line--ok {
+  color: #9be7c4;
+}
+
+.boot-terminal__prompt {
+  color: var(--accent);
+  margin-right: 0.35rem;
+}
+
+.boot-cursor {
+  display: inline-block;
+  width: 0.55rem;
+  height: 1em;
+  margin-left: 0.15rem;
+  vertical-align: text-bottom;
+  background: var(--accent);
+  animation: boot-blink 0.9s steps(1) infinite;
+}
+
+.boot-terminal__bar {
+  margin: 0 1.1rem;
+  height: 0.35rem;
+  overflow: hidden;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.boot-terminal__fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #5aa7d8, #9be7c4);
+  box-shadow: 0 0 16px rgba(126, 184, 232, 0.35);
+  transition: width 80ms linear;
+}
+
+.boot-terminal__meta {
+  margin: 0.65rem 1.1rem 1rem;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+@keyframes boot-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .boot-cursor {
+    animation: none;
+  }
+
+  .boot-screen--leave {
+    filter: none;
   }
 }

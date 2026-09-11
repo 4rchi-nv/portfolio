@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -6,6 +7,8 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { routing } from "@/i18n/routing";
 import { personName, siteUrl } from "@/data/portfolio-meta";
 import { JsonLd } from "@/components/json-ld";
+import { SitePreloader } from "@/components/site-preloader";
+import { BOOT_GATE_SCRIPT } from "@/lib/preloader";
 import { ogImage } from "@/lib/site-metadata";
 
 const geistSans = Geist({
@@ -108,11 +111,20 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html
       lang={locale}
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="flex min-h-dvh min-w-0 flex-col overflow-x-clip">
+      <body className="flex min-h-dvh min-w-0 flex-col" suppressHydrationWarning>
+        <Script
+          id="portfolio-boot-gate"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: BOOT_GATE_SCRIPT }}
+        />
         <JsonLd locale={locale} description={t("description")} />
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
+          <SitePreloader />
+          <div className="site-shell flex min-h-dvh min-w-0 flex-1 flex-col">
+            {children}
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>

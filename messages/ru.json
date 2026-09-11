@@ -34,6 +34,23 @@
     "more": "Ещё",
     "controls": "Настройки сайта"
   },
+  "Preloader": {
+    "aria": "Загрузка портфолио",
+    "variants": {
+      "terminal": "Terminal boot"
+    },
+    "terminal": {
+      "ready": "session ready — rendering UI",
+      "lines": [
+        "mount /portfolio --secure",
+        "verify signature · ed25519 ok",
+        "hydrate react tree",
+        "link next.js app router",
+        "sync i18n namespaces",
+        "compile motion timeline"
+      ]
+    }
+  },
   "Capabilities": {
     "status": {
       "proven": "Proven",
@@ -199,7 +216,8 @@
       "email": "Написать email",
       "github": "Открыть GitHub",
       "linkedin": "Открыть LinkedIn",
-      "resume": "Скачать CV"
+      "resume": "Скачать CV",
+      "bootTerminal": "Replay boot"
     }
   },
   "ProductPreview": {

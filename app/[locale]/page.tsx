@@ -85,10 +85,11 @@ export default async function Home({ params }: Props) {
 
   return (
     <PortfolioModeProvider>
-      <div className="relative min-h-dvh w-full min-w-0 overflow-x-clip text-[var(--foreground)] selection:bg-[rgba(126,184,232,0.35)] selection:text-slate-50">
+      <div className="relative min-h-dvh w-full min-w-0 text-[var(--foreground)] selection:bg-[rgba(126,184,232,0.35)] selection:text-slate-50">
         <CustomCursor />
         <SiteAtmosphere />
 
+        {/* Header stays outside overflow-x shells so glass backdrop-filter can sample the page. */}
         <div className="relative z-10">
           <SiteHeader navItems={navItems} ctaLabel={tNav("cta")} />
           <CommandPalette />

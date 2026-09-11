@@ -268,7 +268,7 @@ export function SiteHeader({ navItems, ctaLabel }: SiteHeaderProps) {
 
       <nav
         aria-label="Section navigation"
-        className="tab-bar fixed bottom-[max(0.7rem,env(safe-area-inset-bottom))] left-1/2 z-[100] w-[min(34rem,calc(100%-1.25rem))] -translate-x-1/2 rounded-[1.45rem] border border-white/12 p-[0.35rem] lg:hidden"
+        className="tab-bar lg:hidden"
       >
         <ul className="tab-bar__list flex items-stretch justify-between gap-0.5">
           {visibleNav.map((item) => {
