@@ -9,20 +9,224 @@
   },
   "Nav": {
     "impact": "Результаты",
+    "impactShort": "Impact",
+    "map": "Карта",
+    "mapShort": "Map",
     "projects": "Проекты",
+    "projectsShort": "Work",
     "experience": "Опыт",
+    "experienceShort": "XP",
     "certifications": "Сертификаты",
-    "skills": "Навыки",
+    "skills": "Capabilities",
+    "skillsShort": "Stack",
     "contact": "Контакты",
+    "contactShort": "Contact",
     "cta": "Нанять"
   },
+  "Mode": {
+    "label": "Смотреть как",
+    "recruiter": "Recruiter",
+    "engineer": "Engineer",
+    "recruiterShort": "HR",
+    "engineerShort": "Eng"
+  },
+  "Capabilities": {
+    "status": {
+      "proven": "Proven",
+      "active": "Active"
+    }
+  },
+  "EngineeringMap": {
+    "eyebrow": "Systems view",
+    "title": "Engineering Map",
+    "description": "Наведи или тапни ноду для превью. Кликни case-ноду, чтобы перейти к глубокому кейсу.",
+    "hubEyebrow": "Focus",
+    "center": "ARSLAN",
+    "preview": "Превью",
+    "viewCase": "К кейсу →",
+    "noCase": "Кластер компетенций — проходит через несколько проектов.",
+    "idleHint": "Выбери ноду, чтобы увидеть специализацию, стек и перейти к кейсу.",
+    "branches": {
+      "enterprise": {
+        "label": "Enterprise",
+        "nodes": [
+          {
+            "id": "erp",
+            "title": "KIP ERP",
+            "blurb": "Enterprise ERP-фронтенд — архитектура, API-контракты, RBAC и data-heavy grids в production.",
+            "href": "#case-enterpriseErp",
+            "tags": ["Architecture", "API", "RBAC"]
+          },
+          {
+            "id": "finance",
+            "title": "Finance migration",
+            "blurb": "Domain-by-domain cutover Finance с аудитом HTTP-контрактов и регрессионными гейтами.",
+            "href": "#case-enterpriseErp",
+            "tags": ["Finance", "Contracts", "Migration"]
+          },
+          {
+            "id": "grids",
+            "title": "Data grids",
+            "blurb": "Переиспользуемая инфраструктура TanStack Table для dense enterprise-layouts.",
+            "href": "#case-enterpriseErp",
+            "tags": ["TanStack Table", "URL state"]
+          }
+        ]
+      },
+      "web3": {
+        "label": "Web3 / Fintech",
+        "nodes": [
+          {
+            "id": "wallets",
+            "title": "WalletConnect",
+            "blurb": "Wallet-адаптеры и UX подключения для finance-sensitive флоу.",
+            "href": "#case-web3Fintech",
+            "tags": ["WalletConnect", "UX"]
+          },
+          {
+            "id": "tron",
+            "title": "TronLink",
+            "blurb": "Интеграция Tron-кошелька наряду с multi-chain transaction paths.",
+            "href": "#case-web3Fintech",
+            "tags": ["TronLink", "RPC"]
+          },
+          {
+            "id": "tokens",
+            "title": "Token flows",
+            "blurb": "Approve, transfer, балансы и AML-проверки внутри пользовательского journey.",
+            "href": "#case-web3Fintech",
+            "tags": ["Approve", "AML"]
+          }
+        ]
+      },
+      "product": {
+        "label": "Product",
+        "nodes": [
+          {
+            "id": "bunker",
+            "title": "Bunker realtime",
+            "blurb": "Комнаты host/player, приватные карты, game FSM и Firestore sync.",
+            "href": "#case-bunker",
+            "tags": ["Realtime", "FSM", "Firebase"]
+          },
+          {
+            "id": "nova",
+            "title": "Nova ERP demo",
+            "blurb": "Публичное enterprise-демо с RBAC, CRUD-таблицами и переключаемым data layer.",
+            "href": "#projects",
+            "tags": ["FSD", "DataGrid"]
+          }
+        ]
+      },
+      "telegram": {
+        "label": "Telegram",
+        "nodes": [
+          {
+            "id": "webapps",
+            "title": "Telegram WebApps",
+            "blurb": "Продуктовый UI внутри Telegram: игры, field service и OTC-флоу.",
+            "tags": ["WebApps", "Mobile"]
+          },
+          {
+            "id": "bots",
+            "title": "Bot workflows",
+            "blurb": "Bot-side референсы вокруг Telegram product journeys.",
+            "tags": ["Bot API"]
+          }
+        ]
+      },
+      "systems": {
+        "label": "Systems",
+        "nodes": [
+          {
+            "id": "ui-systems",
+            "title": "UI systems",
+            "blurb": "UI в духе design system: Tailwind, shadcn/ui и motion.",
+            "tags": ["Tailwind", "shadcn", "Motion"]
+          },
+          {
+            "id": "infra",
+            "title": "Infrastructure",
+            "blurb": "Деплой и ops-грамотность: Docker, Linux, Nginx, Vercel.",
+            "tags": ["Docker", "Nginx", "Vercel"]
+          }
+        ]
+      }
+    }
+  },
   "Hero": {
-    "viewProjects": "К проектам",
-    "contactMe": "Написать",
+    "viewProjects": "К работам",
+    "contactMe": "Контакт",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "downloadCv": "Скачать CV",
     "profilePhotoAlt": "Арслан Агаджанов, Frontend / Software Engineer"
+  },
+  "CommandPalette": {
+    "title": "Command palette",
+    "open": "Открыть command palette",
+    "openShort": "Поиск",
+    "close": "Закрыть command palette",
+    "hint": "⌘K / Ctrl+K — открыть · Esc — закрыть",
+    "placeholder": "Перейти к секции, кейсу или действию…",
+    "empty": "Ничего не найдено.",
+    "current": "сейчас",
+    "groups": {
+      "navigate": "Навигация",
+      "cases": "Кейсы",
+      "mode": "Режим",
+      "locale": "Язык",
+      "actions": "Действия"
+    },
+    "commands": {
+      "impact": "К Impact",
+      "map": "К Engineering Map",
+      "projects": "К проектам",
+      "experience": "К опыту",
+      "skills": "К Capabilities",
+      "contact": "К контактам",
+      "caseErp": "Открыть ERP-кейс",
+      "caseWeb3": "Открыть Web3 / Fintech кейс",
+      "caseBunker": "Открыть кейс Bunker",
+      "modeEngineer": "Режим Engineer",
+      "modeRecruiter": "Режим Recruiter",
+      "localeEn": "Язык: English",
+      "localeRu": "Язык: Русский",
+      "email": "Написать email",
+      "github": "Открыть GitHub",
+      "linkedin": "Открыть LinkedIn"
+    }
+  },
+  "ProductPreview": {
+    "label": "Превью интерфейса",
+    "caption": "Короткий loop dense ERP finance-grid — фильтр, сортировка, drawer.",
+    "filterChip": "Status: Open",
+    "columnsChip": "Columns",
+    "newButton": "New invoice",
+    "colId": "ID",
+    "colParty": "Контрагент",
+    "colAmount": "Сумма",
+    "colStatus": "Статус",
+    "drawerTitle": "Edit invoice",
+    "drawerAction": "Save draft",
+    "steps": {
+      "scan": "Обзор таблицы",
+      "filter": "Фильтр",
+      "sort": "Сортировка",
+      "drawer": "Drawer"
+    }
+  },
+  "CurrentStatus": {
+    "badge": "Open to work",
+    "focusLabel": "Сейчас",
+    "title": "Remote Frontend / Software Engineer роли",
+    "description": "Открыт к удалённой полной занятости и проектной работе: enterprise React/Next.js, ERP-миграции, fintech/Web3 фронтенд.",
+    "chips": [
+      "Remote",
+      "Full-time",
+      "Project-based",
+      "Enterprise frontend"
+    ]
   },
   "Aside": {
     "positioning": "Позиционирование",
@@ -49,16 +253,16 @@
     "experienceDescription": "Enterprise ERP, финтех и продуктовый фронтенд в международных и распределённых командах.",
     "certificationsEyebrow": "Сертификаты",
     "certificationsTitle": "Курсы и профессиональное развитие",
-    "skillsEyebrow": "Стек",
-    "skillsTitle": "Technical Expertise",
+    "skillsEyebrow": "Capabilities",
+    "skillsTitle": "Capability matrix",
     "contactEyebrow": "Контакты",
     "contactTitle": "Контакты",
     "contactDescription": "Открыт к ролям Frontend Engineer, Senior Frontend Developer и Software Engineer. Удалённая полная занятость и проектная работа."
   },
   "Projects": {
-    "eyebrow": "Избранные проекты",
-    "title": "Selected Projects",
-    "description": "Production ERP и финтех-системы, API-driven интерфейсы на React, а также отдельные публичные продукты на Next.js и TypeScript.",
+    "eyebrow": "Инженерные кейсы",
+    "title": "Engineering Cases",
+    "description": "Глубокие frontend-кейсы: проблема, архитектура, ключевые решения и ownership — плюс компактный registry остальных проектов.",
     "gamesIntro": "Отдельное направление — интерактивные приложения на Next.js: от полностью клиентского offline-first приложения до realtime-синхронизации с приватным состоянием игроков.",
     "filterAll": "Все",
     "empty": "В этой категории пока нет проектов.",
@@ -72,6 +276,28 @@
       "Landing": "Лендинг",
       "Bot": "Бот"
     }
+  },
+  "EngineeringCase": {
+    "problem": "Задача",
+    "owned": "За что отвечал",
+    "architecture": "Архитектура",
+    "decisions": "Ключевые решения",
+    "impact": "Impact",
+    "stack": "Стек",
+    "standing": "Где сейчас"
+  },
+  "ProjectRegistry": {
+    "eyebrow": "Остальные проекты",
+    "title": "Project Registry",
+    "description": "Дополнительная поставка — публичные демо, коммерческие продукты и NDA-проекты в компактном виде, чтобы кейсы оставались читаемыми.",
+    "colProject": "Проект",
+    "colType": "Тип",
+    "colRole": "Роль",
+    "colStack": "Стек",
+    "colStatus": "Статус",
+    "statusLive": "Live",
+    "statusUnavailable": "Демо офлайн",
+    "open": "Открыть →"
   },
   "ProjectCard": {
     "featured": "Избранное",
@@ -118,9 +344,11 @@
       "summary": "Frontend / Software Engineer с 6+ годами опыта: production-приложения на React, Next.js и TypeScript для enterprise ERP, финтеха и API-driven систем."
     },
     "hero": {
-      "title": "Frontend / Software Engineer",
-      "stack": "React · Next.js · TypeScript · Enterprise · ERP · Fintech",
-      "subtitle": "6+ лет в production-фронтенде: enterprise-приложения, ERP-сценарии, финтех-операции и API-driven продукты на React, Next.js и TypeScript. В работе — фронтенд-архитектура, бизнес-логика, HTTP-контракты и интеграция с бэкендом."
+      "eyebrow": "Frontend / Senior Software Engineer",
+      "title": "Frontend beyond the UI.",
+      "stack": "Строю React и Next.js продукты, где фронтенд — это архитектура, бизнес-логика, интеграции и ownership.",
+      "subtitle": "Enterprise-системы, fintech-интеграции и data-heavy приложения — от API-контрактов до production.",
+      "statusBadge": "Open to remote"
     },
     "aboutParagraphs": [
       "Я Frontend / Software Engineer с 6+ годами опыта в production-приложениях на React, Next.js и TypeScript: enterprise-софт, ERP и финтех.",
@@ -205,7 +433,51 @@
     "projects": {
       "enterpriseErp": {
         "name": "Enterprise ERP Frontend",
-        "whatItIs": "Production мультимодульный ERP · Next.js · TypeScript · REST API",
+        "whatItIs": "Enterprise management platform — мультимодульный ERP-фронтенд для Finance, Warehouse, HR и операций.",
+        "role": "Lead frontend / architecture",
+        "status": "Production · NDA",
+        "domains": [
+          "Frontend Architecture",
+          "ERP",
+          "Finance",
+          "HR",
+          "Warehouse"
+        ],
+        "problem": "Legacy-фронтенд, несколько backend-доменов, сложные permissions, финансовые workflow и большой объём data-heavy CRUD — при этом production-система должна продолжать работать.",
+        "owned": [
+          "Frontend architecture",
+          "API contracts",
+          "Auth / RBAC",
+          "Finance migration",
+          "Complex data grids",
+          "Production deployment"
+        ],
+        "decisions": [
+          {
+            "title": "ERP API стал source of truth",
+            "body": "UI-модели перестали зеркалить transport DTO. Адаптеры изолируют эволюцию backend-контрактов от доменных моделей, чтобы Finance и другие модули мигрировали без переписывания каждого экрана."
+          },
+          {
+            "title": "Server state вынесен из глобальных сторов",
+            "body": "TanStack Query владеет кэшем, инвалидацией и пагинацией. Zustand остаётся для UI/session — без дублирования списков и ручной синхронизации REST с клиентским стейтом."
+          },
+          {
+            "title": "Data grids стали переиспользуемой инфраструктурой",
+            "body": "TanStack Table закрывает dense enterprise-layouts: pinning, resize, ordering, URL-фильтры и permission-aware actions, общие для Finance, Warehouse и HR."
+          },
+          {
+            "title": "Finance мигрировал domain-by-domain",
+            "body": "Cutover шёл модуль за модулем за регрессионными гейтами (MUI-zero / DataGrid-zero). Finance HTTP-контракты были проаудированы end-to-end до ухода трафика с legacy Nest."
+          }
+        ],
+        "impactStats": [
+          { "label": "Операционный scope", "value": "10+ доменов" },
+          { "label": "Finance audit", "value": "13/13" },
+          { "label": "Найдено в контрактах", "value": "46" },
+          { "label": "Regression suite", "value": "710 тестов" }
+        ],
+        "standing": "В production как основной ERP-фронтенд: постепенный вывод legacy, централизованная локализация и продолжающиеся доменные миграции без остановки live-системы.",
+        "dataLayerLabel": "Domain APIs",
         "description": "Крупный production ERP-фронтенд: Finance, Warehouse, HR, Projects, Tasks, офисные/документные workflow, Users, Roles, Permissions и Self-service. Склад покрывает 16+ операционных зон; HR — 20+ разделов досье сотрудника. Data-heavy система: серверная пагинация, фильтры, сортировка, URL-state и CRUD с правами доступа.",
         "contribution": "Вёл миграцию фронтенда с legacy UI/API на Next.js, TypeScript, Tailwind CSS v4, shadcn/ui и TanStack — и UI, и API/data-контракты. Production-интерфейсы на TanStack Table, TanStack Query, React Hook Form, Zod, RBAC, аутентификации, сессиях и загрузке файлов, с постепенным снятием legacy без остановки системы. Аудит Finance HTTP-контрактов (13/13 доменов), разбор production-регрессии маршрутизации на legacy Nest и перевод локализации на централизованную систему.",
         "whyItMatters": "Показывает ownership фронтенд-архитектуры и API-контрактов в enterprise ERP: гейты MUI-zero / DataGrid-zero, 46 некорректных Finance-контрактов и 8 P0 до cutover, регрессия до 710 зелёных тестов."
@@ -213,13 +485,56 @@
       "spy": {
         "name": "Шпион — offline-first приложение",
         "whatItIs": "Интерактивное веб-приложение · offline-first · клиентская логика",
+        "role": "Full-stack frontend",
         "description": "Мобильное интерактивное приложение для компании без регистрации и сервера: один телефон передаётся по кругу, игроки раскрывают карты, обсуждают ассоциации и голосуют. Вся игровая логика, таймер, база слов и прогресс работают на клиенте.",
         "contribution": "Полный клиентский цикл: настройка партии, генерация ролей, pass-the-phone UX, Classic/Hardcore, 3D flip-card, таймер, голосование, база слов с JSON import/export и localStorage persistence с SSR-safe гидратацией.",
         "whyItMatters": "Показывает умение проектировать игровой цикл, приватное состояние, mobile-first UX и стабильную работу без backend-зависимостей."
       },
       "bunker": {
-        "name": "Бункер — realtime multiplayer приложение",
-        "whatItIs": "Realtime-приложение · host/player · синхронизация состояния",
+        "name": "Бункер — realtime multiplayer",
+        "whatItIs": "Realtime product frontend — комнаты host/player, приватные карты и синхронизированное игровое состояние.",
+        "role": "Frontend / product owner",
+        "status": "Live · публичное демо",
+        "domains": [
+          "Realtime UI",
+          "Game FSM",
+          "Private state",
+          "Firebase"
+        ],
+        "problem": "Мультиплееру нужен хост, управляющий раундами и сценариями, и игроки с приватными полями карт до reveal — с надёжным sync, без хрупкого самописного websocket-стека.",
+        "owned": [
+          "Модель комнаты",
+          "Host / player UX",
+          "Game FSM",
+          "Private vs public state",
+          "AI scenario import"
+        ],
+        "decisions": [
+          {
+            "title": "Firestore как realtime-шина",
+            "body": "Подписки на комнату синхронизируют публичное состояние между устройствами. Без отдельного websocket-сервера — фокус на правилах продукта и UX."
+          },
+          {
+            "title": "Приватные поля не уходят владельцу чужих экранов",
+            "body": "Секретные поля карты моделируются как private до явного reveal. Остальные игроки получают только публичное состояние комнаты."
+          },
+          {
+            "title": "Явная game FSM",
+            "body": "Раунды, события, голосование и финал — переходы state machine, а не набор флагов, чтобы действия хоста и UI оставались согласованными при гонках обновлений."
+          },
+          {
+            "title": "AI-сценарии как валидируемый pipeline",
+            "body": "Промпт → scenario JSON → parser → validation → play. Невалидный импорт падает рано, а не ломает живую комнату."
+          }
+        ],
+        "impactStats": [
+          { "label": "Роли", "value": "Host + player" },
+          { "label": "Синхронизация", "value": "Realtime" },
+          { "label": "Состояние", "value": "FSM" },
+          { "label": "Демо", "value": "Public" }
+        ],
+        "standing": "Публичное демо на Vercel с открытым кодом: комнаты, управление хоста, приватные карты и AI-friendly импорт сценариев.",
+        "dataLayerLabel": "Слои состояния",
         "description": "Онлайн-приложение с комнатами, ролью ведущего, realtime-синхронизацией и скрытыми карточками участников. Хост импортирует AI-сценарий, управляет раундами, событиями, голосованиями и финальной историей.",
         "contribution": "Модель комнаты в Firestore с realtime-подпиской, разделение host/player UI и полный игровой FSM. Приватные поля карточки скрыты от других игроков до раскрытия, публичное состояние синхронизируется в комнате. AI-friendly workflow: промпт → сценарий → parser → валидация → игра.",
         "whyItMatters": "Realtime multiplayer, game state machine, приватные/публичные состояния и AI-friendly импорт сценариев без перегруженного backend."
@@ -227,13 +542,57 @@
       "tWhale": {
         "name": "T-Whale",
         "whatItIs": "Telegram WebApp · игровая прогрессия",
+        "role": "Frontend",
         "description": "Telegram WebApp-игра с механикой прогрессии и пользовательскими сценариями внутри чата. Продукт ориентирован на удержание и повторные сессии в экосистеме Telegram.",
         "contribution": "Фронтенд, пользовательские флоу и интеграционные части Telegram WebApp: экраны прогрессии, состояние и связка с bot/backend-логикой.",
         "whyItMatters": "Практическая поставка в Telegram ecosystem с реальными циклами взаимодействия."
       },
       "web3Fintech": {
         "name": "Web3 / Финтех / AML-сценарии",
-        "whatItIs": "Web3 + финтех · wallet & transaction flows",
+        "whatItIs": "Wallet и transaction frontend для finance-sensitive Web3-продуктов с compliance-проверками.",
+        "role": "Frontend · integrations",
+        "status": "Shipped · NDA",
+        "domains": [
+          "Web3",
+          "Fintech",
+          "Wallets",
+          "AML",
+          "Transaction UX"
+        ],
+        "problem": "Пользователь должен подключить кошелёк, сделать approve и провести перевод между сетями — при этом UI ясно показывает риски, AML-проверки и ошибки, без небезопасных дефолтов.",
+        "owned": [
+          "WalletConnect / TronLink",
+          "Balance & approve flows",
+          "Transaction UX",
+          "Интеграция AML",
+          "Multi-chain RPC"
+        ],
+        "decisions": [
+          {
+            "title": "Wallet-адаптеры на границе",
+            "body": "WalletConnect и TronLink спрятаны за тонким adapter-слоем: экраны работают со стабильным frontend-контрактом, а не с vendor-specific API."
+          },
+          {
+            "title": "Approve и send — явные шаги",
+            "body": "Token approve и transfer разделены на подтверждаемые шаги со статусами — меньше случайных double-submit и непрозрачных ошибок кошелька."
+          },
+          {
+            "title": "AML внутри пользовательского journey",
+            "body": "Результаты compliance — часть флоу, а не боковая панель после факта: blocked/flagged состояния видны до необратимых действий в сети."
+          },
+          {
+            "title": "Различия сетей остаются в инфраструктуре",
+            "body": "Детали Ethereum / Tron / BSC RPC живут в shared helpers, а продуктовые экраны остаются про домен: балансы, переводы, compliance."
+          }
+        ],
+        "impactStats": [
+          { "label": "Кошельки", "value": "WC + TronLink" },
+          { "label": "Сети", "value": "ETH · Tron" },
+          { "label": "Sensitive UX", "value": "AML-aware" },
+          { "label": "Доступ", "value": "NDA" }
+        ],
+        "standing": "Поставлено в коммерческих fintech/Web3-продуктах под NDA — паттерны переиспользуются для connect, approve, transfer и compliance UI.",
+        "dataLayerLabel": "Ops & checks",
         "description": "Фронтенд-сценарии для продуктов с кошельком, транзакциями и compliance-проверками. Фокус — безопасный UX вокруг чувствительных финансовых операций.",
         "contribution": "Подключение кошельков (WalletConnect, TronLink), балансы, транзакции и token approve для Tron/Ethereum, интеграция AML/blockchain checks во фронтенд-флоу.",
         "whyItMatters": "Опыт в finance-sensitive и blockchain-integrated user journeys."
@@ -241,6 +600,7 @@
       "nova": {
         "name": "Nova Engineering ERP",
         "whatItIs": "Публичное демо ERP · промышленная автоматизация · АСУ ТП / SCADA / MES",
+        "role": "Frontend architecture",
         "description": "Публичное демо ERP для инжиниринговой компании: 10 модулей с ролевым доступом (7 ролей), дашборд с метриками и графиками, CRUD-таблицы на MUI X DataGrid с серверной пагинацией, сортировкой, фильтрами и поиском, i18n RU/EN. Это демонстрационный продукт, отдельно от production ERP-кейса выше.",
         "contribution": "Архитектура на Feature-Sliced Design с переключаемым слоем данных: один контракт, две реализации — mock-бэкенд (seed + localStorage) и реальный REST API без изменения UI. Ролевой доступ, учёт проектов и оборудования, сертификаты и экспорт отчётов, SSR CSS-in-JS без ошибок гидратации.",
         "whyItMatters": "Публичный референс enterprise-фронтенда: RBAC, CRUD-таблицы и переключаемый REST-слой данных, а не маркетинговая страница."
@@ -248,6 +608,7 @@
       "itdealgroup": {
         "name": "ITDEAL — корпоративный сайт",
         "whatItIs": "Корпоративный сайт · каталог кейсов · B2B",
+        "role": "Frontend",
         "description": "Production-сайт ITDEAL (Кишинёв): студия делает CRM/ERP, Telegram-ботов, AI и blockchain-продукты. На сайте — услуги, 4-шаговый процесс, каталог кейсов с фильтрами и форма заявки, RU/EN.",
         "contribution": "Фронтенд корпоративного сайта, в первую очередь секция кейсов: карточки, фильтры по категориям, «загрузить ещё», адаптив и более понятная навигация по коммерческим проектам.",
         "whyItMatters": "Живой B2B-сайт с реальным каталогом кейсов, а не шаблонный лендинг."
@@ -255,6 +616,7 @@
       "trustpay": {
         "name": "TrustPay",
         "whatItIs": "Финтех-веб-продукт · payment-oriented UI",
+        "role": "Frontend",
         "description": "Финтех-фронтенд периода Itdeal: payment-ориентированные экраны и UI вокруг API-сценариев оплаты. Публичный URL больше не открывается, поэтому live-демо сейчас нет.",
         "contribution": "Публичный фронтенд: структура экранов, адаптив и UI вокруг payment/API-сценариев.",
         "whyItMatters": "Коммерческий финтех-UI в платёжном продукте — кейс остаётся в портфолио, даже если демо сейчас офлайн."
@@ -262,6 +624,7 @@
       "dezv3": {
         "name": "WorkDez — приложение для мастеров дезинфекции",
         "whatItIs": "Field-service приложение · Telegram WebApp · заявки",
+        "role": "Frontend",
         "description": "WorkDez — агрегатор для мастеров дезинфекции по России: входящие заказы, очередь задач (позвонить клиенту, начать, отчитаться, оплатить, завершить), кошелёк и средний чек, график работы, рейтинг и вход по телефону. Работает как мобильное веб-приложение и Telegram WebApp.",
         "contribution": "Фронтенд приложения мастера: регистрация/логин, список задач и действия по заказу, кошелёк/баланс, график, оболочка Telegram WebApp и деплой на Firebase Hosting.",
         "whyItMatters": "Реальный операционный продукт: полевые флоу, денежный UI и поставка в Telegram — не маркетинговая страница."
@@ -269,6 +632,7 @@
       "mosca": {
         "name": "Bitex — OTC-обмен USDT",
         "whatItIs": "Telegram WebApp · наличные RUB ↔ USDT · AML",
+        "role": "Frontend",
         "description": "OTC-стол в Москве: купить/продать USDT за наличные рубли, 24/7, «стол в стол» (без хранения средств клиента), курс, заявки, AML-проверка, реферальная программа и пропуск в офис через бота.",
         "contribution": "Фронтенд Telegram WebApp: главная, обмен, курс, заявки, о нас, AML и рефералка на React/MUI, интеграция Telegram Web Apps и Firebase Hosting.",
         "whyItMatters": "Живой финтех-WebApp с compliance (AML) и транзакционным UX, а не лендинг."
@@ -276,6 +640,7 @@
       "aviaLanding": {
         "name": "avia-landing.vercel.app",
         "whatItIs": "Промо-лендинг · aviation service",
+        "role": "Frontend",
         "description": "Лендинг для презентации сервиса и сбора пользовательского интереса. Основной фокус — чистый responsive UI, быстрая загрузка, понятная структура контента и production-деплой.",
         "contribution": "Структура страницы, визуальная композиция, адаптивная вёрстка и подготовка к публичному деплою на Vercel.",
         "whyItMatters": "Дополняет product work аккуратной landing execution и deploy-ready frontend."
@@ -283,6 +648,7 @@
       "telegramBots": {
         "name": "Референсы Telegram-ботов",
         "whatItIs": "Бот-сценарии вокруг Telegram",
+        "role": "Bot workflows",
         "description": "Вспомогательные бот-референсы, связанные с Telegram-флоу.",
         "contribution": "Реализация и сопровождение бот-функциональности для проектных и тестовых сценариев.",
         "whyItMatters": "Понимание экосистемы Telegram шире, чем только UI."
@@ -291,7 +657,7 @@
     "experience": [
       {
         "company": "Мультимодульный Enterprise ERP",
-        "role": "Frontend / Software Engineer",
+        "role": "Frontend / Senior Software Engineer",
         "period": "NDA / production-система",
         "location": "Удалённо · международная команда",
         "domain": "Enterprise-софт · ERP · Финтех · SaaS",
@@ -320,7 +686,7 @@
       },
       {
         "company": "Itdeal",
-        "role": "Frontend-разработчик (Middle)",
+        "role": "Frontend-разработчик (Middle+)",
         "period": "июл. 2024 — мар. 2026",
         "location": "Кишинёв, Молдова / удалённо / распределённая команда",
         "url": "https://itdealgroup.com",
@@ -408,13 +774,12 @@
       }
     ],
     "skills": {
-      "frontend": "Frontend Engineering",
-      "uiForms": "UI & Forms",
-      "architecture": "Architecture & Integration",
-      "state": "State Management",
-      "backend": "Backend Exposure",
-      "infrastructure": "Infrastructure",
-      "platforms": "Platforms & Integrations"
+      "architecture": "Frontend Architecture",
+      "dataState": "Data & State",
+      "ui": "UI Engineering",
+      "forms": "Forms & Validation",
+      "integrations": "Integrations",
+      "engineering": "Engineering"
     }
   }
 }

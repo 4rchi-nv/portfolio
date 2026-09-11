@@ -6,10 +6,12 @@ import { staggerItemProps } from "@/lib/motion";
 import { useIsMobile } from "@/hooks/use-is-mobile";
 
 type HeroBlockProps = {
+  eyebrow: string;
   location: string;
   title: string;
   stack: string;
   subtitle: string;
+  statusBadge: string;
   viewProjects: string;
   contactMe: string;
   githubLabel: string;
@@ -25,10 +27,12 @@ type HeroBlockProps = {
 };
 
 export function HeroBlock({
+  eyebrow,
   location,
   title,
   stack,
   subtitle,
+  statusBadge,
   viewProjects,
   contactMe,
   githubLabel,
@@ -50,32 +54,39 @@ export function HeroBlock({
   return (
     <>
       <div className="min-w-0">
-        <motion.h1
-          className="max-w-3xl text-balance break-words text-3xl font-semibold tracking-tight text-[var(--foreground)] md:text-5xl md:leading-[1.05]"
+        <motion.p
+          className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]"
           {...p(0)}
+        >
+          {eyebrow}
+        </motion.p>
+        <motion.h1
+          className="mt-3 max-w-3xl text-balance break-words text-3xl font-semibold tracking-tight text-[var(--foreground)] md:text-5xl md:leading-[1.05]"
+          {...p(1)}
         >
           {title}
         </motion.h1>
         <motion.p
           className="mt-4 max-w-2xl text-base font-medium leading-relaxed text-[var(--muted-strong)] md:text-lg"
-          {...p(1)}
+          {...p(2)}
         >
           {stack}
         </motion.p>
         <motion.p
           className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--muted)] md:text-base"
-          {...p(2)}
+          {...p(3)}
         >
           {subtitle}
         </motion.p>
-        <motion.p
-          className="mt-3 text-xs text-[var(--muted)]"
-          {...p(3)}
-        >
-          {location}
-        </motion.p>
+        <motion.div className="mt-4 flex flex-wrap items-center gap-3" {...p(4)}>
+          <span className="status-pulse inline-flex items-center gap-2 rounded-full border border-[rgba(94,234,212,0.28)] bg-[rgba(94,234,212,0.08)] px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#b6f5e8]">
+            <span aria-hidden className="status-pulse__dot" />
+            {statusBadge}
+          </span>
+          <span className="text-xs text-[var(--muted)]">{location}</span>
+        </motion.div>
 
-        <motion.div className="mt-8 flex flex-wrap gap-3" {...p(4)}>
+        <motion.div className="mt-8 flex flex-wrap gap-3" {...p(5)}>
           <a className="btn-primary" href="#projects">
             {viewProjects}
           </a>
@@ -116,7 +127,7 @@ export function HeroBlock({
             <motion.li
               key={fact}
               className="glass-chip rounded-[var(--radius-md)] px-3.5 py-2.5 break-words hyphens-auto text-[var(--muted-strong)]"
-              {...p(5 + i)}
+              {...p(6 + i)}
             >
               {fact}
             </motion.li>
@@ -126,7 +137,7 @@ export function HeroBlock({
 
       <motion.aside
         className="glass-dense min-w-0 rounded-[var(--radius-xl)] p-5 md:p-7"
-        {...staggerItemProps(5 + recruiterFacts.length, isMobile, reduced)}
+        {...staggerItemProps(6 + recruiterFacts.length, isMobile, reduced)}
       >
         <div className="mb-5 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--glass-border)] shadow-[var(--shadow-md)]">
           <Image

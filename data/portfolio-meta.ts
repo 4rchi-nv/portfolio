@@ -26,15 +26,31 @@ export type ProjectTag =
 
 export type ProjectLinkStatus = "live" | "nda" | "demoUnavailable";
 
+export type ArchitectureFlowNode = {
+  id: string;
+  label: string;
+  subtitle?: string;
+};
+
+export type ArchitectureMeta = {
+  flow: ArchitectureFlowNode[];
+  dataLayer?: string[];
+};
+
 export interface ProjectMeta {
   key: string;
   tag: ProjectTag;
   featured?: boolean;
+  /** Deep engineering case study (P0 selected work). */
+  caseStudy?: boolean;
   href?: string;
   githubUrl?: string;
   image?: string;
   linkStatus?: ProjectLinkStatus;
   stack: string[];
+  architecture?: ArchitectureMeta;
+  /** Primary language/runtime badge on the case header. */
+  language?: string;
 }
 
 /** Set when `public/resume.pdf` (or custom name) is added. */
@@ -45,7 +61,9 @@ export const projectOrder: ProjectMeta[] = [
     key: "enterpriseErp",
     tag: "Enterprise",
     featured: true,
+    caseStudy: true,
     linkStatus: "nda",
+    language: "TypeScript",
     stack: [
       "Next.js",
       "Next.js App Router",
@@ -58,6 +76,19 @@ export const projectOrder: ProjectMeta[] = [
       "Zod",
       "REST API",
     ],
+    architecture: {
+      flow: [
+        { id: "browser", label: "Browser", subtitle: "Operators · RBAC UI" },
+        { id: "next", label: "Next.js", subtitle: "App Router · forms · grids" },
+        {
+          id: "query",
+          label: "TanStack Query",
+          subtitle: "Server state · cache",
+        },
+        { id: "api", label: "ERP API", subtitle: "Auth · RBAC · domains" },
+      ],
+      dataLayer: ["Finance", "Warehouse", "HR", "Projects", "Office"],
+    },
   },
   {
     key: "spy",
@@ -80,7 +111,9 @@ export const projectOrder: ProjectMeta[] = [
     key: "bunker",
     tag: "Interactive Apps",
     featured: true,
+    caseStudy: true,
     linkStatus: "live",
+    language: "TypeScript",
     href: "https://bunker-glhf.vercel.app",
     githubUrl: "https://github.com/4rchi-nv/bunker-game",
     stack: [
@@ -93,6 +126,23 @@ export const projectOrder: ProjectMeta[] = [
       "Game FSM",
       "Vercel",
     ],
+    architecture: {
+      flow: [
+        { id: "host", label: "Host UI", subtitle: "Scenario · rounds" },
+        { id: "player", label: "Player UI", subtitle: "Private cards" },
+        {
+          id: "fsm",
+          label: "Game FSM",
+          subtitle: "Rounds · votes · reveal",
+        },
+        {
+          id: "firestore",
+          label: "Firestore",
+          subtitle: "Realtime room state",
+        },
+      ],
+      dataLayer: ["Public state", "Private fields", "AI scenario import"],
+    },
   },
   {
     key: "tWhale",
@@ -104,8 +154,27 @@ export const projectOrder: ProjectMeta[] = [
     key: "web3Fintech",
     tag: "Web3",
     featured: true,
+    caseStudy: true,
     linkStatus: "nda",
+    language: "TypeScript",
     stack: ["React", "TypeScript", "WalletConnect", "TronLink", "REST API"],
+    architecture: {
+      flow: [
+        { id: "user", label: "User", subtitle: "Wallet intent" },
+        {
+          id: "app",
+          label: "Next.js / React",
+          subtitle: "Transaction UX",
+        },
+        {
+          id: "wallets",
+          label: "Wallets",
+          subtitle: "WalletConnect · TronLink",
+        },
+        { id: "chain", label: "RPC / Chain", subtitle: "ETH · Tron · BSC" },
+      ],
+      dataLayer: ["Balances", "Approve", "AML checks", "Backend"],
+    },
   },
   {
     key: "nova",
@@ -182,55 +251,67 @@ export const projectOrder: ProjectMeta[] = [
 ];
 
 export const skillGroupOrder = [
-  "frontend",
-  "uiForms",
   "architecture",
-  "state",
-  "backend",
-  "infrastructure",
-  "platforms",
+  "dataState",
+  "ui",
+  "forms",
+  "integrations",
+  "engineering",
 ] as const;
 
 export type SkillGroupKey = (typeof skillGroupOrder)[number];
 
 export const skillItems: Record<SkillGroupKey, string[]> = {
-  frontend: [
-    "React",
+  architecture: [
+    "React 19",
     "Next.js",
-    "Next.js App Router",
+    "App Router",
+    "RSC",
+    "SSR / ISR",
     "TypeScript",
-    "JavaScript",
+  ],
+  dataState: [
     "TanStack Query",
     "TanStack Table",
+    "Zustand",
+    "Redux",
+    "URL state",
   ],
-  uiForms: [
+  ui: [
     "Tailwind CSS",
-    "Tailwind CSS v4",
     "shadcn/ui",
-    "React Hook Form",
-    "Zod",
+    "Radix / Base UI",
     "Framer Motion",
+    "Responsive UI",
   ],
-  architecture: [
-    "REST APIs",
-    "HTTP API contracts",
-    "Authentication",
-    "Sessions",
-    "RBAC",
-    "SSR",
-    "ISR",
-  ],
-  state: ["Zustand", "Redux", "TanStack Query"],
-  backend: ["NestJS", "Prisma", "PostgreSQL"],
-  infrastructure: ["Docker", "Linux", "Nginx", "Git", "Vercel"],
-  platforms: [
-    "Web3 integrations",
-    "Fintech integrations",
-    "Telegram Web Apps",
-    "Firebase",
+  forms: ["React Hook Form", "Zod", "Complex CRUD forms"],
+  integrations: [
+    "REST",
     "GraphQL",
-    "PWA",
+    "WebSocket",
+    "WalletConnect",
+    "TronLink",
+    "Telegram Web Apps",
   ],
+  engineering: [
+    "Vitest",
+    "Cypress",
+    "Docker",
+    "Linux",
+    "Nginx",
+    "Git",
+    "Vercel",
+  ],
+};
+
+/** Optional health label shown on capability cards */
+export const skillGroupStatus: Record<SkillGroupKey, "proven" | "active"> = {
+  architecture: "proven",
+  dataState: "proven",
+  ui: "active",
+  forms: "proven",
+  integrations: "proven",
+  engineering: "active",
 };
 
 export const contacts = {

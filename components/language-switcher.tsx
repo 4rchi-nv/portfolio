@@ -13,7 +13,7 @@ export function LanguageSwitcher() {
     <div
       role="group"
       aria-label={t("label")}
-      className="relative z-[60] isolate inline-flex min-h-11 shrink-0 select-none items-center rounded-full border border-[var(--glass-border)] bg-[rgba(255,255,255,0.05)] p-1 shadow-[var(--glass-inset)] backdrop-blur-[var(--blur-sm)] [touch-action:manipulation]"
+      className="relative isolate inline-flex h-9 shrink-0 select-none items-center rounded-full border border-[var(--glass-border)] bg-[rgba(255,255,255,0.05)] p-0.5 shadow-[var(--glass-inset)] backdrop-blur-[var(--blur-sm)] [touch-action:manipulation]"
     >
       {routing.locales.map((loc) => {
         const active = loc === locale;
@@ -25,7 +25,7 @@ export function LanguageSwitcher() {
               key={loc}
               aria-current="true"
               title={label}
-              className="flex min-h-9 min-w-[3rem] cursor-default items-center justify-center rounded-full bg-[rgba(255,255,255,0.92)] px-3 py-2 text-xs font-semibold tracking-wide text-[#0a0c12] shadow-sm"
+              className="flex h-8 min-w-[2.5rem] cursor-default items-center justify-center rounded-full bg-[rgba(255,255,255,0.92)] px-2.5 text-xs font-semibold tracking-wide text-[#0a0c12] shadow-sm"
             >
               <span className="sr-only">{label}</span>
               <span aria-hidden>{loc.toUpperCase()}</span>
@@ -40,7 +40,7 @@ export function LanguageSwitcher() {
             locale={loc}
             scroll={false}
             title={label}
-            className="flex min-h-9 min-w-[3rem] items-center justify-center rounded-full px-3 py-2 text-xs font-semibold tracking-wide text-[var(--muted)] transition-colors hover:bg-[rgba(255,255,255,0.06)] hover:text-[var(--foreground)] active:bg-[rgba(255,255,255,0.08)]"
+            className="flex h-8 min-w-[2.5rem] items-center justify-center rounded-full px-2.5 text-xs font-semibold tracking-wide text-[var(--muted)] transition-colors hover:bg-[rgba(255,255,255,0.06)] hover:text-[var(--foreground)] active:bg-[rgba(255,255,255,0.08)]"
           >
             <span className="sr-only">{label}</span>
             <span aria-hidden>{loc.toUpperCase()}</span>
