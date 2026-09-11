@@ -30,6 +30,10 @@
     "recruiterShort": "HR",
     "engineerShort": "Eng"
   },
+  "Header": {
+    "more": "Ещё",
+    "controls": "Настройки сайта"
+  },
   "Capabilities": {
     "status": {
       "proven": "Proven",

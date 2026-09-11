@@ -95,7 +95,7 @@ export default async function Home({ params }: Props) {
 
           <main
             id="top"
-            className="mx-auto w-full min-w-0 max-w-6xl overflow-x-clip px-4 pb-36 pt-2 sm:px-5 md:px-6 md:pb-36 xl:pb-20"
+            className="mx-auto w-full min-w-0 max-w-6xl overflow-x-clip px-4 pb-[7.5rem] pt-2 sm:px-5 md:px-6 lg:pb-20"
           >
             <PaperSection className="section-wrap section-divider grid items-center gap-8 pt-8 max-md:min-h-0 md:min-h-[min(76vh,920px)] md:grid-cols-[1.1fr_0.9fr] md:gap-10 md:pt-14">
               <HeroBlock

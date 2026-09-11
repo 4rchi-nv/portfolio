@@ -83,43 +83,49 @@ export function HeroBlock({
             <span aria-hidden className="status-pulse__dot" />
             {statusBadge}
           </span>
-          <span className="text-xs text-[var(--muted)]">{location}</span>
+          <span className="hidden text-xs text-[var(--muted)] sm:inline">
+            {location}
+          </span>
         </motion.div>
 
-        <motion.div className="mt-8 flex flex-wrap gap-3" {...p(5)}>
-          <a className="btn-primary" href="#projects">
-            {viewProjects}
-          </a>
-          <a className="btn-secondary" href="#contact">
-            {contactMe}
-          </a>
-          <a
-            className="btn-secondary"
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {githubLabel}
-          </a>
-          <a
-            className="btn-secondary"
-            href={linkedinUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {linkedinLabel}
-          </a>
-          {resumeHref && downloadCvLabel ? (
+        <motion.div className="mt-8 flex flex-col gap-3" {...p(5)}>
+          <div className="grid grid-cols-1 gap-3 min-[420px]:grid-cols-2 sm:flex sm:flex-wrap">
+            <a className="btn-primary w-full sm:w-auto" href="#projects">
+              {viewProjects}
+            </a>
+            <a className="btn-secondary w-full sm:w-auto" href="#contact">
+              {contactMe}
+            </a>
+          </div>
+          <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm">
             <a
-              className="btn-secondary"
-              href={resumeHref}
+              className="font-medium text-[var(--muted-strong)] underline-offset-4 transition-colors hover:text-[var(--foreground)] hover:underline"
+              href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              download
             >
-              {downloadCvLabel}
+              {githubLabel}
             </a>
-          ) : null}
+            <a
+              className="font-medium text-[var(--muted-strong)] underline-offset-4 transition-colors hover:text-[var(--foreground)] hover:underline"
+              href={linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {linkedinLabel}
+            </a>
+            {resumeHref && downloadCvLabel ? (
+              <a
+                className="font-medium text-[var(--accent)] underline-offset-4 transition-colors hover:underline"
+                href={resumeHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
+                {downloadCvLabel}
+              </a>
+            ) : null}
+          </div>
         </motion.div>
 
         <ul className="mt-7 grid gap-2 text-sm text-[var(--muted)] sm:grid-cols-2">

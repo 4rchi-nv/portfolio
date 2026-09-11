@@ -30,6 +30,10 @@
     "recruiterShort": "HR",
     "engineerShort": "Eng"
   },
+  "Header": {
+    "more": "More controls",
+    "controls": "Site controls"
+  },
   "Capabilities": {
     "status": {
       "proven": "Proven",
