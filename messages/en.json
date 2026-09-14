@@ -1,11 +1,11 @@
 {
   "Meta": {
-    "title": "Arslan Agajanov — Frontend / Software Engineer | React, Next.js, TypeScript",
-    "description": "Frontend / Software Engineer with 6+ years building production React, Next.js and TypeScript applications across enterprise ERP, fintech, and API-driven systems.",
-    "ogTitle": "Arslan Agajanov — Frontend / Software Engineer | React, Next.js, TypeScript",
-    "ogDescription": "Frontend / Software Engineer specializing in React, Next.js and TypeScript for enterprise ERP, fintech workflows, and REST API-driven interfaces.",
-    "twitterDescription": "Frontend / Software Engineer — React, Next.js, TypeScript. Enterprise ERP, fintech, and API-driven frontend systems.",
-    "keywords": "Frontend Engineer, Software Engineer, Senior Frontend Developer, React Engineer, Next.js Engineer, TypeScript Engineer, React, Next.js, TypeScript, ERP frontend, enterprise frontend, fintech frontend, REST API"
+    "title": "Arslan Agajanov — Software Engineer | React, Next.js, NestJS, TypeScript",
+    "description": "Software Engineer with 6+ years of experience building React, Next.js, NestJS and TypeScript applications across enterprise ERP, fintech and API-driven systems.",
+    "ogTitle": "Arslan Agajanov — Software Engineer | React, Next.js, NestJS, TypeScript",
+    "ogDescription": "Software Engineer specializing in React, Next.js, NestJS and TypeScript for enterprise ERP, fintech workflows, and API-driven systems.",
+    "twitterDescription": "Software Engineer — React, Next.js, NestJS, TypeScript. Enterprise ERP, fintech, and API-driven systems.",
+    "keywords": "Software Engineer, TypeScript Software Engineer, React Software Engineer, Next.js Engineer, NestJS Developer, Node.js Developer, Full Stack TypeScript Engineer, Enterprise Software Engineer, ERP Developer, React Native Developer, React, Next.js, NestJS, TypeScript, PostgreSQL, REST API"
   },
   "Nav": {
     "impact": "Impact",
@@ -74,9 +74,9 @@
           {
             "id": "erp",
             "title": "KIP ERP",
-            "blurb": "Enterprise ERP frontend — architecture, API contracts, RBAC, and data-heavy grids in production.",
+            "blurb": "Multi-module enterprise ERP across frontend and backend — architecture, NestJS APIs, RBAC, and data-heavy workflows.",
             "href": "#case-enterpriseErp",
-            "tags": ["Architecture", "API", "RBAC"]
+            "tags": ["Architecture", "NestJS", "RBAC"]
           },
           {
             "id": "finance",
@@ -181,7 +181,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "downloadCv": "Download CV",
-    "profilePhotoAlt": "Arslan Agajanov, Frontend / Software Engineer"
+    "profilePhotoAlt": "Arslan Agajanov, Software Engineer"
   },
   "CommandPalette": {
     "title": "Command palette",
@@ -242,24 +242,24 @@
   "CurrentStatus": {
     "badge": "Open to work",
     "focusLabel": "Current focus",
-    "title": "Remote Frontend / Software Engineer roles",
-    "description": "Available for remote full-time and project work on enterprise React/Next.js products, ERP migrations, and fintech/Web3 frontend systems.",
+    "title": "Remote Software Engineer roles",
+    "description": "Available for remote full-time and project work on enterprise React/Next.js/NestJS products, ERP systems, and fintech/Web3 platforms.",
     "chips": [
       "Remote",
       "Full-time",
       "Project-based",
-      "Enterprise frontend"
+      "Enterprise ERP"
     ],
     "downloadCv": "Download CV"
   },
   "Aside": {
     "positioning": "Positioning",
     "bullets": [
-      "Frontend architecture, business logic, and REST API integrations",
-      "Production React and Next.js applications for ERP and fintech",
-      "Data-heavy CRUD, RBAC, authentication, and complex workflows",
+      "Software engineering across frontend, backend services, and REST APIs",
+      "Production React, Next.js, NestJS and TypeScript systems for ERP and fintech",
+      "Data-heavy CRUD, PostgreSQL, RBAC, authentication, and complex workflows",
       "Large-scale migrations without stopping production systems",
-      "End-to-end ownership of frontend features, including debugging and deployment"
+      "End-to-end ownership — from API contracts and business logic to production UI"
     ]
   },
   "Sections": {
@@ -269,24 +269,24 @@
     "helpTitle": "What I take ownership of",
     "impactEyebrow": "Results",
     "impactTitle": "Engineering Impact",
-    "impactDescription": "Measurable outcomes from a production ERP frontend migration, Finance API-contract audit, localization architecture, and regression gates.",
+    "impactDescription": "Measurable outcomes from a production ERP system migration, Finance API-contract audit, localization architecture, and regression gates.",
     "expertiseEyebrow": "Focus",
     "expertiseTitle": "Engineering focus",
     "experienceEyebrow": "Experience",
     "experienceTitle": "Experience",
-    "experienceDescription": "Enterprise ERP, fintech, and product frontend work with international and distributed teams.",
+    "experienceDescription": "Enterprise ERP, fintech, and product engineering with international and distributed teams.",
     "certificationsEyebrow": "Certifications",
     "certificationsTitle": "Courses and professional development",
     "skillsEyebrow": "Capabilities",
     "skillsTitle": "Capability matrix",
     "contactEyebrow": "Contact",
     "contactTitle": "Contact",
-    "contactDescription": "Available for Frontend Engineer, Senior Frontend Developer, and Software Engineer opportunities. Remote full-time and project work."
+    "contactDescription": "Available for Software Engineer opportunities across React, Next.js, NestJS and TypeScript. Remote full-time and project work."
   },
   "Projects": {
     "eyebrow": "Selected engineering",
     "title": "Engineering Cases",
-    "description": "Deep frontend case studies with problem framing, architecture, key decisions, and measurable ownership — plus a compact registry of the rest.",
+    "description": "Deep engineering case studies with problem framing, architecture, key decisions, and measurable ownership — plus a compact registry of the rest.",
     "gamesIntro": "A separate track is interactive Next.js applications: from a fully client-side offline-first app to realtime state sync with private player state.",
     "filterAll": "All",
     "empty": "No projects in this category yet.",
@@ -365,32 +365,32 @@
   },
   "Portfolio": {
     "person": {
-      "role": "Frontend / Software Engineer",
+      "role": "Software Engineer",
       "location": "Kayseri, Türkiye · Open to remote",
-      "summary": "Frontend / Software Engineer with 6+ years building production React, Next.js and TypeScript applications across enterprise ERP, fintech, and API-driven systems."
+      "summary": "Software Engineer with 6+ years of experience building production web applications, enterprise ERP systems, fintech products and API-driven platforms across frontend and backend layers."
     },
     "hero": {
-      "eyebrow": "Frontend / Senior Software Engineer",
-      "title": "Frontend beyond the UI.",
-      "stack": "I build React and Next.js products where frontend means architecture, business logic, integrations, and ownership.",
-      "subtitle": "Enterprise systems, fintech integrations, and data-heavy applications — from API contracts to production.",
+      "eyebrow": "Full-stack product engineering · Enterprise ERP · Fintech · React Native",
+      "title": "Software Engineer",
+      "stack": "React · Next.js · NestJS · TypeScript",
+      "subtitle": "Software Engineer with 6+ years of experience building production web applications, enterprise ERP systems, fintech products and API-driven platforms across frontend and backend layers. Strongest in React/Next.js and TypeScript, with practical backend experience in NestJS, Node.js, PostgreSQL, authentication, RBAC and complex business workflows.",
       "statusBadge": "Open to remote"
     },
     "aboutParagraphs": [
-      "I am a Frontend / Software Engineer with 6+ years of experience building production React, Next.js, and TypeScript applications across enterprise software, ERP, and fintech.",
-      "The work is not limited to UI. It includes frontend architecture, HTTP/API contracts, backend integration, data-heavy interfaces, authentication and role-based access control, complex CRUD workflows, large-scale migrations, production debugging, and end-to-end ownership of frontend features. English C1. Available for remote full-time and project roles as a Frontend Engineer, Senior Frontend Developer, React Engineer, Next.js Engineer, or Software Engineer."
+      "I’m a Software Engineer with 6+ years of experience building production applications with React, Next.js and TypeScript. My background started primarily in frontend engineering, but my work now spans backend services, REST APIs, PostgreSQL, authentication, RBAC, infrastructure and end-to-end business workflows.",
+      "On a large enterprise ERP, I worked across both frontend and backend layers, taking functionality from data model and API contract through business logic and production UI. English C1. Available for remote full-time and project roles as a Software Engineer."
     ],
     "helpWith": [
-      "Frontend architecture for production React, Next.js, and TypeScript systems",
-      "Enterprise ERP and business-application workflows: warehouse, HR, finance, projects, and permissions",
-      "REST API integrations, HTTP contracts, and request/response auditing",
-      "Fintech interfaces: invoices, payments, expenses, reports, and monetary workflows",
+      "Application architecture for production React, Next.js, NestJS and TypeScript systems",
+      "Enterprise ERP across frontend and backend: Finance, Warehouse, HR, Projects, Users/Roles and permissions",
+      "REST API design and integration, HTTP contracts, PostgreSQL and Prisma-backed services",
+      "Fintech interfaces and workflows: invoices, payments, expenses, reports, and monetary operations",
       "Production migrations, regression gates, and incident debugging without stopping the running application"
     ],
     "recruiterFacts": [
-      "6+ years in frontend development",
-      "Enterprise ERP, fintech, and SaaS interfaces",
-      "API-contract ownership across finance domains",
+      "6+ years in software engineering",
+      "Enterprise ERP, fintech, and API-driven systems",
+      "Frontend + backend ownership across finance domains",
       "Open to remote full-time and project work"
     ],
     "impact": [
@@ -407,7 +407,7 @@
       {
         "value": "46",
         "label": "incorrect API contracts identified",
-        "context": "Frontend HTTP contracts that did not match the ERP Finance API."
+        "context": "HTTP contracts that did not match the ERP Finance API."
       },
       {
         "value": "22",
@@ -437,15 +437,15 @@
       },
       {
         "title": "Enterprise ERP",
-        "text": "Multi-module ERP frontends covering Finance, Warehouse, HR, Projects, Tasks, office workflows, users, roles, permissions, and self-service."
+        "text": "Multi-module enterprise ERP across frontend and backend layers — Finance, Warehouse, HR, Projects, Tasks, office workflows, users, roles, permissions, and self-service."
       },
       {
         "title": "Fintech workflows",
         "text": "Invoices, estimates, payments, expenses, recurring operations, reports, transactions, and permissioned monetary interfaces."
       },
       {
-        "title": "API contracts & integration",
-        "text": "HTTP request/response models, REST API integration, and frontend contract auditing against NestJS, Prisma, and PostgreSQL-backed services."
+        "title": "Backend & API contracts",
+        "text": "NestJS and Node.js services, REST APIs, Prisma and PostgreSQL data models, plus request/response contract auditing across business domains."
       },
       {
         "title": "Auth, sessions & RBAC",
@@ -458,30 +458,30 @@
     ],
     "projects": {
       "enterpriseErp": {
-        "name": "Enterprise ERP Frontend",
-        "whatItIs": "Enterprise management platform — multi-module ERP frontend for Finance, Warehouse, HR, and operations.",
-        "role": "Lead frontend / architecture",
+        "name": "Enterprise ERP",
+        "whatItIs": "Multi-module enterprise ERP developed across frontend and backend layers — Finance, Warehouse, HR, and operations.",
+        "role": "Software Engineer · frontend & backend",
         "status": "Production · NDA",
         "domains": [
-          "Frontend Architecture",
+          "Software Engineering",
           "ERP",
           "Finance",
           "HR",
           "Warehouse"
         ],
-        "problem": "Legacy frontend, several backend domains, complex permissions, financial workflows, and a large volume of data-heavy CRUD interfaces — all while the production system had to keep running.",
+        "problem": "Legacy UI and API layers, several business domains, complex permissions, financial workflows, and a large volume of data-heavy CRUD — all while the production system had to keep running.",
         "owned": [
-          "Frontend architecture",
-          "API contracts",
+          "Application architecture",
+          "Frontend & backend services",
+          "REST API contracts",
           "Auth / RBAC",
           "Finance migration",
-          "Complex data grids",
           "Production deployment"
         ],
         "decisions": [
           {
             "title": "ERP API became the source of truth",
-            "body": "UI models stopped mirroring transport DTOs. Adapters isolate evolving backend contracts from domain models so Finance and other modules can migrate without rewriting every screen."
+            "body": "UI models stopped mirroring transport DTOs. Adapters isolate evolving NestJS/PostgreSQL-backed contracts from domain models so Finance and other modules can migrate without rewriting every screen."
           },
           {
             "title": "Server state left global stores",
@@ -502,11 +502,11 @@
           { "label": "Contract issues found", "value": "46" },
           { "label": "Regression suite", "value": "710 tests" }
         ],
-        "standing": "In production as the primary ERP frontend: gradual legacy removal, centralized localization, and ongoing domain migrations without stopping the live system.",
+        "standing": "In production as the primary ERP system surface: gradual legacy removal, centralized localization, and ongoing domain migrations without stopping the live system.",
         "dataLayerLabel": "Domain APIs",
-        "description": "A large production ERP frontend spanning Finance, Warehouse, HR, Projects, Tasks, office/document workflows, Users, Roles, Permissions, and Self-service. Warehouse covers 16+ operational areas; HR includes 20+ sections of the employee dossier. The system is data-heavy: server pagination, filtering, sorting, URL state, and permissioned CRUD.",
-        "contribution": "Led the frontend migration from a legacy UI/API architecture to Next.js, TypeScript, Tailwind CSS v4, shadcn/ui, and TanStack — covering both UI and API/data-contract work. Built production interfaces with TanStack Table, TanStack Query, React Hook Form, Zod, RBAC, authentication, sessions, and file uploads, while removing legacy dependencies without stopping the running application. Audited Finance HTTP contracts (13/13 domains), resolved a production routing regression that could send ERP traffic to the legacy Nest backend, and reworked localization into a centralized system.",
-        "whyItMatters": "Shows frontend architecture and API-contract ownership on an enterprise ERP: MUI-zero / DataGrid-zero migration gates, 46 incorrect Finance contracts and 8 P0 issues found before cutover, and regression suites that reached 710 passing tests."
+        "description": "Designed and developed a multi-module enterprise ERP across frontend and backend layers, covering Finance, Warehouse, HR, Projects, Tasks, office/document workflows, Users, Roles, Permissions, and Self-service. Warehouse covers 16+ operational areas; HR includes 20+ sections of the employee dossier. Work spanned Next.js/React UI, NestJS REST APIs, PostgreSQL/Prisma data models, authentication, RBAC, and permissioned CRUD with server pagination, filtering, sorting, and URL state.",
+        "contribution": "Owned end-to-end delivery across application layers: Next.js/TypeScript frontend (TanStack Query/Table, React Hook Form, Zod, Tailwind CSS v4, shadcn/ui) and NestJS/Node.js backend services with Prisma and PostgreSQL — REST API contracts, business logic, authentication, sessions, RBAC, and file uploads. Migrated from a legacy UI/API architecture without stopping production. Audited Finance HTTP contracts (13/13 domains), resolved a production routing regression that could send ERP traffic to the legacy Nest backend, and reworked localization into a centralized system.",
+        "whyItMatters": "Shows system ownership on an enterprise ERP across frontend and backend: MUI-zero / DataGrid-zero migration gates, 46 incorrect Finance contracts and 8 P0 issues found before cutover, and regression suites that reached 710 passing tests."
       },
       "spy": {
         "name": "Spy Game — offline-first app",
@@ -683,14 +683,18 @@
     "experience": [
       {
         "company": "Multi-module Enterprise ERP",
-        "role": "Frontend / Senior Software Engineer",
+        "role": "Software Engineer",
         "period": "NDA / production system",
         "location": "Remote · International team",
         "domain": "Enterprise software · ERP · Fintech · SaaS",
         "technologies": [
           "Next.js",
-          "Next.js App Router",
+          "React",
           "TypeScript",
+          "NestJS",
+          "Node.js",
+          "PostgreSQL",
+          "Prisma",
           "Tailwind CSS v4",
           "shadcn/ui",
           "TanStack Query",
@@ -699,12 +703,12 @@
           "Zod",
           "REST API"
         ],
-        "scope": "Led frontend migration of a production ERP from a legacy UI/API architecture, including both interface work and HTTP/data-contract migration across major business modules, without stopping the running application.",
+        "scope": "Designed and developed a multi-module enterprise ERP across frontend and backend layers — application architecture, NestJS/Node.js services, PostgreSQL/Prisma data models, REST API contracts, and production UI — without stopping the running application.",
         "points": [
-          "Migrated Warehouse, HR, Projects, Tasks, Users, roles and permissions, office/document workflows, Finance, and Self-service to the new ERP API. Warehouse covers 16+ operational areas; HR includes 20+ sections of the employee dossier.",
+          "Implemented Warehouse, HR, Projects, Tasks, Users, roles and permissions, office/document workflows, Finance, and Self-service across UI and API layers. Warehouse covers 16+ operational areas; HR includes 20+ sections of the employee dossier.",
           "Eliminated a large legacy UI surface: started at 135 MUI importers, 59 MUI icon importers, and 31 DataGrid files; migration gates reached MUI-zero and DataGrid-zero.",
-          "Audited 13/13 Finance domains (invoices, estimates, payments, expenses, recurring operations, reports, transactions): identified 46 incorrect frontend API contracts, 22 missing scenarios, and 8 P0 issues before production cutover.",
-          "Integrated against NestJS APIs backed by Prisma and PostgreSQL — request/response models, frontend data models, RBAC, authentication, sessions, file uploads, server pagination, filtering, sorting, and URL state.",
+          "Audited 13/13 Finance domains (invoices, estimates, payments, expenses, recurring operations, reports, transactions): identified 46 incorrect API contracts, 22 missing scenarios, and 8 P0 issues before production cutover.",
+          "Built and integrated NestJS REST APIs backed by Prisma and PostgreSQL — data models, validation, business logic, RBAC, authentication, sessions, file uploads, server pagination, filtering, sorting, and URL state.",
           "Reworked localization as architecture: moved about 420 hardcoded UI strings into 22 namespaces and 951 translation keys, and removed legacy i18next dependencies.",
           "Resolved a production routing regression where ERP requests could fall back to the legacy Nest backend when ERP URL configuration was invalid, and added configuration safeguards.",
           "Migration stages passed regression gates: a controlled milestone at 682 tests across 160 files with typecheck, build, and API-contract checks; later the suite reached 710 passing tests."
@@ -795,17 +799,18 @@
       },
       {
         "title": "NestJS Masterclass – NodeJS Framework Backend Development",
-        "provider": "Udemy",
-        "year": "2024"
+        "provider": "Udemy · Manik (Cloudaffle)",
+        "year": "2024",
+        "detail": "Completed structured backend training in NestJS and Node.js covering REST API architecture, authentication, TypeORM, PostgreSQL, MongoDB, JWT, Swagger, testing and AWS deployment concepts. Supporting training — separate from commercial NestJS/ERP delivery."
       }
     ],
     "skills": {
-      "architecture": "Frontend Architecture",
-      "dataState": "Data & State",
-      "ui": "UI Engineering",
-      "forms": "Forms & Validation",
-      "integrations": "Integrations",
-      "engineering": "Engineering"
+      "architecture": "Frontend",
+      "dataState": "Backend",
+      "ui": "UI & Forms",
+      "forms": "Mobile",
+      "integrations": "Additional",
+      "engineering": "Infrastructure"
     }
   }
 }

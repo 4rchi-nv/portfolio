@@ -1,11 +1,11 @@
 {
   "Meta": {
-    "title": "Арслан Агаджанов — Frontend / Software Engineer | React, Next.js, TypeScript",
-    "description": "Frontend / Software Engineer с 6+ годами опыта: production-приложения на React, Next.js и TypeScript для enterprise ERP, финтеха и API-driven систем.",
-    "ogTitle": "Арслан Агаджанов — Frontend / Software Engineer | React, Next.js, TypeScript",
-    "ogDescription": "Frontend / Software Engineer: React, Next.js и TypeScript для enterprise ERP, финтех-сценариев и REST API-интеграций.",
-    "twitterDescription": "Frontend / Software Engineer — React, Next.js, TypeScript. Enterprise ERP, финтех и API-driven фронтенд.",
-    "keywords": "Frontend Engineer, Software Engineer, Senior Frontend Developer, React Engineer, Next.js Engineer, TypeScript Engineer, React, Next.js, TypeScript, ERP frontend, enterprise frontend, fintech frontend, REST API"
+    "title": "Арслан Агаджанов — Software Engineer | React, Next.js, NestJS, TypeScript",
+    "description": "Software Engineer / Инженер-программист с 6+ годами опыта: React, Next.js, NestJS и TypeScript для enterprise ERP, финтеха и API-driven систем.",
+    "ogTitle": "Арслан Агаджанов — Software Engineer | React, Next.js, NestJS, TypeScript",
+    "ogDescription": "Software Engineer: React, Next.js, NestJS и TypeScript для enterprise ERP, финтех-сценариев и API-driven систем.",
+    "twitterDescription": "Software Engineer — React, Next.js, NestJS, TypeScript. Enterprise ERP, финтех и API-driven systems.",
+    "keywords": "Software Engineer, TypeScript Software Engineer, React Software Engineer, Next.js Engineer, NestJS Developer, Node.js Developer, Full Stack TypeScript Engineer, Enterprise Software Engineer, ERP Developer, React Native Developer, React, Next.js, NestJS, TypeScript, PostgreSQL, REST API"
   },
   "Nav": {
     "impact": "Результаты",
@@ -74,9 +74,9 @@
           {
             "id": "erp",
             "title": "KIP ERP",
-            "blurb": "Enterprise ERP-фронтенд — архитектура, API-контракты, RBAC и data-heavy grids в production.",
+            "blurb": "Мультимодульный enterprise ERP на frontend и backend — архитектура, NestJS API, RBAC и data-heavy workflow.",
             "href": "#case-enterpriseErp",
-            "tags": ["Architecture", "API", "RBAC"]
+            "tags": ["Architecture", "NestJS", "RBAC"]
           },
           {
             "id": "finance",
@@ -181,7 +181,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "downloadCv": "Скачать CV",
-    "profilePhotoAlt": "Арслан Агаджанов, Frontend / Software Engineer"
+    "profilePhotoAlt": "Арслан Агаджанов, Software Engineer"
   },
   "CommandPalette": {
     "title": "Command palette",
@@ -242,24 +242,24 @@
   "CurrentStatus": {
     "badge": "Open to work",
     "focusLabel": "Сейчас",
-    "title": "Remote Frontend / Software Engineer роли",
-    "description": "Открыт к удалённой полной занятости и проектной работе: enterprise React/Next.js, ERP-миграции, fintech/Web3 фронтенд.",
+    "title": "Remote Software Engineer роли",
+    "description": "Открыт к удалённой полной занятости и проектной работе: enterprise React/Next.js/NestJS, ERP-системы, fintech/Web3 платформы.",
     "chips": [
       "Remote",
       "Full-time",
       "Project-based",
-      "Enterprise frontend"
+      "Enterprise ERP"
     ],
     "downloadCv": "Скачать CV"
   },
   "Aside": {
     "positioning": "Позиционирование",
     "bullets": [
-      "Фронтенд-архитектура, бизнес-логика и REST API-интеграции",
-      "Production React и Next.js для ERP и финтеха",
-      "Data-heavy CRUD, RBAC, аутентификация и сложные workflow",
+      "Software engineering: frontend, backend-сервисы и REST API",
+      "Production React, Next.js, NestJS и TypeScript для ERP и финтеха",
+      "Data-heavy CRUD, PostgreSQL, RBAC, аутентификация и сложные workflow",
       "Крупные миграции без остановки production-системы",
-      "End-to-end ответственность за фронтенд-фичи, включая отладку и деплой"
+      "End-to-end ownership — от API-контрактов и бизнес-логики до production UI"
     ]
   },
   "Sections": {
@@ -269,24 +269,24 @@
     "helpTitle": "За что беру ownership",
     "impactEyebrow": "Результаты",
     "impactTitle": "Engineering Impact",
-    "impactDescription": "Измеримые результаты миграции production ERP-фронтенда, аудита Finance API-контрактов, архитектуры локализации и регрессионных гейтов.",
+    "impactDescription": "Измеримые результаты миграции production ERP-системы, аудита Finance API-контрактов, архитектуры локализации и регрессионных гейтов.",
     "expertiseEyebrow": "Фокус",
     "expertiseTitle": "Инженерный фокус",
     "experienceEyebrow": "Опыт",
     "experienceTitle": "Опыт",
-    "experienceDescription": "Enterprise ERP, финтех и продуктовый фронтенд в международных и распределённых командах.",
+    "experienceDescription": "Enterprise ERP, финтех и продуктовая инженерия в международных и распределённых командах.",
     "certificationsEyebrow": "Сертификаты",
     "certificationsTitle": "Курсы и профессиональное развитие",
     "skillsEyebrow": "Capabilities",
     "skillsTitle": "Capability matrix",
     "contactEyebrow": "Контакты",
     "contactTitle": "Контакты",
-    "contactDescription": "Открыт к ролям Frontend Engineer, Senior Frontend Developer и Software Engineer. Удалённая полная занятость и проектная работа."
+    "contactDescription": "Открыт к ролям Software Engineer / Инженер-программист: React, Next.js, NestJS и TypeScript. Удалённая полная занятость и проектная работа."
   },
   "Projects": {
     "eyebrow": "Инженерные кейсы",
     "title": "Engineering Cases",
-    "description": "Глубокие frontend-кейсы: проблема, архитектура, ключевые решения и ownership — плюс компактный registry остальных проектов.",
+    "description": "Глубокие engineering-кейсы: проблема, архитектура, ключевые решения и ownership — плюс компактный registry остальных проектов.",
     "gamesIntro": "Отдельное направление — интерактивные приложения на Next.js: от полностью клиентского offline-first приложения до realtime-синхронизации с приватным состоянием игроков.",
     "filterAll": "Все",
     "empty": "В этой категории пока нет проектов.",
@@ -365,32 +365,32 @@
   },
   "Portfolio": {
     "person": {
-      "role": "Frontend / Software Engineer",
+      "role": "Software Engineer / Инженер-программист",
       "location": "Кайсери, Турция · открыт к удалённой работе",
-      "summary": "Frontend / Software Engineer с 6+ годами опыта: production-приложения на React, Next.js и TypeScript для enterprise ERP, финтеха и API-driven систем."
+      "summary": "Software Engineer с 6+ годами опыта: production web-приложения, enterprise ERP, финтех-продукты и API-driven платформы на frontend и backend слоях."
     },
     "hero": {
-      "eyebrow": "Frontend / Senior Software Engineer",
-      "title": "Frontend beyond the UI.",
-      "stack": "Строю React и Next.js продукты, где фронтенд — это архитектура, бизнес-логика, интеграции и ownership.",
-      "subtitle": "Enterprise-системы, fintech-интеграции и data-heavy приложения — от API-контрактов до production.",
+      "eyebrow": "Full-stack product engineering · Enterprise ERP · Fintech · React Native",
+      "title": "Software Engineer",
+      "stack": "React · Next.js · NestJS · TypeScript",
+      "subtitle": "Software Engineer с 6+ годами опыта: production web-приложения, enterprise ERP, финтех-продукты и API-driven платформы на frontend и backend слоях. Сильнейшая специализация — React/Next.js и TypeScript; практический backend-опыт — NestJS, Node.js, PostgreSQL, аутентификация, RBAC и сложные бизнес-workflow.",
       "statusBadge": "Open to remote"
     },
     "aboutParagraphs": [
-      "Я Frontend / Software Engineer с 6+ годами опыта в production-приложениях на React, Next.js и TypeScript: enterprise-софт, ERP и финтех.",
-      "Это не только UI. В скоупе — фронтенд-архитектура, HTTP/API-контракты, интеграция с бэкендом, data-heavy интерфейсы, аутентификация и RBAC, сложные CRUD-workflow, крупные миграции, production-отладка и end-to-end ответственность за фронтенд-фичи. English C1. Открыт к удалённым full-time и проектным ролям Frontend Engineer, Senior Frontend Developer, React Engineer, Next.js Engineer или Software Engineer."
+      "Я Software Engineer / Инженер-программист с 6+ годами опыта в production-приложениях на React, Next.js и TypeScript. Карьера начиналась преимущественно во frontend, но сейчас работа охватывает backend-сервисы, REST API, PostgreSQL, аутентификацию, RBAC, инфраструктуру и end-to-end бизнес-workflow.",
+      "В крупном enterprise ERP работал на обоих слоях — frontend и backend: от модели данных и API-контракта через бизнес-логику до production UI. English C1. Открыт к удалённым full-time и проектным ролям Software Engineer."
     ],
     "helpWith": [
-      "Фронтенд-архитектура production-систем на React, Next.js и TypeScript",
-      "Enterprise ERP и бизнес-приложения: склад, HR, финансы, проекты и права доступа",
-      "REST API-интеграции, HTTP-контракты и аудит request/response",
-      "Финтех-интерфейсы: счета, платежи, расходы, отчёты и денежные workflow",
+      "Архитектура приложений на React, Next.js, NestJS и TypeScript",
+      "Enterprise ERP на frontend и backend: Finance, Warehouse, HR, Projects, Users/Roles и permissions",
+      "Проектирование и интеграция REST API, HTTP-контракты, сервисы на PostgreSQL и Prisma",
+      "Финтех-интерфейсы и workflow: счета, платежи, расходы, отчёты и денежные операции",
       "Production-миграции, регрессионные гейты и разбор инцидентов без остановки работающей системы"
     ],
     "recruiterFacts": [
-      "6+ лет во фронтенд-разработке",
-      "Enterprise ERP, финтех и SaaS-интерфейсы",
-      "Ownership API-контрактов в финансовых доменах",
+      "6+ лет в software engineering",
+      "Enterprise ERP, финтех и API-driven системы",
+      "Ownership frontend + backend в финансовых доменах",
       "Открыт к удалённой полной занятости и проектам"
     ],
     "impact": [
@@ -407,7 +407,7 @@
       {
         "value": "46",
         "label": "некорректных API-контрактов найдено",
-        "context": "Фронтенд HTTP-контракты, которые не совпадали с Finance API ERP."
+        "context": "HTTP-контракты, которые не совпадали с Finance API ERP."
       },
       {
         "value": "22",
@@ -437,15 +437,15 @@
       },
       {
         "title": "Enterprise ERP",
-        "text": "Мультимодульный ERP-фронтенд: Finance, Warehouse, HR, Projects, Tasks, офисные workflow, пользователи, роли, права и self-service."
+        "text": "Мультимодульный enterprise ERP на frontend и backend слоях — Finance, Warehouse, HR, Projects, Tasks, офисные workflow, пользователи, роли, права и self-service."
       },
       {
         "title": "Финтех-сценарии",
         "text": "Счета, сметы, платежи, расходы, регулярные операции, отчёты, транзакции и интерфейсы с правами доступа."
       },
       {
-        "title": "API-контракты и интеграции",
-        "text": "HTTP request/response-модели, REST API и аудит фронтенд-контрактов к сервисам на NestJS, Prisma и PostgreSQL."
+        "title": "Backend и API-контракты",
+        "text": "Сервисы на NestJS и Node.js, REST API, модели данных на Prisma и PostgreSQL, а также аудит request/response-контрактов по бизнес-доменам."
       },
       {
         "title": "Auth, сессии и RBAC",
@@ -458,30 +458,30 @@
     ],
     "projects": {
       "enterpriseErp": {
-        "name": "Enterprise ERP Frontend",
-        "whatItIs": "Enterprise management platform — мультимодульный ERP-фронтенд для Finance, Warehouse, HR и операций.",
-        "role": "Lead frontend / architecture",
+        "name": "Enterprise ERP",
+        "whatItIs": "Мультимодульный enterprise ERP, разработанный на frontend и backend слоях — Finance, Warehouse, HR и операции.",
+        "role": "Software Engineer · frontend & backend",
         "status": "Production · NDA",
         "domains": [
-          "Frontend Architecture",
+          "Software Engineering",
           "ERP",
           "Finance",
           "HR",
           "Warehouse"
         ],
-        "problem": "Legacy-фронтенд, несколько backend-доменов, сложные permissions, финансовые workflow и большой объём data-heavy CRUD — при этом production-система должна продолжать работать.",
+        "problem": "Legacy UI и API-слои, несколько бизнес-доменов, сложные permissions, финансовые workflow и большой объём data-heavy CRUD — при этом production-система должна продолжать работать.",
         "owned": [
-          "Frontend architecture",
-          "API contracts",
+          "Application architecture",
+          "Frontend & backend services",
+          "REST API contracts",
           "Auth / RBAC",
           "Finance migration",
-          "Complex data grids",
           "Production deployment"
         ],
         "decisions": [
           {
             "title": "ERP API стал source of truth",
-            "body": "UI-модели перестали зеркалить transport DTO. Адаптеры изолируют эволюцию backend-контрактов от доменных моделей, чтобы Finance и другие модули мигрировали без переписывания каждого экрана."
+            "body": "UI-модели перестали зеркалить transport DTO. Адаптеры изолируют эволюцию контрактов NestJS/PostgreSQL от доменных моделей, чтобы Finance и другие модули мигрировали без переписывания каждого экрана."
           },
           {
             "title": "Server state вынесен из глобальных сторов",
@@ -502,11 +502,11 @@
           { "label": "Найдено в контрактах", "value": "46" },
           { "label": "Regression suite", "value": "710 тестов" }
         ],
-        "standing": "В production как основной ERP-фронтенд: постепенный вывод legacy, централизованная локализация и продолжающиеся доменные миграции без остановки live-системы.",
+        "standing": "В production как основной ERP-контур: постепенный вывод legacy, централизованная локализация и продолжающиеся доменные миграции без остановки live-системы.",
         "dataLayerLabel": "Domain APIs",
-        "description": "Крупный production ERP-фронтенд: Finance, Warehouse, HR, Projects, Tasks, офисные/документные workflow, Users, Roles, Permissions и Self-service. Склад покрывает 16+ операционных зон; HR — 20+ разделов досье сотрудника. Data-heavy система: серверная пагинация, фильтры, сортировка, URL-state и CRUD с правами доступа.",
-        "contribution": "Вёл миграцию фронтенда с legacy UI/API на Next.js, TypeScript, Tailwind CSS v4, shadcn/ui и TanStack — и UI, и API/data-контракты. Production-интерфейсы на TanStack Table, TanStack Query, React Hook Form, Zod, RBAC, аутентификации, сессиях и загрузке файлов, с постепенным снятием legacy без остановки системы. Аудит Finance HTTP-контрактов (13/13 доменов), разбор production-регрессии маршрутизации на legacy Nest и перевод локализации на централизованную систему.",
-        "whyItMatters": "Показывает ownership фронтенд-архитектуры и API-контрактов в enterprise ERP: гейты MUI-zero / DataGrid-zero, 46 некорректных Finance-контрактов и 8 P0 до cutover, регрессия до 710 зелёных тестов."
+        "description": "Спроектировал и разработал мультимодульный enterprise ERP на frontend и backend слоях: Finance, Warehouse, HR, Projects, Tasks, офисные/документные workflow, Users, Roles, Permissions и Self-service. Склад покрывает 16+ операционных зон; HR — 20+ разделов досье сотрудника. Работа охватывала Next.js/React UI, NestJS REST API, модели данных PostgreSQL/Prisma, аутентификацию, RBAC и permissioned CRUD с серверной пагинацией, фильтрами, сортировкой и URL-state.",
+        "contribution": "End-to-end поставка на обоих слоях приложения: frontend на Next.js/TypeScript (TanStack Query/Table, React Hook Form, Zod, Tailwind CSS v4, shadcn/ui) и backend-сервисы NestJS/Node.js с Prisma и PostgreSQL — REST API-контракты, бизнес-логика, аутентификация, сессии, RBAC и загрузка файлов. Миграция с legacy UI/API без остановки production. Аудит Finance HTTP-контрактов (13/13 доменов), разбор production-регрессии маршрутизации на legacy Nest и перевод локализации на централизованную систему.",
+        "whyItMatters": "Показывает system ownership в enterprise ERP на frontend и backend: гейты MUI-zero / DataGrid-zero, 46 некорректных Finance-контрактов и 8 P0 до cutover, регрессия до 710 зелёных тестов."
       },
       "spy": {
         "name": "Шпион — offline-first приложение",
@@ -683,14 +683,18 @@
     "experience": [
       {
         "company": "Мультимодульный Enterprise ERP",
-        "role": "Frontend / Senior Software Engineer",
+        "role": "Software Engineer",
         "period": "NDA / production-система",
         "location": "Удалённо · международная команда",
         "domain": "Enterprise-софт · ERP · Финтех · SaaS",
         "technologies": [
           "Next.js",
-          "Next.js App Router",
+          "React",
           "TypeScript",
+          "NestJS",
+          "Node.js",
+          "PostgreSQL",
+          "Prisma",
           "Tailwind CSS v4",
           "shadcn/ui",
           "TanStack Query",
@@ -699,12 +703,12 @@
           "Zod",
           "REST API"
         ],
-        "scope": "Вёл миграцию фронтенда production ERP с legacy UI/API, включая интерфейс и HTTP/data-контракты по основным бизнес-модулям, без остановки работающей системы.",
+        "scope": "Спроектировал и разработал мультимодульный enterprise ERP на frontend и backend слоях — архитектура приложения, сервисы NestJS/Node.js, модели данных PostgreSQL/Prisma, REST API-контракты и production UI — без остановки работающей системы.",
         "points": [
-          "Мигрировал Warehouse, HR, Projects, Tasks, Users, роли и права, офисные/документные workflow, Finance и Self-service на новый ERP API. Склад — 16+ операционных зон; HR — 20+ разделов досье сотрудника.",
+          "Реализовал Warehouse, HR, Projects, Tasks, Users, роли и права, офисные/документные workflow, Finance и Self-service на UI и API слоях. Склад — 16+ операционных зон; HR — 20+ разделов досье сотрудника.",
           "Убрал большой legacy UI-слой: старт — 135 MUI-импортеров, 59 импортеров иконок и 31 DataGrid; гейты миграции — MUI-zero и DataGrid-zero.",
-          "Аудит 13/13 доменов Finance (счета, сметы, платежи, расходы, регулярные операции, отчёты, транзакции): 46 некорректных фронтенд API-контрактов, 22 отсутствующих сценария и 8 P0 до production cutover.",
-          "Интеграция с NestJS API на Prisma и PostgreSQL — request/response-модели, фронтенд-модели данных, RBAC, аутентификация, сессии, загрузка файлов, серверная пагинация, фильтры, сортировка и URL-state.",
+          "Аудит 13/13 доменов Finance (счета, сметы, платежи, расходы, регулярные операции, отчёты, транзакции): 46 некорректных API-контрактов, 22 отсутствующих сценария и 8 P0 до production cutover.",
+          "Разработка и интеграция NestJS REST API на Prisma и PostgreSQL — модели данных, валидация, бизнес-логика, RBAC, аутентификация, сессии, загрузка файлов, серверная пагинация, фильтры, сортировка и URL-state.",
           "Локализация как архитектура: около 420 захардкоженных строк вынесены в 22 namespace и 951 ключ перевода, legacy i18next убран.",
           "Разобрал production-регрессию маршрутизации, из-за которой ERP-запросы могли уходить на legacy Nest при невалидной ERP URL-конфигурации, и добавил защиту конфигурации.",
           "Этапы миграции проходили регрессионные гейты: контролируемый milestone — 682 теста в 160 файлах плюс typecheck, build и проверки API-контрактов; позднее набор достиг 710 зелёных тестов."
@@ -795,17 +799,18 @@
       },
       {
         "title": "NestJS Masterclass – NodeJS Framework Backend Development",
-        "provider": "Udemy",
-        "year": "2024"
+        "provider": "Udemy · Manik (Cloudaffle)",
+        "year": "2024",
+        "detail": "Структурированное backend-обучение по NestJS и Node.js: архитектура REST API, аутентификация, TypeORM, PostgreSQL, MongoDB, JWT, Swagger, тестирование и концепции деплоя на AWS. Поддерживающий курс — отдельно от коммерческой NestJS/ERP-поставки."
       }
     ],
     "skills": {
-      "architecture": "Frontend Architecture",
-      "dataState": "Data & State",
-      "ui": "UI Engineering",
-      "forms": "Forms & Validation",
-      "integrations": "Integrations",
-      "engineering": "Engineering"
+      "architecture": "Frontend",
+      "dataState": "Backend",
+      "ui": "UI & Forms",
+      "forms": "Mobile",
+      "integrations": "Additional",
+      "engineering": "Infrastructure"
     }
   }
 }

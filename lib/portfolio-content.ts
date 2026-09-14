@@ -76,6 +76,8 @@ export type ResolvedCertification = {
   title: string;
   provider: string;
   year: string;
+  /** Optional note distinguishing training from commercial experience */
+  detail?: string;
 };
 
 function resolveBaseProject(

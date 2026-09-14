@@ -20,6 +20,11 @@ export function CertificationsList({ items }: { items: ResolvedCertification[] }
             <p className="mt-2 text-xs uppercase tracking-wide break-words text-[var(--muted)]">
               {item.provider} · {item.year}
             </p>
+            {item.detail ? (
+              <p className="mt-2 text-sm leading-relaxed break-words text-[var(--muted-strong)]">
+                {item.detail}
+              </p>
+            ) : null}
           </article>
         </motion.div>
       ))}

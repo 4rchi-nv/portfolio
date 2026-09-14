@@ -66,8 +66,12 @@ export const projectOrder: ProjectMeta[] = [
     language: "TypeScript",
     stack: [
       "Next.js",
-      "Next.js App Router",
+      "React",
       "TypeScript",
+      "NestJS",
+      "Node.js",
+      "PostgreSQL",
+      "Prisma",
       "Tailwind CSS v4",
       "shadcn/ui",
       "TanStack Query",
@@ -81,11 +85,15 @@ export const projectOrder: ProjectMeta[] = [
         { id: "browser", label: "Browser", subtitle: "Operators · RBAC UI" },
         { id: "next", label: "Next.js", subtitle: "App Router · forms · grids" },
         {
-          id: "query",
-          label: "TanStack Query",
-          subtitle: "Server state · cache",
+          id: "api",
+          label: "NestJS API",
+          subtitle: "REST · Auth · RBAC",
         },
-        { id: "api", label: "ERP API", subtitle: "Auth · RBAC · domains" },
+        {
+          id: "db",
+          label: "PostgreSQL",
+          subtitle: "Prisma · domains",
+        },
       ],
       dataLayer: ["Finance", "Warehouse", "HR", "Projects", "Office"],
     },
@@ -263,44 +271,47 @@ export type SkillGroupKey = (typeof skillGroupOrder)[number];
 
 export const skillItems: Record<SkillGroupKey, string[]> = {
   architecture: [
-    "React 19",
+    "React",
     "Next.js",
-    "App Router",
-    "RSC",
-    "SSR / ISR",
     "TypeScript",
-  ],
-  dataState: [
     "TanStack Query",
     "TanStack Table",
     "Zustand",
     "Redux",
-    "URL state",
+  ],
+  dataState: [
+    "NestJS",
+    "Node.js",
+    "Prisma",
+    "PostgreSQL",
+    "REST APIs",
+    "Authentication",
+    "RBAC",
   ],
   ui: [
-    "Tailwind CSS",
+    "Tailwind CSS v4",
     "shadcn/ui",
-    "Radix / Base UI",
+    "React Hook Form",
+    "Zod",
     "Framer Motion",
-    "Responsive UI",
   ],
-  forms: ["React Hook Form", "Zod", "Complex CRUD forms"],
+  forms: ["React Native"],
   integrations: [
-    "REST",
     "GraphQL",
-    "WebSocket",
+    "Hasura",
+    "Firebase",
+    "Web3",
     "WalletConnect",
-    "TronLink",
     "Telegram Web Apps",
   ],
   engineering: [
-    "Vitest",
-    "Cypress",
     "Docker",
     "Linux",
     "Nginx",
     "Git",
     "Vercel",
+    "Vitest",
+    "Cypress",
   ],
 };
 
@@ -308,8 +319,8 @@ export const skillItems: Record<SkillGroupKey, string[]> = {
 export const skillGroupStatus: Record<SkillGroupKey, "proven" | "active"> = {
   architecture: "proven",
   dataState: "proven",
-  ui: "active",
-  forms: "proven",
+  ui: "proven",
+  forms: "active",
   integrations: "proven",
   engineering: "active",
 };
@@ -325,18 +336,19 @@ export const contacts = {
 
 export const personName = "Arslan Agajanov";
 
-export const jobTitle = "Frontend / Software Engineer";
+export const jobTitle = "Software Engineer";
 
 export const knowsAbout = [
+  "Software Engineering",
+  "TypeScript",
   "React",
   "Next.js",
-  "TypeScript",
-  "Frontend Development",
-  "Software Engineering",
+  "NestJS",
+  "Node.js",
+  "React Native",
+  "PostgreSQL",
+  "REST APIs",
   "Enterprise Software",
   "ERP",
   "Fintech",
-  "REST APIs",
-  "NestJS",
-  "PostgreSQL",
 ] as const;

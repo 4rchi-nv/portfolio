@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { jobTitle, personName, siteUrl } from "@/data/portfolio-meta";
 
-const title = `${personName} — ${jobTitle} | React, Next.js, TypeScript`;
+const title = `${personName} — ${jobTitle} | React, Next.js, NestJS, TypeScript`;
 const description =
-  "Frontend / Software Engineer with 6+ years building production React, Next.js and TypeScript applications across enterprise ERP, fintech, and API-driven systems.";
+  "Software Engineer with 6+ years of experience building React, Next.js, NestJS and TypeScript applications across enterprise ERP, fintech and API-driven systems.";
 
 const ogImage = {
   url: "/og-image.png",
